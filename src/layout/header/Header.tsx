@@ -4,11 +4,13 @@ import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/Menu/Menu";
 
 
+const items = ["Home", "Projects", "About", "Content",];
+
 export const Header = () => {
     return (
         <Styledheader>
             <Logo/>
-            <Menu/>
+            <Menu menuItems={items}/>
         </Styledheader>
     );
 };

@@ -6,11 +6,19 @@ import {MoonStyled} from "../MoonImg/MoonImg";
 
 
 
-export const Menu = () => {
+export const Menu = (props: {menuItems: Array<string>}) => {
     return (
 
         <StyledMenu>
             <ul>
+                        //Переиспользуемая функция menu
+                {/*{props.menuItems.map((item, index) => {*/}
+                {/*    return <li key={index}>*/}
+                {/*        <a href="">(item)</a>*/}
+                {/*    </li>*/}
+                {/*})};*/}
+
+
                 <li>
                     <a href="">Home</a>
                 </li>
