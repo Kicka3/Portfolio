@@ -1,24 +1,21 @@
 import React from 'react';
-import {Icon} from "../../../../components/icon/icon";
 import styled from "styled-components";
 
 
 type skillPropsType = {
-    iconId: string,
+    title?: string,
 }
 
 
-export const Skill = (props: skillPropsType) => {
-    return (
-        <StyledSkill>
-            {/*<Icon iconId={props.iconId} />*/}
-        </StyledSkill>
-    );
-};
+// export const Skill = (props: skillPropsType) => {
+//     return (
+//
+//     );
+// };
 
 
-const StyledSkill = styled.div`
-    width: 66%;
+const StyledSkill = styled.h3`
+    
   
 `;
 

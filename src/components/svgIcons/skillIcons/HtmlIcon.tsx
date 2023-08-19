@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HtmlIcon = () => (
-    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.1323 102.004L13.7061 7.5H106.294L97.856 101.989L59.9436 112.5L22.1323 102.004Z" fill="#E44F26"/>
         <path d="M60 104.468L90.6375 95.9738L97.845 15.2288H60V104.468Z" fill="#F1662A"/>
         <path d="M60 50.2762H44.6625L43.605 38.4075H60V26.8162H30.9375L31.215 29.9287L34.0613 61.8675H60V50.2762ZM60 80.3775L59.9475 80.3925L47.04 76.9087L46.215 67.665H34.5787L36.2025 85.86L59.9475 92.4525L60 92.4375V80.3775Z" fill="#EBEBEB"/>

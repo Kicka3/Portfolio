@@ -11,7 +11,6 @@ import {Name} from "../../../components/NameWrapper";
 export const Main = () => {
     return (
         <div>
-            {/*<FlexWrapper align={"center"} direction={"row-reverse"}>*/}
             <TitleMainWrapper gap={"76px"}>
                 <div>
                     <MyPhoto src={myImg}/>
@@ -29,7 +28,6 @@ export const Main = () => {
                     <ButtonsWrapper  color={"#6C92FF"}>Download Resume</ButtonsWrapper>
                 </div>
             </TitleMainWrapper>
-            {/*</FlexWrapper>*/}
         </div>
     );
 }

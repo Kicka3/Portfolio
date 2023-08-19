@@ -26,4 +26,12 @@ export const TitleMainWrapper = styled.div<TitleMainWrapperPropsType>`
   border-radius: 0px 200px;
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
   backdrop-filter: blur(10px);
+  
+  & p {
+    max-width: 377px;
+  }
+  
+  & h1 {
+    
+  }
 `;

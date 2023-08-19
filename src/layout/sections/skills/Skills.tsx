@@ -15,8 +15,8 @@ const Skills = () => {
     return (
         <StyledSkill>
             <SectionTitle>My Tech Stack</SectionTitle>
-            <FlexWrapper>
-                <CssIcon/>
+            <FlexWrapper wrap={"wrap"}>
+                <CssIcon />
                 <HtmlIcon/>
                 <GitHubIcon/>
                 <JsIcon/>
@@ -33,8 +33,8 @@ const Skills = () => {
 export default Skills;
 
 export const StyledSkill = styled.section`
-
-
+  margin-bottom: 214px;
+    
 `;
 
 
