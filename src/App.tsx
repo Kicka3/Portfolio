@@ -1,7 +1,7 @@
 import './App.css';
 import styled from 'styled-components';
 import {Header} from "./layout/header/Header";
-import {Main} from "./layout/main/Main";
+import {Main} from "./layout/sections/main/Main";
 
 
 function App() {

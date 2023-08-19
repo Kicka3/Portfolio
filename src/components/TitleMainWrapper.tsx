@@ -6,9 +6,7 @@ export const TitleMainWrapper = styled.div`
   justify-content: center;
   align-items: center;
   //flex-direction: row;
-  margin-top: 107px;
-  margin-left: 151px;
-  margin-right: 131px;
+  margin: 107px 131px 195px 151px;
 
   max-width: 1158px;
   max-height: 507px;

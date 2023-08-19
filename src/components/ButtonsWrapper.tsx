@@ -5,10 +5,13 @@ type ButtonsWrapperPropsType = {
     color?: string,
 }
 
-export const ButtonsWrapper = styled.a`
+export const ButtonsWrapper = styled.a<ButtonsWrapperPropsType>`
   width: 200px;
   height: 54px;
   border-radius: 20px;
-  background: #2157F2;
+  background: ${props => props.background || "#transparent"};
+  font-size: 15px;
+  color: ${props => props.color || "#fff"};
+  margin-right: 32px;
   
 `;
