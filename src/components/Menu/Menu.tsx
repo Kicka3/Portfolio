@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {MoonStyled} from "../MoonImg/MoonImg";
-// import {MoonImg} from "../MoonImg/MoonImg";
 
 export const Menu = () => {
     return (
