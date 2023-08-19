@@ -10,12 +10,16 @@ const Skills = () => {
         <StyledSkill>
             <SectionTitle>My Tech Stack</SectionTitle>
             <FlexWrapper>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
+                <Skill iconId={"html"}/>
+                <Skill iconId={"css"}/>
+                <Skill iconId={"css"}/>
+                <Skill iconId={"Git"}/>
+                <Skill iconId={"js"}/>
+                <Skill iconId={"ts"}/>
+                <Skill iconId={"react"}/>
+                <Skill iconId={"redux"}/>
+                <Skill iconId={"sass"}/>
+                <Skill iconId={"styledComponent"}/>
             </FlexWrapper>
         </StyledSkill>
     );

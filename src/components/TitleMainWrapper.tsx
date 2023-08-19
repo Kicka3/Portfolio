@@ -1,13 +1,24 @@
 import styled from "styled-components";
 
 
-export const TitleMainWrapper = styled.div`
+type TitleMainWrapperPropsType = {
+    direction?: string,
+    justify?: string,
+    align?: string,
+    wrap?: string,
+    gap?: string,
+}
+
+export const TitleMainWrapper = styled.div<TitleMainWrapperPropsType>`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: ${props => props.justify || "center"};
+  align-items: ${props => props.align || "center"};
+  flex-direction: ${props => props.direction || "row"};
+  flex-wrap: ${props => props.wrap || "no-wrap"};
+  
   gap: 76px;
   margin: 107px 131px 195px 151px;
-
+  
   max-width: 1158px;
   max-height: 507px;
   flex-shrink: 0;
