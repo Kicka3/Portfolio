@@ -5,7 +5,7 @@ export const TitleMainWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  //flex-direction: row;
+  gap: 76px;
   margin: 107px 131px 195px 151px;
 
   max-width: 1158px;

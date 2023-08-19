@@ -33,12 +33,6 @@ export const Main = () => {
                     <ButtonsWrapper  color={"#6C92FF"}>Download Resume</ButtonsWrapper>
                 </div>
             </TitleMainWrapper>
-
-            <div>
-
-
-            </div>
-
             {/*</FlexWrapper>*/}
         </div>
     );

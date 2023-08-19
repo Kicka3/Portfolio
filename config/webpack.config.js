@@ -705,7 +705,7 @@ module.exports = function (webpackEnv) {
           issue: {
             // This one is specifically to match during CI tests,
             // as micromatch doesn't match
-            // '../cra-template-typescript/template/src/App.tsx'
+            // '../cra-template-typescript/template/src/AppSkill.tsx'
             // otherwise.
             include: [
               { file: '../**/src/**/*.{ts,tsx}' },
