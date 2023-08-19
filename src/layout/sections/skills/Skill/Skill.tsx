@@ -11,7 +11,7 @@ type skillPropsType = {
 export const Skill = (props: skillPropsType) => {
     return (
         <StyledSkill>
-            <Icon iconId={props.iconId} />
+            {/*<Icon iconId={props.iconId} />*/}
         </StyledSkill>
     );
 };

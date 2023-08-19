@@ -4,7 +4,6 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {TitleMainWrapper} from "../../../components/TitleMainWrapper";
 import {ButtonsWrapper} from "../../../components/ButtonsWrapper";
-import iconsSprite2 from "../../../assets/images/iconsSprite2.svg";
 import {Name} from "../../../components/NameWrapper";
 
 
@@ -13,7 +12,7 @@ export const Main = () => {
     return (
         <div>
             {/*<FlexWrapper align={"center"} direction={"row-reverse"}>*/}
-            <TitleMainWrapper>
+            <TitleMainWrapper gap={"76px"}>
                 <div>
                     <MyPhoto src={myImg}/>
                 </div>
@@ -25,9 +24,6 @@ export const Main = () => {
                         sunt
                         tenetur!</p>
                     <ButtonsWrapper color={"#fff"} background={"#2157F2"}>
-                        {/*<svg>*/}
-                        {/*    <use xlinkHref={`${iconsSprite2}#${arrowR}`} />*/}
-                        {/*</svg>*/}
                         See Projects
                     </ButtonsWrapper>
                     <ButtonsWrapper  color={"#6C92FF"}>Download Resume</ButtonsWrapper>

@@ -15,8 +15,8 @@ export const TitleMainWrapper = styled.div<TitleMainWrapperPropsType>`
   align-items: ${props => props.align || "center"};
   flex-direction: ${props => props.direction || "row"};
   flex-wrap: ${props => props.wrap || "no-wrap"};
+  gap: ${props => props.gap || "75px"};
   
-  gap: 76px;
   margin: 107px 131px 195px 151px;
   
   max-width: 1158px;
