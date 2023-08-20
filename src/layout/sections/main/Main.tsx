@@ -1,7 +1,6 @@
 import React from 'react';
 import myImg from "../../../assets/images/myPhoto.jpg";
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {TitleMainWrapper} from "../../../components/TitleMainWrapper";
 import {ButtonsWrapper} from "../../../components/ButtonsWrapper";
 import {Name} from "../../../components/NameWrapper";

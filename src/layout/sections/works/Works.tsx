@@ -36,5 +36,6 @@ export const Works = () => {
 const StyledWorks = styled.section`
   min-height: 100vh;
   background-color: rgba(0, 255, 255, 0.18);
+  margin-bottom: 150px;
 `;
 
