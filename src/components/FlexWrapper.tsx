@@ -6,6 +6,11 @@ type FlexWrapperPropsType = {
     align?: string,
     wrap?: string,
     gap?: string,
+    flexFlow?: string,
+    marginL?: string,
+    marginR?: string,
+    marginB?: string,
+
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -15,4 +20,8 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   align-items: ${props => props.align || "stretch"};
   flex-wrap: ${props => props.wrap || "no-wrap"};
   gap: ${props => props.gap || "76px"};
+  flex-flow: ${props => props.flexFlow};
+  margin-left: ${props => props.marginL};
+  margin-right: ${props => props.marginR};
+  margin-bottom: ${props => props.marginB};
 `;

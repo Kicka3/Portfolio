@@ -14,6 +14,7 @@ export const SectionTitle = styled.h2<SectionTitlePropsType>`
   text-align: center;
   margin-bottom: ${props => props.marginB || "15px"};
   line-height: ${props => props.lineH || "26px"};
+    
 `;
 
 

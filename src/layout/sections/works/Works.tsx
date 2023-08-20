@@ -21,15 +21,14 @@ export const Works = () => {
             <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"0px"}>
                 <SectionTitle marginB={"49px"} color={"#42446E"} size={"48px"}>Projects</SectionTitle>
                 <Subtitle color={"#666"} lineH={"26px"} size={"32px"}>Things I’ve built so far</Subtitle>
+
+                <FlexWrapper gap={"34px"}>
+                    <Work src={reactangle1} title={"Project Tile goes here"} text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                    <Work src={reactangle2} title={"Project Tile goes here"} text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                    <Work src={reactangle3} title={"Project Tile goes here"} text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                </FlexWrapper>
             </FlexWrapper>
             {/*<Menu menuItems={worksItems}/>*/}
-
-            <FlexWrapper>
-                <Work src={reactangle1} title={"Project Tile goes here"} text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                <Work src={reactangle2} title={"Project Tile goes here"} text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                <Work src={reactangle3} title={"Project Tile goes here"} text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-            </FlexWrapper>
-
         </StyledWorks>
     );
 };
