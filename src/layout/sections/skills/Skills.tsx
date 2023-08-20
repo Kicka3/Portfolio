@@ -33,7 +33,7 @@ const Skills = () => {
 export default Skills;
 
 export const StyledSkill = styled.section`
-  margin-bottom: 214px;
+  margin-bottom: 80px;
     
 `;
 

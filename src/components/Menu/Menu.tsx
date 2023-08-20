@@ -11,7 +11,7 @@ export const Menu = (props: {menuItems: Array<string>}) => {
 
         <StyledMenu>
             <ul>
-                        //Переиспользуемая функция menu
+
                 {/*{props.menuItems.map((item, index) => {*/}
                 {/*    return <li key={index}>*/}
                 {/*        <a href="">(item)</a>*/}
