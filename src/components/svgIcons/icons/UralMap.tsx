@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import mapUr from "../../../assets/images/mapOrig.png";
 import {AboutMeTextWrapper} from "../../AboutMeTextWrapper";
+import {FlexWrapper} from "../../FlexWrapper";
 
 
 export const UralMap = () => {
@@ -10,7 +11,7 @@ export const UralMap = () => {
             <div>
                 <UralMapStyled src={mapUr}/>
             </div>
-            <AboutMeTextWrapper/>
+                <AboutMeTextWrapper/>
         </div>
     );
 };
