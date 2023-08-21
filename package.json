@@ -69,7 +69,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -91,6 +91,7 @@
     ]
   },
   "devDependencies": {
+    "@types/gh-pages": "^3.2.1",
     "@types/styled-components": "5.1.26",
     "babel-plugin-styled-components": "2.0.7"
   },

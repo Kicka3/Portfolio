@@ -24,3 +24,10 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
 
 `;
+
+const SocialIconLink = styled.a`
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 200px;
+`;
