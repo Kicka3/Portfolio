@@ -19,7 +19,7 @@ export const TitleMainWrapper = styled.div<TitleMainWrapperPropsType>`
   
   margin: 107px 131px 195px 151px;
   
-  max-width: 1158px;
+  min-width: 1215px;
   max-height: 507px;
   flex-shrink: 0;
 

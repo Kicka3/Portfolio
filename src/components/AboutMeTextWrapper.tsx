@@ -6,7 +6,7 @@ import {CircleIcon} from "./svgIcons/icons/CircleIcon";
 export const AboutMeTextWrapper = () => {
     return (
         <AboutMeTextWrapperStyled>
-            <FlexWrapper direction={"column"} gap={"10px"} align={"flex-start"} wrap={"wrap"} justify={"flex-start"}>
+            <FlexWrapper direction={"column"} gap={"0px"} align={"flex-start"} wrap={"wrap"} justify={"flex-start"}>
                 <AboutMeTextStyled>I'm <span>Kirill</span> Ozornin</AboutMeTextStyled>
                 <AboutMeTextTitles><CircleIcon/>I was born in Ekaterinburg</AboutMeTextTitles>
                 <AboutMeTextTitles><CircleIcon/>I’m 25 years old</AboutMeTextTitles>
@@ -23,7 +23,7 @@ const AboutMeTextWrapperStyled = styled.div`
   border-radius: 100px 0px;
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
   backdrop-filter: blur(10px);
-
+  
 `;
 
 const AboutMeTextStyled = styled.h2`

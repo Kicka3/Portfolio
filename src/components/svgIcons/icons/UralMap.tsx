@@ -1,17 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import mapUr from "../../../assets/images/mapOrig.png";
-import {AboutMeTextWrapper} from "../../AboutMeTextWrapper";
-import {FlexWrapper} from "../../FlexWrapper";
+
 
 
 export const UralMap = () => {
     return (
         <div>
-            <div>
-                <UralMapStyled src={mapUr}/>
-            </div>
-                <AboutMeTextWrapper/>
+            <UralMapStyled src={mapUr}/>
         </div>
     );
 };
