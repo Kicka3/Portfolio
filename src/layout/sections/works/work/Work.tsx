@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import {ViewCodeIcon} from "../../../components/svgIcons/icons/ViewCodeIcon";
-import {GitWorkIcon} from "../../../components/svgIcons/icons/GitWorkIcon";
-import {FlexWrapper} from "../../../components/FlexWrapper";
+import {ViewCodeIcon} from "../../../../components/svgIcons/icons/ViewCodeIcon";
+import {GitWorkIcon} from "../../../../components/svgIcons/icons/GitWorkIcon";
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 
 type WorkPropsType = {

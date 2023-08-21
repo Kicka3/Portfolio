@@ -4,7 +4,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Subtitle} from "../../../components/Subtitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Menu} from "../../../components/Menu/Menu";
-import {Work} from "../work/Work";
+import {Work} from "./work/Work";
 import reactangle1 from "../../../assets/images/Rectangle1.png";
 import reactangle2 from "../../../assets/images/Rectangle2.png";
 import reactangle3 from "../../../assets/images/Rectangle3.png";
@@ -30,7 +30,7 @@ export const Works = () => {
                     <Work src={reactangle3} title={"Project Tile goes here"} text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                 </FlexWrapper>
             </FlexWrapper>
-            {/*<Menu menuItems={worksItems}/>*/}
+
         </StyledWorks>
     );
 };
