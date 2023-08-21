@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Button} from "../../../components/Button";
 
 export const Contact = () => {
     return (
@@ -15,6 +16,7 @@ export const Contact = () => {
                 <StyledField placeholder={"E-mail"}/>
                 <StyledField placeholder={"Phone"}/>
                 <StyledField placeholder={"Massage"} as={"textarea"}/>
+                <Button type={"submit"}>Send</Button>
             </StyledForm>
         </StyledContacts>
     );
@@ -24,7 +26,7 @@ export const Contact = () => {
 const StyledContacts = styled.section`
   min-height: 50vh;
   background: #FFF;
-
+  margin-bottom: 60px;
 `;
 
 const StyledForm = styled.form`
@@ -33,6 +35,7 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 0 auto;
 `;
 
 const StyledField = styled.input`
