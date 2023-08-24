@@ -6,7 +6,6 @@ import {ButtonsWrapper} from "../../../components/ButtonsWrapper";
 import {Name} from "../../../components/NameWrapper";
 
 
-
 export const Main = () => {
     return (
         <div>
@@ -24,7 +23,7 @@ export const Main = () => {
                     <ButtonsWrapper color={"#fff"} background={"#2157F2"}>
                         See Projects
                     </ButtonsWrapper>
-                    <ButtonsWrapper  color={"#6C92FF"}>Download Resume</ButtonsWrapper>
+                    <ButtonsWrapper color={"#6C92FF"}>Download Resume</ButtonsWrapper>
                 </div>
             </TitleMainWrapper>
         </div>

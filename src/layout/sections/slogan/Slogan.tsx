@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Button} from "../../../components/Button";
+
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
             <SectionTitle>When will we code?</SectionTitle>
-            <Button>contact me</Button>
+            <ButtonSlogan>Contact me</ButtonSlogan>
         </StyledSlogan>
     );
 };

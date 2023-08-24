@@ -10,14 +10,15 @@ import {FooterImg} from "../../components/svgIcons/icons/FooterIcon";
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper marginB={"60px"} direction={"column"}>
+            <FlexWrapper marginB={"60px"} >
                 <SocialIconLink>
                     <WhatsUpIconFooter/>
                     <TelegramIconFooter/>
                     <LinkedInIconFooter/>
                 </SocialIconLink>
             </FlexWrapper>
-            <FooterImg/>
+                <FooterImg/>
+                <FooterImg/>
             <StyledSmall>Coded by Oz Kirill</StyledSmall>
         </StyledFooter>
     );
@@ -29,15 +30,10 @@ const StyledFooter = styled.footer`
 
 const SocialIconLink = styled.a`
   cursor: pointer;
-  display: flex;
-  gap: 20px;
-  margin-bottom: 200px;
 `;
 
 const StyledSmall = styled.small`
   color: #eb0f0f;
   font-family: Inter;
   font-size: 20px;
-  align-items: center;
-  top: 100px;
 `;

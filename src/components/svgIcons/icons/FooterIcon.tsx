@@ -1,25 +1,15 @@
 import React from 'react';
-import styled from "styled-components";
-import FooterImgWave from "../../../../src/assets/images/footerWave.jpg";
 
+const BgFooter = ()=> {
+    return <svg width="1440" height="152" viewBox="0 0 1440 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-1201.13 44.1924C-1201.13 44.1924 -1099.63 3.99015 -959.747 0.503911C-795.61 -3.58683 -797.448 43.2652 -631.47 44.1924C-458.116 45.1608 -452.498 0.86847 -279.055 0.503911C-102.606 0.133032 -93.2496 45.5482 83.0148 44.1924C248.904 42.9165 245.484 2.03358 411.292 0.503911C589.739 -1.14237 601.88 44.5586 780.603 44.1924C956.299 43.8325 964.581 1.03923 1140.26 0.503911C1320.49 -0.0452765 1334.92 46.9009 1514.4 44.1924C1674.03 41.7835 1664.41 3.8839 1823.36 0.503911C2012.07 -3.5086 2038.61 43.4593 2228.88 44.1924C2426.27 44.9529 2458.7 0.0031199 2656.13 0.503911C2848.79 0.99264 2876.48 42.5103 3068.89 44.1924C3278.92 46.0287 3326.67 -4.46894 3534.75 0.503911C3715.81 4.83096 3889.58 50.0436 3889.58 50.0436V70.9486V152H-1201.13V44.1924Z" fill="#A5BBF8"/>
+    </svg>
+}
 
 export const FooterImg = () => {
     return (
-        <StyledFooterImg/>
+            <BgFooter/>
     );
 }
 
-
-const StyledFooterImg = styled.img`
-  //background-image: url("/src/assets/images/footerWave.jpg");
-  background-image: url("/src/assets/images/footerWave.jpg");
- 
-`;
-
-//Не нужен
-// const StyledFooterIcon = styled.svg`
-//   width: 5090px;
-//   min-height: 20vh;
-//   position: absolute;
-// `;
 

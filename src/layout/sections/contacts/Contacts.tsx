@@ -5,6 +5,7 @@ import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Button} from "../../../components/Button";
 
+
 export const Contact = () => {
     return (
         <StyledContacts>
@@ -16,7 +17,7 @@ export const Contact = () => {
                 <StyledField placeholder={"E-mail"}/>
                 <StyledField placeholder={"Phone"}/>
                 <StyledField placeholder={"Massage"} as={"textarea"}/>
-                <Button type={"submit"}>Send</Button>
+                <Button/>
             </StyledForm>
         </StyledContacts>
     );
