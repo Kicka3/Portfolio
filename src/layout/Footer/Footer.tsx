@@ -4,8 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {WhatsUpIconFooter} from "../../components/svgIcons/icons/WhatsUpIconFooter";
 import {TelegramIconFooter} from "../../components/svgIcons/icons/TelegramIconFooter";
 import {LinkedInIconFooter} from "../../components/svgIcons/icons/LinkedInIconFooter";
-import {FooterImg} from "../../components/svgIcons/icons/FooterIcon";
-
+import {Icon} from "../../components/icon/icon";
 
 export const Footer = () => {
     return (
@@ -17,8 +16,7 @@ export const Footer = () => {
                     <LinkedInIconFooter/>
                 </SocialIconLink>
             </FlexWrapper>
-                <FooterImg/>
-                <FooterImg/>
+            <Icon iconId="BgFooter" width={"100%"} height={"253px"} viewBox={"0 1440 253"}/>
             <StyledSmall>Coded by Oz Kirill</StyledSmall>
         </StyledFooter>
     );
