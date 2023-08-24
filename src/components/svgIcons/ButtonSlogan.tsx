@@ -8,6 +8,9 @@ export const ButtonSlogan = () => {
 };
 
 const ButtonSloganStyled = styled.button`
-  color: blue;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: blue;
   border-radius: 5px;
 `;

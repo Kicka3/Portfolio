@@ -8,6 +8,7 @@ import moon from "../../assets/images/moon.webp";
   background: url(${moon});
   width: 36px;
   height: 37px;
+  cursor: pointer;
  `;
 
 

@@ -11,6 +11,7 @@ import ReduxIcon from "../../../components/svgIcons/skillIcons/ReduxIcon";
 import StyledComIcon from "../../../components/svgIcons/skillIcons/StyledComIcon";
 import TsIcon from "../../../components/svgIcons/skillIcons/TsIcon";
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
+import {Icon} from "../../../components/icon/icon";
 
 const Skills = () => {
     return (
@@ -20,15 +21,15 @@ const Skills = () => {
                 <CircleIcon/>
             </FlexWrapper>
             <FlexWrapper wrap={"wrap"}>
-                <CssIcon/>
-                <HtmlIcon/>
-                <GitHubIcon/>
-                <JsIcon/>
-                <ReactIcon/>
-                <TsIcon/>
-                <ReduxIcon/>
-                <StyledComIcon/>
-
+                {/*<CssIcon/>*/}
+                {/*<HtmlIcon/>*/}
+                {/*<GitHubIcon/>*/}
+                {/*<JsIcon/>*/}
+                {/*<ReactIcon/>*/}
+                {/*<TsIcon/>*/}
+                {/*<ReduxIcon/>*/}
+                {/*<StyledComIcon/>*/}
+                <Icon iconId={"css"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
             </FlexWrapper>
         </StyledSkill>
     );

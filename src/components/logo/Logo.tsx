@@ -1,6 +1,4 @@
 import React from 'react';
-import LogoHeadIcon from "../svgIcons/icons/LogoHeadIcon";
-import {IconSvg} from "../svgIcons/icons/FooterIcon";
 import {Icon} from "../icon/icon";
 
 export const Logo = () => {
