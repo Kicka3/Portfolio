@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
+import {ButtonSlogan} from "../../../components/svgIcons/ButtonSlogan";
 
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
             <SectionTitle>When will we code?</SectionTitle>
-            <ButtonSlogan>Contact me</ButtonSlogan>
+            <ButtonSlogan/>
         </StyledSlogan>
     );
 };
