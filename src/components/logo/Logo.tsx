@@ -4,7 +4,7 @@ import LogoHeadIcon from "../svgIcons/icons/LogoHeadIcon";
 export const Logo = () => {
     return (
         <a href="">
-            <LogoHeadIcon />
+            <LogoHeadIcon aria-label="Logo"/>
         </a>
     );
 };

@@ -12,7 +12,7 @@ export const Main = () => {
         <div>
             <TitleMainWrapper gap={"76px"}>
                 <div>
-                    <MyPhoto src={myImg}/>
+                    <MyPhoto src={myImg} alt="My Photo"/>
                 </div>
                 <div>
                     <h2>I’m <Name color={"#2157F2"}> Kirill </Name>Ozornin</h2>

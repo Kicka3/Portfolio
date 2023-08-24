@@ -11,7 +11,7 @@ export const FooterIcon = () => {
                         fill="#A5BBF8"/>
                 </svg>
             </StyledFooterIcon>
-            <StyledSmall>Coded by Alireza Kavousy nezhad</StyledSmall>
+            <StyledSmall>Coded by Oz Kirill</StyledSmall>
         </>
     );
 }

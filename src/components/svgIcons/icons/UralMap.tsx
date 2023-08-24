@@ -7,7 +7,7 @@ import mapUr from "../../../assets/images/mapOrig.png";
 export const UralMap = () => {
     return (
         <div>
-            <UralMapStyled src={mapUr}/>
+            <UralMapStyled src={mapUr} alt={""}/>
         </div>
     );
 };
