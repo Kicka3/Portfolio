@@ -19,11 +19,14 @@ export const AboutMeTextWrapper = () => {
 const AboutMeTextWrapperStyled = styled.div`
   width: 563px;
   height: 491px;
-
+  
   border-radius: 100px 0px;
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
   backdrop-filter: blur(10px);
-  
+  position: relative;
+  z-index: 1;
+  top: 94px;
+  left: -300px;
 `;
 
 const AboutMeTextStyled = styled.h2`

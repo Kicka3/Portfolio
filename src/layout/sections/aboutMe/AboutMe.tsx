@@ -14,11 +14,11 @@ export const AboutMe = () => {
 
 const AboutMeStyled = styled.section`
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: space-evenly;
   background-color: rgba(33, 87, 242, 0.27);
-  //width: 1633px;
   max-height: 946px;
   margin-bottom: 47px;
+  overflow: hidden;
 `;
 

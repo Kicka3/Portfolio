@@ -4,11 +4,14 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {WhatsUpIconFooter} from "../../components/svgIcons/icons/WhatsUpIconFooter";
 import {TelegramIconFooter} from "../../components/svgIcons/icons/TelegramIconFooter";
 import {LinkedInIconFooter} from "../../components/svgIcons/icons/LinkedInIconFooter";
+import {BgImgFooterTwo} from "../../components/bgImgFooter/BgImgFooterTwo";
+import {BgImgFooter} from "../../components/bgImgFooter/BgImgFooter";
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
+
             <FlexWrapper marginB={"60px"}>
                 <SocialIconLink>
                     <FlexWrapper gap={"40px"}>
@@ -18,8 +21,13 @@ export const Footer = () => {
                     </FlexWrapper>
                 </SocialIconLink>
             </FlexWrapper>
-            <BgImFooter/>
+
+            <div>
+                <BgImgFooter/>
+                <BgImgFooterTwo/>
             <StyledSmall>Coded by Oz Kirill</StyledSmall>
+            </div>
+
         </StyledFooter>
     );
 };
@@ -29,15 +37,19 @@ const StyledFooter = styled.footer`
 `;
 
 const SocialIconLink = styled.nav`
-    
+
 `;
 
 const StyledSmall = styled.small`
-  color: #eb0f0f;
+  z-index: 9999999;
+  position: relative;
+  top: -165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 700;
 `;
 
-const BgImFooter = styled.img`
-  background-image: url("../../assets/images/footerWave.jpg");
-`;
