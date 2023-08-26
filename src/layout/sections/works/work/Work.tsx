@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {ViewCodeIcon} from "../../../../components/svgIcons/icons/ViewCodeIcon";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {Icon} from "../../../../components/icon/icon";
 
 
 type WorkPropsType = {
@@ -25,7 +26,7 @@ export const Work = (props: WorkPropsType) => {
                     <Link href="#">Live Preview</Link>
                 </FlexWrapper>
                 <FlexWrapper justify={"space-between"} gap={"11px"}>
-                    {/*<GitWorkIcon/>*/}
+                    <Icon iconId={"Git"} width={"20px"} height={"20px"} viewBox={"0 0 88 88"}/>
                     <Link href="#">View Code</Link>
                 </FlexWrapper>
 
@@ -37,11 +38,14 @@ export const Work = (props: WorkPropsType) => {
 
 const StyledWork = styled.div`
   border-radius: 20px;
-  background: #FFF;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
   max-width: 375px;
   max-height: 570px;
-
+  cursor: pointer;
+  :hover {
+    background-color: #A6BCFA;
+  }
+  
 `;
 
 const Image = styled.img`

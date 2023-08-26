@@ -39,9 +39,19 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 };
 
 const StyledMenu = styled.nav`
-  ul {
+ menu > ul {
     display: flex;
     gap: 30px;
     list-style: none;
+    font-size: 16px;
+    
+    & a{
+      color: #393939;
+      font-family: Roboto;
+
+      :visited {
+        text-decoration: none;
+      }
+    }
   }
 `;

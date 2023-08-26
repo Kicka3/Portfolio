@@ -12,7 +12,7 @@ import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 
 
 
-const worksItems = ["All", "Landing page", "react", "SPA",];
+// const worksItems = ["All", "Landing page", "react", "SPA",];
 
 export const Works = () => {
     return (
