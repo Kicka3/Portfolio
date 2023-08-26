@@ -1,10 +1,17 @@
 import React from 'react';
-import {Icon} from "../icon/icon";
+import logoImg from "../../assets/images/logo.png";
+import styled from "styled-components";
 
 export const Logo = () => {
     return (
         <a href="#">
-            <Icon iconId={"logoOne"} width={"20px"} height={"20px"}/>
+            <LogoImgWrapper/>
         </a>
     );
 };
+
+const LogoImgWrapper = styled.div`
+  background-image: url(${logoImg});
+  width: 79px;
+  height: 79px;
+`;

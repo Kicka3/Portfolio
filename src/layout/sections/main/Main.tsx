@@ -2,9 +2,10 @@ import React from 'react';
 import myImg from "../../../assets/images/myPhoto.jpg";
 import styled from "styled-components";
 import {TitleMainWrapper} from "../../../components/TitleMainWrapper";
-import {ButtonsWrapper} from "../../../components/ButtonsWrapper";
 import {Name} from "../../../components/NameWrapper";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Button} from "../../../components/Button";
+import {Icon} from "../../../components/icon/icon";
 
 
 export const Main = () => {
@@ -21,19 +22,24 @@ export const Main = () => {
                         excepturi expedita impedit molestias neque nobis quibusdam, reprehenderit repudiandae sequi
                         sunt
                         tenetur!</p>
-                    <FlexWrapper justify={"space-between"}>
-                        <ButtonsWrapper color={"#fff"} background={"#2157F2"}>
-                            See Projects
-                        </ButtonsWrapper>
-                        <ButtonsWrapper color={"#6C92FF"} background={"transparent"}>
-                            Download Resume
-                        </ButtonsWrapper>
+
+                    <FlexWrapper gap={"32px"}>
+                        <Button padding={"1px 5px"} fSize={"15px"} color={"#FFF"} background={"#2157F2"} borderRadius={"20px"} width={"200px"} height={"54px"}>
+                            <div>See Projects</div>
+                            <span><Icon iconId={"arrowR"} width={"28px"} height={"28px"} viewBox="0 0 28 28"/></span>
+                        </Button>
+                        <Button color={"#6C92FF"} fSize={"15px"}>
+                            {/*<div>icon</div>*/}
+                            <>Download Resume</>
+                        </Button>
                     </FlexWrapper>
+
 
                 </FlexWrapper>
             </TitleMainWrapper>
         </>
-    );
+    )
+        ;
 }
 
 
@@ -42,7 +48,6 @@ export const Main = () => {
 const MyPhoto = styled.img`
   width: 401px;
   height: 401px;
-
   flex-shrink: 0;
   border-radius: 334px;
   border: 25px solid #FFF;
@@ -50,3 +55,6 @@ const MyPhoto = styled.img`
   background: 50% / cover no-repeat, #2157F2;
 `;
 
+const StyledLink = styled.a`
+  
+`;

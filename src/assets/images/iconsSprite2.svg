@@ -1,52 +1,13 @@
 <svg width="120" height="119" viewBox="0 0 120 119" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g>
         <g id="arrowR">
-            <rect width="28" height="28" fill="#F5F5F5"/>
-            <g id="Desktop" clip-path="url(#clip0_11_3425)">
-                <rect width="1440" height="5761" transform="translate(-892 -581)" fill="white"/>
-                <g id="bg">
-                    <rect id="Rectangle 1" x="-892" y="-580" width="1440" height="946" fill="white"/>
-                </g>
-                <g id="Rectangle 7" filter="url(#filter0_b_11_3425)">
-                    <path d="M-741 115L217 115C327.457 115 417 25.457 417 -85V-392L-541 -392C-651.457 -392 -741 -302.457 -741 -192V115Z"
-                          fill="url(#paint0_linear_11_3425)"/>
-                    <path d="M-740 114L217 114C326.905 114 416 24.9047 416 -85V-391L-541 -391C-650.905 -391 -740 -301.905 -740 -192V114Z"
-                          stroke="url(#paint1_linear_11_3425)" stroke-opacity="0.5" stroke-width="2"/>
-                </g>
-                <g id="Register Button">
-                    <rect id="Rectangle 59" x="-135" y="-13" width="200" height="54" rx="20" fill="#2157F2"/>
-                    <g id="Arrow-Right 1">
-                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
-                              d="M2.33334 14.0002C2.33334 13.3559 2.85568 12.8335 3.5 12.8335H24.5C25.1443 12.8335 25.6667 13.3559 25.6667 14.0002C25.6667 14.6446 25.1443 15.1669 24.5 15.1669H3.5C2.85568 15.1669 2.33334 14.6446 2.33334 14.0002Z"
-                              fill="white"/>
-                        <path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd"
-                              d="M16.6751 6.1752C17.1306 5.71959 17.8694 5.71959 18.325 6.1752L25.325 13.1753C25.7805 13.6308 25.7805 14.3696 25.325 14.8252L18.325 21.8252C17.8694 22.2807 17.1306 22.2807 16.6751 21.8252C16.2195 21.3696 16.2195 20.6308 16.6751 20.1753L22.8501 14.0002L16.6751 7.82512C16.2195 7.3695 16.2195 6.63082 16.6751 6.1752Z"
-                              fill="white"/>
-                    </g>
-                </g>
-            </g>
-            <defs>
-                <filter id="filter0_b_11_3425" x="-761" y="-412" width="1198" height="547" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_11_3425"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_11_3425" result="shape"/>
-                </filter>
-                <linearGradient id="paint0_linear_11_3425" x1="-869.959" y1="134.637" x2="-624.42" y2="-717.085"
-                                gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white" stop-opacity="0.5"/>
-                    <stop offset="1" stop-color="#0047FF" stop-opacity="0.05"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear_11_3425" x1="-741" y1="115" x2="-544.983" y2="-652.098"
-                                gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0.5"/>
-                </linearGradient>
-                <clipPath id="clip0_11_3425">
-                    <rect width="1440" height="5761" fill="white" transform="translate(-892 -581)"/>
-                </clipPath>
-            </defs>
+            xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.33334 14.0002C2.33334 13.3559 2.85568 12.8335 3.5 12.8335H24.5C25.1443 12.8335 25.6667 13.3559 25.6667 14.0002C25.6667 14.6446 25.1443 15.1669 24.5 15.1669H3.5C2.85568 15.1669 2.33334 14.6446 2.33334 14.0002Z"
+                  fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.6751 6.1752C17.1306 5.71959 17.8694 5.71959 18.325 6.1752L25.325 13.1753C25.7805 13.6308 25.7805 14.3696 25.325 14.8252L18.325 21.8252C17.8694 22.2807 17.1306 22.2807 16.6751 21.8252C16.2195 21.3696 16.2195 20.6308 16.6751 20.1753L22.8501 14.0002L16.6751 7.82512C16.2195 7.3695 16.2195 6.63082 16.6751 6.1752Z"
+                  fill="white"/>
         </g>
 
         <g id="css">

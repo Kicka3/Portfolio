@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Button} from "../../../components/Button";
+import {ButtonSend} from "../../../components/ButtonSend";
 
 
 export const Contact = () => {
@@ -17,7 +17,7 @@ export const Contact = () => {
                 <StyledField placeholder={"E-mail"}/>
                 <StyledField placeholder={"Phone"}/>
                 <StyledField placeholder={"Massage"} as={"textarea"}/>
-                <Button/>
+                <ButtonSend/>
             </StyledForm>
         </StyledContacts>
     );
