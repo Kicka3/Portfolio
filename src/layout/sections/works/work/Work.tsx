@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {ViewCodeIcon} from "../../../../components/svgIcons/icons/ViewCodeIcon";
-import {GitWorkIcon} from "../../../../components/svgIcons/icons/GitWorkIcon";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 
@@ -26,7 +25,7 @@ export const Work = (props: WorkPropsType) => {
                     <Link href="#">Live Preview</Link>
                 </FlexWrapper>
                 <FlexWrapper justify={"space-between"} gap={"11px"}>
-                    <GitWorkIcon/>
+                    {/*<GitWorkIcon/>*/}
                     <Link href="#">View Code</Link>
                 </FlexWrapper>
 

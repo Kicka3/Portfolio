@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Subtitle} from "../../../components/Subtitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Menu} from "../../../components/Menu/Menu";
 import {Work} from "./work/Work";
 import reactangle1 from "../../../assets/images/Rectangle1.png";
 import reactangle2 from "../../../assets/images/Rectangle2.png";
