@@ -13,5 +13,4 @@ export const ButtonsWrapper = styled.a<ButtonsWrapperPropsType>`
   font-size: 15px;
   color: ${props => props.color || "#fff"};
   margin-right: 32px;
-  
 `;

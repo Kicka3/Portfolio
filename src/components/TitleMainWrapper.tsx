@@ -31,7 +31,11 @@ export const TitleMainWrapper = styled.div<TitleMainWrapperPropsType>`
     max-width: 377px;
   }
   
+  & h2 {
+    margin: 0;
+  }
+  
   & h1 {
-    
+    margin: 0;
   }
 `;

@@ -8,7 +8,7 @@ import {Icon} from "../../../components/icon/icon";
 const Skills = () => {
     return (
         <StyledSkill>
-            <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"120px"}>
+            <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"50px"}>
                 <SectionTitle color={"#6C92FF"}>My Tech Stack</SectionTitle>
                 <CircleIcon/>
             </FlexWrapper>
