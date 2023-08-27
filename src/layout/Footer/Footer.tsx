@@ -4,8 +4,8 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {WhatsUpIconFooter} from "../../components/svgIcons/icons/WhatsUpIconFooter";
 import {TelegramIconFooter} from "../../components/svgIcons/icons/TelegramIconFooter";
 import {LinkedInIconFooter} from "../../components/svgIcons/icons/LinkedInIconFooter";
-import {BgImgFooterTwo} from "../../components/bgImgFooter/BgImgFooterTwo";
-import {BgImgFooter} from "../../components/bgImgFooter/BgImgFooter";
+import {BgImgFooterTwo} from "../../components/backGrounds/BgImgFooterTwo";
+import {BgImgFooter} from "../../components/backGrounds/BgImgFooter";
 
 
 export const Footer = () => {
