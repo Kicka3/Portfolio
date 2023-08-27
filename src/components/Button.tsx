@@ -19,8 +19,8 @@ export const Button = (props:ButtonsWrapperPropsType) => {
 };
 
 export const StyledButton = styled.a<ButtonsWrapperPropsType>`
-  min-width: ${props => props.width};
-  min-height: ${props => props.height};
+  width: ${props => props.width};
+  height: ${props => props.height};
   border-radius: ${props => props.borderRadius};
   background: ${props => props.background || "transparent"};
   font-size: ${props => props.fSize || "15px"};

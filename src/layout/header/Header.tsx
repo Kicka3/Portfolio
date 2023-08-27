@@ -10,21 +10,21 @@ const items = ["Home", "Projects", "About", "Content",];
 
 export const Header = () => {
     return (
-        <Styledheader>
+        <StyledHeader>
             <Container>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                     <Logo/>
                     <HeaderMenu menuItems={items}/>
                 </FlexWrapper>
             </Container>
-        </Styledheader>
+        </StyledHeader>
     );
 };
 
 
-const Styledheader = styled.header`
-  background-color: #A6BCFA;
-  padding: 20px 0;
+const StyledHeader = styled.header`
+  background-color: #FFF;
+  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
