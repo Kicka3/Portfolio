@@ -32,7 +32,7 @@ const StyledSlogan = styled.section`
     -webkit-text-fill-color: transparent;
   }
 
-  font-family: DM Sans;
+  font-family: Roboto;
   font-size: 58px;
   font-style: normal;
   font-weight: 700;
