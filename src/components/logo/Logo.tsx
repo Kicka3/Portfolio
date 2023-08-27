@@ -14,6 +14,8 @@ const LinkLogo = styled.a`
   cursor: pointer;
   outline: none;
   text-decoration: none;
+  
+ 
 `;
 
 const LogoImgWrapper = styled.div`

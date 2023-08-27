@@ -14,9 +14,10 @@ export const Header = () => {
             <Container>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                     <Logo/>
-                    <HeaderMenu menuItems={items}/>
+                    <HeaderMenu/>
                 </FlexWrapper>
             </Container>
+
         </StyledHeader>
     );
 };
@@ -25,9 +26,4 @@ export const Header = () => {
 const StyledHeader = styled.header`
   background-color: #FFF;
   padding: 15px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99999;
 `;

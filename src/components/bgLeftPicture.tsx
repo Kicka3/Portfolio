@@ -14,8 +14,7 @@ const StyledBgLeftPicture = styled.div`
   height: 946px;
   background-color: ${theme.whiteThemeColors.secondaryBg};
   
-  position: absolute;
-  top: 0;
-  left: 0;
+  
+ 
   z-index: 0;
 `;

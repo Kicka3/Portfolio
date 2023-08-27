@@ -4,7 +4,7 @@ import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 // import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 
 
-export const HeaderMenu = (props: { menuItems: Array<string> }) => {
+export const HeaderMenu = () => {
     return (
 
         <StyledHeaderNav>
@@ -36,7 +36,7 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
 };
 
 const StyledHeaderNav = styled.nav`
-    
+
 `;
 
 const StyledHeaderUl = styled.ul`

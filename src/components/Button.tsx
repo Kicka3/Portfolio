@@ -9,6 +9,7 @@ type ButtonsWrapperPropsType = {
     height?: string,
     borderRadius?: string,
     padding?: string,
+    marginT?: string,
     children: ReactNode
 }
 
@@ -26,18 +27,14 @@ export const StyledButton = styled.a<ButtonsWrapperPropsType>`
   font-size: ${props => props.fSize || "15px"};
   color: ${props => props.color};
   padding: ${props => props.padding};
+  margin-top: ${props => props.marginT};
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  outline: none;
-  text-decoration: none;
   
   :hover {
     background-color: blueviolet;
   }
-
-  :focus {
-    outline: none;
-    box-shadow: 0 0 0 4px #cbd6ee;
+  
 `;
