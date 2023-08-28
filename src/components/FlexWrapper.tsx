@@ -11,6 +11,7 @@ type FlexWrapperPropsType = {
     marginR?: string,
     marginB?: string,
     marginT?: string,
+    height?: string,
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -25,5 +26,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   margin-right: ${props => props.marginR};
   margin-bottom: ${props => props.marginB};
   margin-top: ${props => props.marginT};
-  height: 100%;
+  height: ${props => props.height};
 `;
