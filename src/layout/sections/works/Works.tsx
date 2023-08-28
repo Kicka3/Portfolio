@@ -9,6 +9,7 @@ import reactangle2 from "../../../assets/images/Rectangle2.png";
 import reactangle3 from "../../../assets/images/Rectangle3.png";
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {Container} from "../../../components/Container";
+import {BgDotsWork} from "../../../components/BgDotsWork";
 
 
 // const worksItems = ["All", "Landing page", "react", "SPA",];
@@ -17,7 +18,7 @@ export const Works = () => {
     return (
         <StyledWorks>
             <Container>
-
+            <BgDotsWork/>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"0px"}>
                     <SectionTitle marginB={"49px"} color={"#42446E"} size={"48px"}>Projects</SectionTitle>
                     <CircleIcon/>
@@ -40,5 +41,6 @@ export const Works = () => {
 const StyledWorks = styled.section`
   //min-height: 100vh;
   margin-bottom: 152px;
+  z-index: 9999;
 `;
 
