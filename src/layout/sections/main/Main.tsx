@@ -7,29 +7,33 @@ import {MyMainDecs} from "../../../components/myMainDecs/MyMainDecs";
 import {BgLeftPicture} from "../../../components/bgLeftPicture";
 import {Logo} from "../../../components/logo/Logo";
 import {HeaderMenu} from "../../header/headerMenu/HeaderMenu";
+import {CircleBg} from "../../../components/CircleBg";
+import {XBgIcon} from "../../../components/xBgIcon";
 
 
 export const Main = () => {
     return (
-            <StyledMain>
-                <Container>
+        <StyledMain>
+            <Container>
                 <StyledHeader>
                     <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                         <Logo/>
                         <HeaderMenu/>
                     </FlexWrapper>
                 </StyledHeader>
+                <BgLeftPicture/>
+                <CircleBg/>
+                <XBgIcon/>
 
-                    <TitleMainWrapper>
-                        <FlexWrapper gap={"0"} wrap={"no-wrap"}>
-                            <MyPhoto alt="My Photo"/>
-                            <MyMainDecs/>
-                        </FlexWrapper>
-                    </TitleMainWrapper>
-                    {/*<BgLeftPicture/>*/}
+                <TitleMainWrapper>
+                    <FlexWrapper gap={"0"} wrap={"no-wrap"}>
+                        <MyPhoto alt="My Photo"/>
+                        <MyMainDecs/>
+                    </FlexWrapper>
+                </TitleMainWrapper>
 
-                </Container>
-            </StyledMain>
+            </Container>
+        </StyledMain>
     );
 }
 
