@@ -11,22 +11,19 @@ import {HeaderMenu} from "../../header/headerMenu/HeaderMenu";
 
 export const Main = () => {
     return (
-        <>
+            <StyledMain>
 
-            {/*header*/}
-            <StyledHeader>
-                {/*<Container>*/}
+                <Container>
+                <StyledHeader>
+                    {/*<Container>*/}
                     <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                         <Logo/>
                         <HeaderMenu/>
                     </FlexWrapper>
-                {/*</Container>*/}
-            </StyledHeader>
+                    {/*</Container>*/}
+                </StyledHeader>
                 {/*header*/}
 
-
-            <StyledMain>
-                <Container>
                     <TitleMainWrapper>
                         <FlexWrapper gap={"0"} wrap={"no-wrap"}>
                             <MyPhoto alt="My Photo"/>
@@ -37,7 +34,6 @@ export const Main = () => {
 
                 </Container>
             </StyledMain>
-        </>
     );
 }
 
