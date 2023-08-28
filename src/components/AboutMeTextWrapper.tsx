@@ -34,7 +34,7 @@ const AboutMeTextWrapperStyled = styled.div`
   backdrop-filter: blur(10px);
   background-image: url("../assets/images/Chel.png");
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
-
+  
 `;
 
 const AboutMeTextStyled = styled.h2`
@@ -47,7 +47,7 @@ const AboutMeTextStyled = styled.h2`
   //padding-left: 59px;
   //padding-top: 10px;
   //padding-right: 71px;
-  margin: 74px 51px 22px 49px;
+  margin: 74px 51px 22px 59px;
 
   & span {
     color: #2157F2;

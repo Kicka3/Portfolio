@@ -6,28 +6,29 @@ import {TelegramIconFooter} from "../../components/svgIcons/icons/TelegramIconFo
 import {LinkedInIconFooter} from "../../components/svgIcons/icons/LinkedInIconFooter";
 import {BgImgFooterTwo} from "../../components/backGrounds/BgImgFooterTwo";
 import {BgImgFooter} from "../../components/backGrounds/BgImgFooter";
+import {Container} from "../../components/Container";
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
+            <Container>
+                <FlexWrapper marginB={"60px"}>
+                    <SocialIconLink>
+                        <FlexWrapper gap={"40px"}>
+                            <WhatsUpIconFooter/>
+                            <TelegramIconFooter/>
+                            <LinkedInIconFooter/>
+                        </FlexWrapper>
+                    </SocialIconLink>
+                </FlexWrapper>
 
-            <FlexWrapper marginB={"60px"}>
-                <SocialIconLink>
-                    <FlexWrapper gap={"40px"}>
-                        <WhatsUpIconFooter/>
-                        <TelegramIconFooter/>
-                        <LinkedInIconFooter/>
-                    </FlexWrapper>
-                </SocialIconLink>
-            </FlexWrapper>
-
-            <div>
-                <BgImgFooter/>
-                <BgImgFooterTwo/>
-            <StyledSmall>Coded by Oz Kirill</StyledSmall>
-            </div>
-
+                <div>
+                    <BgImgFooter/>
+                    <BgImgFooterTwo/>
+                    <StyledSmall>Coded by Oz Kirill</StyledSmall>
+                </div>
+            </Container>
         </StyledFooter>
     );
 };

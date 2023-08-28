@@ -2,16 +2,18 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {ButtonSlogan} from "../../../components/svgIcons/ButtonSlogan";
+import {Container} from "../../../components/Container";
 
 
 export const Slogan = () => {
     return (
-
         <StyledSlogan>
-            <div>
-                <SectionTitle>When will we code?</SectionTitle>
-            </div>
-            <ButtonSlogan/>
+            <Container>
+                <div>
+                    <SectionTitle>When will we code?</SectionTitle>
+                </div>
+                <ButtonSlogan/>
+            </Container>
         </StyledSlogan>
     );
 };
@@ -32,7 +34,7 @@ const StyledSlogan = styled.section`
     -webkit-text-fill-color: transparent;
   }
 
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 58px;
   font-style: normal;
   font-weight: 700;

@@ -42,7 +42,7 @@ const StyledWork = styled.div`
   max-width: 375px;
   max-height: 570px;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 99999;
   :hover {
     background-color: #A6BCFA;
   }

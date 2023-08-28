@@ -12,7 +12,6 @@ const StyledBgDotsWork = styled.div`
   background-image: url("${BgDots}");
   width: 413px;
   height: 505px;
-  padding: 0.002px 0px 0.765px 0px;
   position: absolute;
   z-index: 0;
   top: 109px;
