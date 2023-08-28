@@ -12,17 +12,13 @@ import {HeaderMenu} from "../../header/headerMenu/HeaderMenu";
 export const Main = () => {
     return (
             <StyledMain>
-
                 <Container>
                 <StyledHeader>
-                    {/*<Container>*/}
                     <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                         <Logo/>
                         <HeaderMenu/>
                     </FlexWrapper>
-                    {/*</Container>*/}
                 </StyledHeader>
-                {/*header*/}
 
                     <TitleMainWrapper>
                         <FlexWrapper gap={"0"} wrap={"no-wrap"}>
@@ -53,11 +49,9 @@ const TitleMainWrapper = styled.div`
   border-radius: 200px 0;
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
   backdrop-filter: blur(10px);
-
-  //margin: 107px 131px 251px 151px;
-
-  width: 867px;
+  width: 1158px;
   height: 507px;
+  margin: 188px 131px 251px 151px;
 
   & h2 {
     margin-top: 64px;
