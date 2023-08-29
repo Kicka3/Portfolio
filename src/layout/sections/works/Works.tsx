@@ -33,6 +33,8 @@ export const Works = () => {
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                         <Work src={reactangle3} title={"Project Tile goes here"}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                        <Work src={reactangle3} title={"Project Tile goes here"}
+                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                     </FlexWrapper>
                 </FlexWrapper>
             </Container>
@@ -43,6 +45,5 @@ export const Works = () => {
 const StyledWorks = styled.section`
   //min-height: 100vh;
   margin-bottom: 152px;
-  z-index: 9999;
 `;
 

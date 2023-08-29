@@ -1,9 +1,8 @@
-
 import React from 'react';
+import styled from "styled-components";
 import {ViewCodeIcon} from "../../../../components/svgIcons/icons/ViewCodeIcon";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {Icon} from "../../../../components/icon/icon";
-import styled from "styled-components";
 
 
 type WorkPropsType = {
@@ -42,18 +41,19 @@ const StyledWork = styled.div`
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
   //border-radius: 20px;
   //max-width: 375px;
+  //max-height: 154px;
   max-height: 570px;
   max-width: 270px;
   cursor: pointer;
   border-radius: 0 0 26px 26px;
-  background-color: #F9F9FC;
-  
-  position: relative;
+  background: #A6BCFA;
+
+  //position: relative;
   z-index: 99999;
 `;
 
 const Image = styled.img`
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0px 0px;
   width: 100%;
   max-height: 260px;
   flex-shrink: 0;

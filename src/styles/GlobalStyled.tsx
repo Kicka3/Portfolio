@@ -29,4 +29,15 @@ export const GlobalStyle = createGlobalStyle`
     background-color: unset;
     border: none;
   }
+  
+  h3 {
+    
+  }
+  
+  p {
+    
+  }
+  
+  
+  
 `;

@@ -11,8 +11,8 @@ export const BgXWork = () => {
 
 const StyledBgXWork = styled.div`
   background-image: url("${BgXImg}");
-  width: 382.906px;
-  height: 346.482px;
+  width: 383px;
+  height: 346px;
   right: -82px;
   bottom: -161px;
   position: absolute;
