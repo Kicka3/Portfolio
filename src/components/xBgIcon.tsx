@@ -13,11 +13,12 @@ export const XBgIcon = () => {
 
 const StyledXBgIcon = styled.div`
   background-image: url("${XIcon}");
-  width: 88px;
-  height: 88px;
+  width: 120px;
+  height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 549px;
-  top: 216px;
+  left: 563px;
+  top: 192px;
+
 `;

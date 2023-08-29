@@ -10,7 +10,7 @@ type SectionTitlePropsType = {
 export const SectionTitle = styled.h2<SectionTitlePropsType>`
   color: ${props => props.color || "#42446E"};
   font-size: ${props => props.size || "48px"};
-  margin-bottom: ${props => props.marginB || "15px"};
+  margin-bottom: ${props => props.marginB || "5px"};
   line-height: ${props => props.lineH};
   font-family: Roboto;
   text-align: center;

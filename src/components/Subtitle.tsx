@@ -10,9 +10,10 @@ type SubTitlePropsType = {
 
 
 export const Subtitle = styled.h3<SubTitlePropsType>`
-    color: ${props => props.color || "red"};
-    font-size: ${props => props.size || "15px"};
-    line-height: ${props => props.lineH || "26px"};
-    margin-bottom: 110px;
+  color: ${props => props.color || "red"};
+  font-size: ${props => props.size || "15px"};
+  line-height: ${props => props.lineH || "26px"};
+  margin-bottom: 70px;
+  margin-top: 40px;
 `;
 

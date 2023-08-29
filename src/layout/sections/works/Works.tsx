@@ -22,7 +22,7 @@ export const Works = () => {
                 <BgDotsWork/>
                 <BgXWork/>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"0px"}>
-                    <SectionTitle marginB={"49px"} color={"#42446E"} size={"48px"}>Projects</SectionTitle>
+                    <SectionTitle color={"#42446E"} size={"48px"}>Projects</SectionTitle>
                     <CircleIcon/>
                     <Subtitle color={"#666"} lineH={"26px"} size={"32px"}>Things I’ve built so far</Subtitle>
 
