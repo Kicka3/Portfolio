@@ -32,6 +32,8 @@ export const Work = (props: WorkPropsType) => {
 
                 <FlexWrapper justify={"flex-start"} gap={"21px"} >
 
+
+
                     <FlexWrapper justify={"space-between"} gap={"11px"}>
                         <Button padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
                                 background={"#2157F2"}
@@ -62,7 +64,7 @@ const StyledWork = styled.div`
   border-radius: 26px 26px;
   background-color: #F9F9FC;
 
-  //position: relative;
+  position: relative;
   z-index: 99999;
 
   //padding-bottom: 152px;

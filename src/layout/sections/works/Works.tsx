@@ -11,6 +11,7 @@ import work4 from "../../../assets/images/Work4.png";
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {Container} from "../../../components/Container";
 import {BgDotsWork} from "../../../components/BgDotsWork";
+import {BgXWork} from "../../../components/BgXWork";
 
 
 // const worksItems = ["All", "Landing page", "react", "SPA",];
@@ -20,7 +21,6 @@ export const Works = () => {
         <StyledWorks>
             <Container>
                 <BgDotsWork/>
-                {/*<BgXWork/>*/}
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"0px"}>
                     <SectionTitle color={"#42446E"} size={"48px"}>Projects</SectionTitle>
                     <CircleIcon/>
