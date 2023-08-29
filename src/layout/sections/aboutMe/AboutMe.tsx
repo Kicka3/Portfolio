@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-// import {UralMap} from "../../../components/svgIcons/icons/UralMap";
 import {AboutMeTextWrapper} from "../../../components/AboutMeTextWrapper";
 import bgImgUral from "../../../assets/images/mapOrig.png"
 import {Container} from "../../../components/Container";

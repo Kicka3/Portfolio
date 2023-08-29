@@ -13,10 +13,14 @@ const StyledBgXWork = styled.div`
   background-image: url("${BgXImg}");
   width: 383px;
   height: 346px;
-  right: -82px;
-  bottom: -161px;
+  //right: -82px;
+  //bottom: -161px;
   position: absolute;
-  background-repeat: no-repeat;
   background-size: contain;
   z-index: 0;
+  
+  padding-bottom: 152px;
+  background-position-y: bottom;
+  background-position-x: right;
+  background-repeat: no-repeat;
 `;
