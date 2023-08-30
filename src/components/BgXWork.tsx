@@ -15,11 +15,12 @@ const StyledBgXWork = styled.div`
   height: 346px;
   //right: -82px;
   //bottom: -161px;
+  //padding-bottom: 152px;
   position: absolute;
   background-size: contain;
   z-index: 0;
-  
-  padding-bottom: 152px;
+  bottom: -148px;
+  right: 16px;
   background-position-y: bottom;
   background-position-x: right;
   background-repeat: no-repeat;

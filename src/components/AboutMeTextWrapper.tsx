@@ -10,12 +10,12 @@ export const AboutMeTextWrapper = () => {
             <FlexWrapper direction={"row"} gap={"0px"} align={"center"} wrap={"wrap"} justify={"flex-start"}>
                 <AboutMeTextStyled>I'm <span>Kirill</span> Ozornin</AboutMeTextStyled>
 
-                    <FlexWrapper wrap={"wrap"} direction={"column"} align={"start"} justify={"start"} gap={"26px"}>
+                <FlexWrapper wrap={"wrap"} direction={"column"} align={"start"} justify={"start"} gap={"26px"}>
                     <AboutMeTextTitles><CircleIcon/> I was born in Ekaterinburg</AboutMeTextTitles>
                     <AboutMeTextTitles><CircleIcon/> I’m 25 years old</AboutMeTextTitles>
                     <AboutMeTextTitles><CircleIcon/> I have started my interest in this field from
                         2022</AboutMeTextTitles>
-                    </FlexWrapper>
+                </FlexWrapper>
 
             </FlexWrapper>
             <BgAboutMeChel/>
@@ -33,8 +33,9 @@ const AboutMeTextWrapperStyled = styled.div`
   border-radius: 100px 0;
   backdrop-filter: blur(10px);
   background-image: url("../assets/images/Chel.png");
-  background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
-  
+  //background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
+  background: #A6BCFA;
+  box-shadow: 0px 2px 27px 0px rgba(0, 0, 0, 0.05);
 `;
 
 const AboutMeTextStyled = styled.h2`

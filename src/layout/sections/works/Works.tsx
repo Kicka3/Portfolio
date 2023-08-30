@@ -25,6 +25,7 @@ export const Works = () => {
                     <SectionTitle color={"#42446E"} size={"48px"}>Projects</SectionTitle>
                     <CircleIcon/>
                     <Subtitle color={"#666"} lineH={"26px"} size={"32px"}>Things I’ve built so far</Subtitle>
+                    <BgXWork/>
 
                     <FlexWrapper gap={"34px"} wrap={"wrap"}>
                         <Work src={work1} title={"Project Tile goes here"}
@@ -50,7 +51,6 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-  //min-height: 100vh;
-  //margin-bottom: 152px;
+  margin-bottom: 152px;
 `;
 

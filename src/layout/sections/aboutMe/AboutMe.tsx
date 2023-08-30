@@ -9,18 +9,24 @@ export const AboutMe = () => {
     return (
         <AboutMeStyled>
             <Container>
+                <BgColorWrap>
                 <AboutMeTextWrapper/>
+                </BgColorWrap>
             </Container>
         </AboutMeStyled>
     );
 };
 
-const AboutMeStyled = styled.section`
+const BgColorWrap = styled.div`
   background-color: rgba(33, 87, 242, 0.27);
+  height: 738px;
+`;
+
+const AboutMeStyled = styled.section`
+  //background-color: rgba(33, 87, 242, 0.27);
   max-height: 946px;
   margin-bottom: 47px;
   overflow: hidden;
-
   background-image: url("${bgImgUral}");
   background-repeat: no-repeat;
 

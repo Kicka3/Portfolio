@@ -56,6 +56,7 @@ const TitleMainWrapper = styled.div`
   width: 1158px;
   height: 507px;
   margin: 188px 131px 251px 151px;
+  padding: 45px;
 
   & h2 {
     margin-top: 64px;

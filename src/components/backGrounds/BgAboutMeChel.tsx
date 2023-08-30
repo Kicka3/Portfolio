@@ -18,5 +18,5 @@ const StyledBgAboutMeChel = styled.div`
   background-repeat: no-repeat;
   position: absolute;
   top: 85px;
-  left: 865px;
+  left: 850px;
 `;
