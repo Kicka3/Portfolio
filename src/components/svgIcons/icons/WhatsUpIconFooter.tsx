@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const WhatsUpIconFooter = () => {
     return (
-        <StyledWhatsUpIconFooter>
+        <StyledWhatsUpIconFooter href={"#"}>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#25D366" className="bi bi-whatsapp"
                  viewBox="0 0 16 16">
                 <path

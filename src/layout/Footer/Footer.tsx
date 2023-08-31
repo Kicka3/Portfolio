@@ -8,7 +8,6 @@ import {BgImgFooterTwo} from "../../components/backGrounds/BgImgFooterTwo";
 import {BgImgFooter} from "../../components/backGrounds/BgImgFooter";
 import {Container} from "../../components/Container";
 import {theme} from "../../styles/Theme";
-import {Icon} from "../../components/icon/icon";
 
 
 export const Footer = () => {
@@ -16,7 +15,7 @@ export const Footer = () => {
         <StyledFooter>
             <Container>
                 <FlexWrapper marginB={"195px"} marginT={"65px"}>
-                    {/*<SocialIconLink>*/}
+                    <SocialIconLink>
 
                     <FlexWrapper gap={"40px"}>
                         <WhatsUpIconFooter/>
@@ -24,32 +23,7 @@ export const Footer = () => {
                         <LinkedInIconFooter/>
                     </FlexWrapper>
 
-                    {/*<FlexWrapper gap={"40px"} wrap={"wrap"}>*/}
-                    {/*    <SocialList>*/}
-                    {/*        <SocialItem>*/}
-                    {/*            <SocialLink>*/}
-                    {/*                /!*<WhatsUpIconFooter/>*!/*/}
-                    {/*                <Icon iconId={"whatsUpIconFooter"} width={"50px"} height={"50px"} viewBox={"0 0 50 50"}/>*/}
-                    {/*            </SocialLink>*/}
-                    {/*        </SocialItem>*/}
-
-                    {/*        <SocialItem>*/}
-                    {/*            <SocialLink>*/}
-                    {/*                <Icon iconId={"TelegramFooter"} width={"50px"} height={"50px"} viewBox={"0 0 50 50"}/>*/}
-                    {/*                /!*<TelegramIconFooter/>*!/*/}
-                    {/*            </SocialLink>*/}
-                    {/*        </SocialItem>*/}
-
-                    {/*        <SocialItem>*/}
-                    {/*            <SocialLink>*/}
-                    {/*                <Icon iconId={"linkedInFooter"} width={"50px"} height={"50px"} viewBox={"0 0 50 50"}/>*/}
-                    {/*                /!*<LinkedInIconFooter/>*!/*/}
-                    {/*            </SocialLink>*/}
-                    {/*        </SocialItem>*/}
-                    {/*    </SocialList>*/}
-                    {/*</FlexWrapper>*/}
-
-                    {/*</SocialIconLink>*/}
+                    </SocialIconLink>
                 </FlexWrapper>
 
                 <BgImgFooter/>
@@ -61,24 +35,6 @@ export const Footer = () => {
         </StyledFooter>
     );
 };
-
-const SocialList = styled.ul`
-
-`;
-
-const SocialItem = styled.li`
-
-`;
-
-const SocialLink = styled.a`
-
-`;
-
-
-
-
-
-
 
 const StyledFooter = styled.footer`
 

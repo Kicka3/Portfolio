@@ -12,8 +12,8 @@ export const Slogan = () => {
                 <FlexWrapper>
                     <SectionTitle>
                         {/*<blockquote>*/}
-                            <p>Fashion is not...</p>
-                            <footer>— <cite>Coco Chanel</cite></footer>
+                            <p>When we will code?</p>
+                            <footer>— <cite>Timothy John</cite></footer>
                         {/*</blockquote>*/}
                     </SectionTitle>
                 </FlexWrapper>
