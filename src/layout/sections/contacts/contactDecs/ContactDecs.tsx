@@ -2,6 +2,7 @@ import React, {PropsWithChildren, ReactNode} from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {Icon} from "../../../../components/icon/icon";
+import {LocationImg} from "./LocationImg";
 
 
 
@@ -13,18 +14,19 @@ type ContactDecsPropsType = {
 
 export const ContactDecs = (props: PropsWithChildren<ContactDecsPropsType>) => {
     return (
-        <>
+        <StyledLocation>
             {/*{ props.children }*/}
             <LocationImg/>
             <LocationTitle>{props.locTitle}</LocationTitle>
             <LocationDesc>{props.locDesc}</LocationDesc>
-        </>
+        </StyledLocation>
     );
 };
 
-// const StyledLocation = styled.div<ContactDecsPropsType>`
-//
-// `;
+const StyledLocation = styled.div<ContactDecsPropsType>`
+  display: flex;
+  
+`;
 
 const LocationTitle = styled.p`
   color: ${theme.whiteThemeColors.fontThree};
