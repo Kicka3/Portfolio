@@ -25,7 +25,7 @@ export const Contact = () => {
                 <StyledFormWrapper>
                     <SectionTitle size={"36px"}>Get in touch</SectionTitle>
 
-                    <FlexWrapper>
+                    <FlexWrapper gap={"128px"}>
 
 
                         <FlexWrapper direction={"column"} justify={"flex-start"} align={"stretch"} wrap={"no-wrap"}>
@@ -36,9 +36,10 @@ export const Contact = () => {
                             </FlexWrapper>
                             <StyledFieldMessageTextArea placeholder={"Massage"} as={"textarea"}/>
                             </InputWrapper>
+                            <ButtonSend/>
                         </FlexWrapper>
 
-                        <FlexWrapper>
+                        <FlexWrapper direction={"column"}>
                             <FlexWrapper gap={"26px"}>
                                 <LocationImg/>
                                 <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
@@ -57,8 +58,6 @@ export const Contact = () => {
 
 
                     </FlexWrapper>
-
-                    <ButtonSend/>
                 </StyledFormWrapper>
 
             </Container>
