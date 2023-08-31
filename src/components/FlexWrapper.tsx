@@ -19,7 +19,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   display: flex;
   flex-direction: ${props => props.direction || "row"};
   justify-content: ${props => props.justify || "center"};
-  align-items: ${props => props.align || "center"};
+  align-items: ${props => props.align};
   flex-wrap: ${props => props.wrap || "no-wrap"};
   gap: ${props => props.gap};
   flex-flow: ${props => props.flexFlow};

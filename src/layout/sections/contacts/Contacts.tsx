@@ -30,8 +30,7 @@ export const Contact = () => {
                                      wrap={"wrap"}>
                             <InputWrapper>
 
-                                <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"}
-                                             wrap={"wrap"} gap={"23px"}>
+                                <FlexWrapper  direction={"column"} wrap={"wrap"} gap={"23px"}>
                                     <FlexWrapper gap={"7px"}>
                                         <StyledField placeholder={"E-mail"}/>
                                         <StyledField placeholder={"Phone"}/>
@@ -44,7 +43,7 @@ export const Contact = () => {
                             <ButtonSend/>
                         </FlexWrapper>
 
-                        <FlexWrapper gap={"30px"} alignContent={"center"} direction={"column"} justify={"flex-start"}
+                        <FlexWrapper gap={"48px"} alignContent={"center"} direction={"column"} justify={"flex-start"}
                                      align={"flex-start"} wrap={"wrap"}>
                             <FlexWrapper gap={"26px"}>
                                 <LocationImg/>
@@ -76,6 +75,10 @@ const StyledContacts = styled.section`
   background: #FFF;
   margin-bottom: 60px;
   margin-top: 61px;
+  
+  textarea {
+    resize: none;
+  }
 `;
 
 const StyledFormWrapper = styled.div`
@@ -93,15 +96,33 @@ const InputWrapper = styled.form`
 
 
 const StyledField = styled.input`
+  background-color: ${theme.whiteThemeColors.bgColorInputContacts};
+  color: ${theme.whiteThemeColors.dontForms};
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
   border-radius: 9px;
   width: 100%;
-  background: ${theme.whiteThemeColors.bgColorInputContacts};
-
+  border: none;
+  padding: 10px 20px 8px 29px;
+  
+  &:focus-visible {
+    outline: 1px solid ${theme.whiteThemeColors.dontForms};
+  }
 `;
 
 const StyledFieldMessageTextArea = styled.input`
+  background: ${theme.whiteThemeColors.bgColorInputContacts};
+  color: ${theme.whiteThemeColors.dontForms};
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  border: none;
   width: 429px;
   height: 152px;
   border-radius: 9px;
-  background: ${theme.whiteThemeColors.bgColorInputContacts};
+  padding: 17px 25px 17px 29px;
+  text-transform: capitalize;
+  
+  &:focus-visible {
+    outline: 1px solid ${theme.whiteThemeColors.dontForms};
+  }
 `;
