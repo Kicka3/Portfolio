@@ -36,7 +36,7 @@ export const Contact = () => {
                                         <StyledField placeholder={"Phone"}/>
                                     </FlexWrapper>
 
-                                    <StyledFieldMessageTextArea placeholder={"Massage"} as={"textarea"}/>
+                                    <StyledFieldMessageTextArea placeholder={"Message"} as={"textarea"}/>
                                 </FlexWrapper>
 
                             </InputWrapper>

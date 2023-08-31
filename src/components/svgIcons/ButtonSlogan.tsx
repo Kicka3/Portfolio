@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 export const ButtonSlogan = () => {
     return (
@@ -7,10 +8,10 @@ export const ButtonSlogan = () => {
     );
 };
 
-const ButtonSloganStyled = styled.button`
-  color: white;
-  outline: none;
-  border: none;
-  background-color: blue;
-  border-radius: 5px;
+const ButtonSloganStyled = styled.a`
+  color: ${theme.whiteThemeColors.primaryBg};
+  background-color: ${theme.whiteThemeColors.accent};
+  width: 117px;
+  height: 43px;
+  border-radius: 9px;
 `;

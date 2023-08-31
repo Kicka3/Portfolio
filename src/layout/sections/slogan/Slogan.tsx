@@ -1,18 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {ButtonSlogan} from "../../../components/svgIcons/ButtonSlogan";
 import {Container} from "../../../components/Container";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
             <Container>
-                <div>
-                    <SectionTitle>When will we code?</SectionTitle>
-                </div>
-                <ButtonSlogan/>
+                <FlexWrapper>
+                    <SectionTitle>
+                        {/*<blockquote>*/}
+                            <p>Fashion is not...</p>
+                            <footer>— <cite>Coco Chanel</cite></footer>
+                        {/*</blockquote>*/}
+                    </SectionTitle>
+                </FlexWrapper>
             </Container>
         </StyledSlogan>
     );
@@ -20,11 +24,6 @@ export const Slogan = () => {
 
 
 const StyledSlogan = styled.section`
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 50px;
 
   & div {
@@ -32,8 +31,16 @@ const StyledSlogan = styled.section`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
 
+    border-top: 5px solid #EAF9F9;
+    border-bottom: 5px solid #EAF9F9;
+    //color: #020202;
+    padding: 30px 30px 30px 30px;
+    //position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  
   font-family: Roboto, sans-serif;
   font-size: 58px;
   font-style: normal;

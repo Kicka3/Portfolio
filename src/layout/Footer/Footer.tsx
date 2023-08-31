@@ -7,31 +7,78 @@ import {LinkedInIconFooter} from "../../components/svgIcons/icons/LinkedInIconFo
 import {BgImgFooterTwo} from "../../components/backGrounds/BgImgFooterTwo";
 import {BgImgFooter} from "../../components/backGrounds/BgImgFooter";
 import {Container} from "../../components/Container";
+import {theme} from "../../styles/Theme";
+import {Icon} from "../../components/icon/icon";
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper marginB={"60px"}>
-                    <SocialIconLink>
-                        <FlexWrapper gap={"40px"}>
-                            <WhatsUpIconFooter/>
-                            <TelegramIconFooter/>
-                            <LinkedInIconFooter/>
-                        </FlexWrapper>
-                    </SocialIconLink>
+                <FlexWrapper marginB={"195px"} marginT={"65px"}>
+                    {/*<SocialIconLink>*/}
+
+                    <FlexWrapper gap={"40px"}>
+                        <WhatsUpIconFooter/>
+                        <TelegramIconFooter/>
+                        <LinkedInIconFooter/>
+                    </FlexWrapper>
+
+                    {/*<FlexWrapper gap={"40px"} wrap={"wrap"}>*/}
+                    {/*    <SocialList>*/}
+                    {/*        <SocialItem>*/}
+                    {/*            <SocialLink>*/}
+                    {/*                /!*<WhatsUpIconFooter/>*!/*/}
+                    {/*                <Icon iconId={"whatsUpIconFooter"} width={"50px"} height={"50px"} viewBox={"0 0 50 50"}/>*/}
+                    {/*            </SocialLink>*/}
+                    {/*        </SocialItem>*/}
+
+                    {/*        <SocialItem>*/}
+                    {/*            <SocialLink>*/}
+                    {/*                <Icon iconId={"TelegramFooter"} width={"50px"} height={"50px"} viewBox={"0 0 50 50"}/>*/}
+                    {/*                /!*<TelegramIconFooter/>*!/*/}
+                    {/*            </SocialLink>*/}
+                    {/*        </SocialItem>*/}
+
+                    {/*        <SocialItem>*/}
+                    {/*            <SocialLink>*/}
+                    {/*                <Icon iconId={"linkedInFooter"} width={"50px"} height={"50px"} viewBox={"0 0 50 50"}/>*/}
+                    {/*                /!*<LinkedInIconFooter/>*!/*/}
+                    {/*            </SocialLink>*/}
+                    {/*        </SocialItem>*/}
+                    {/*    </SocialList>*/}
+                    {/*</FlexWrapper>*/}
+
+                    {/*</SocialIconLink>*/}
                 </FlexWrapper>
 
-                <div>
-                    <BgImgFooter/>
-                    <BgImgFooterTwo/>
-                    <StyledSmall>Coded by Oz Kirill</StyledSmall>
-                </div>
+                <BgImgFooter/>
+                <BgImgFooterTwo/>
+                <StyledSmall>Coded by Oz Kirill</StyledSmall>
+                <Copyright>All Rights Reserved 2023</Copyright>
+
             </Container>
         </StyledFooter>
     );
 };
+
+const SocialList = styled.ul`
+
+`;
+
+const SocialItem = styled.li`
+
+`;
+
+const SocialLink = styled.a`
+
+`;
+
+
+
+
+
+
 
 const StyledFooter = styled.footer`
 
@@ -42,15 +89,28 @@ const SocialIconLink = styled.nav`
 `;
 
 const StyledSmall = styled.small`
+  color: ${theme.whiteThemeColors.primaryBg};
   z-index: 9999999;
   position: relative;
   top: -165px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFF;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 17px;
   font-weight: 700;
+  margin-bottom: 8px;
+`;
+
+const Copyright = styled.small`
+  color: ${theme.whiteThemeColors.primaryBg};
+  z-index: 9999999;
+  position: relative;
+  top: -165px;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
