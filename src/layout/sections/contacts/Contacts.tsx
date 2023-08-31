@@ -7,6 +7,7 @@ import {ButtonSend} from "../../../components/ButtonSend";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 import {ContactDecs} from "./contactDecs/ContactDecs";
+import {LocationImg} from "./contactDecs/LocationImg";
 
 
 export const Contact = () => {
@@ -27,7 +28,18 @@ export const Contact = () => {
                         <ButtonSend/>
                     </FlexWrapper>
 
-                    <FlexWrapper>
+                    <FlexWrapper gap={"26px"}>
+                        <LocationImg/>
+                        <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
+                    </FlexWrapper>
+
+                    <FlexWrapper gap={"26px"}>
+                        <LocationImg/>
+                        <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
+                    </FlexWrapper>
+
+                    <FlexWrapper gap={"26px"}>
+                        <LocationImg/>
                         <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
                     </FlexWrapper>
 

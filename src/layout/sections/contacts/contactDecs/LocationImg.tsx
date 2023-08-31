@@ -10,6 +10,7 @@ export const LocationImg = () => {
 
 const StyledLocationImg = styled.div`
   background-image: url("${locImg}");
+  //background-image: url("${locImg}");
   width: 38px;
   height: 38px;
   background-repeat: no-repeat;

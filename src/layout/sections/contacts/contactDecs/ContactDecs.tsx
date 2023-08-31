@@ -1,9 +1,8 @@
 import React, {PropsWithChildren, ReactNode} from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
-import {Icon} from "../../../../components/icon/icon";
 import {LocationImg} from "./LocationImg";
-
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 
 type ContactDecsPropsType = {
@@ -14,19 +13,13 @@ type ContactDecsPropsType = {
 
 export const ContactDecs = (props: PropsWithChildren<ContactDecsPropsType>) => {
     return (
-        <StyledLocation>
-            {/*{ props.children }*/}
-            <LocationImg/>
-            <LocationTitle>{props.locTitle}</LocationTitle>
-            <LocationDesc>{props.locDesc}</LocationDesc>
-        </StyledLocation>
+            <FlexWrapper direction={"column"}>
+                <LocationTitle>{props.locTitle}</LocationTitle>
+                <LocationDesc>{props.locDesc}</LocationDesc>
+            </FlexWrapper>
     );
 };
 
-const StyledLocation = styled.div<ContactDecsPropsType>`
-  display: flex;
-  
-`;
 
 const LocationTitle = styled.p`
   color: ${theme.whiteThemeColors.fontThree};
