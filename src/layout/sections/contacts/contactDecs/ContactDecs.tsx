@@ -12,7 +12,7 @@ type ContactDecsPropsType = {
 
 export const ContactDecs = (props: PropsWithChildren<ContactDecsPropsType>) => {
     return (
-            <FlexWrapper direction={"column"}>
+            <FlexWrapper direction={"column"}  align={"flex-start"} wrap={"wrap"}>
                 <LocationTitle>{props.locTitle}</LocationTitle>
                 <LocationDesc>{props.locDesc}</LocationDesc>
             </FlexWrapper>

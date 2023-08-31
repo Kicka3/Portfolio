@@ -13,7 +13,7 @@ export const SectionTitle = styled.h2<SectionTitlePropsType>`
   margin-bottom: ${props => props.marginB || "5px"};
   line-height: ${props => props.lineH};
   font-family: Roboto,sans-serif;
-  text-align: center;
+  
 `;
 
 

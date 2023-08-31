@@ -23,23 +23,29 @@ export const Contact = () => {
 
 
                 <StyledFormWrapper>
-                    <SectionTitle size={"36px"}>Get in touch</SectionTitle>
+                    <SectionTitle marginB={"23px"} size={"36px"}>Get in touch</SectionTitle>
 
-                    <FlexWrapper gap={"128px"}>
-
-
-                        <FlexWrapper direction={"column"} justify={"flex-start"} align={"stretch"} wrap={"no-wrap"}>
+                    <FlexWrapper align={"flex-start"} gap={"128px"}>
+                        <FlexWrapper gap={"37px"} direction={"column"} justify={"flex-start"} align={"stretch"}
+                                     wrap={"wrap"}>
                             <InputWrapper>
-                            <FlexWrapper gap={"7px"}>
-                                <StyledField placeholder={"E-mail"}/>
-                                <StyledField placeholder={"Phone"}/>
-                            </FlexWrapper>
-                            <StyledFieldMessageTextArea placeholder={"Massage"} as={"textarea"}/>
+
+                                <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"}
+                                             wrap={"wrap"} gap={"23px"}>
+                                    <FlexWrapper gap={"7px"}>
+                                        <StyledField placeholder={"E-mail"}/>
+                                        <StyledField placeholder={"Phone"}/>
+                                    </FlexWrapper>
+
+                                    <StyledFieldMessageTextArea placeholder={"Massage"} as={"textarea"}/>
+                                </FlexWrapper>
+
                             </InputWrapper>
                             <ButtonSend/>
                         </FlexWrapper>
 
-                        <FlexWrapper direction={"column"}>
+                        <FlexWrapper gap={"30px"} alignContent={"center"} direction={"column"} justify={"flex-start"}
+                                     align={"flex-start"} wrap={"wrap"}>
                             <FlexWrapper gap={"26px"}>
                                 <LocationImg/>
                                 <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
@@ -78,6 +84,7 @@ const StyledFormWrapper = styled.div`
   background: ${theme.whiteThemeColors.primaryBg};
   box-shadow: 8px 8px 34px 0 rgba(0, 0, 0, 0.05);
   margin: 0 auto;
+  padding: 53px 113px 46px 82px;
 `;
 
 const InputWrapper = styled.form`
@@ -89,7 +96,7 @@ const StyledField = styled.input`
   border-radius: 9px;
   width: 100%;
   background: ${theme.whiteThemeColors.bgColorInputContacts};
- 
+
 `;
 
 const StyledFieldMessageTextArea = styled.input`
