@@ -15,4 +15,5 @@ export const ButtonSend = () => {
 const ButtonStyled = styled.button`
   color: ${theme.whiteThemeColors.primaryBg};
   background-color: ${theme.whiteThemeColors.accent};
+  margin-top: 14px;
 `;

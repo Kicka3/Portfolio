@@ -22,41 +22,44 @@ export const Contact = () => {
                 </FlexWrapper>
 
 
-                <StyledForm>
+                <StyledFormWrapper>
+                    <SectionTitle size={"36px"}>Get in touch</SectionTitle>
+
+                    <FlexWrapper>
 
 
-                    <FlexWrapper direction={"column"} wrap={"nowrap"} gap={"23px"} justify={"flex-start"}>
-                        <SectionTitle size={"36px"}>Get in touch</SectionTitle>
-
-                        <FlexWrapper gap={"7px"}>
-                        <StyledField placeholder={"E-mail"}/>
-                        <StyledField placeholder={"Phone"}/>
+                        <FlexWrapper direction={"column"} justify={"flex-start"} align={"stretch"} wrap={"no-wrap"}>
+                            <InputWrapper>
+                            <FlexWrapper gap={"7px"}>
+                                <StyledField placeholder={"E-mail"}/>
+                                <StyledField placeholder={"Phone"}/>
+                            </FlexWrapper>
+                            <StyledFieldMessageTextArea placeholder={"Massage"} as={"textarea"}/>
+                            </InputWrapper>
                         </FlexWrapper>
 
-                        <StyledField placeholder={"Massage"} as={"textarea"}/>
-                        <ButtonSend/>
+                        <FlexWrapper>
+                            <FlexWrapper gap={"26px"}>
+                                <LocationImg/>
+                                <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
+                            </FlexWrapper>
+
+                            <FlexWrapper gap={"26px"}>
+                                <PhoneImg/>
+                                <ContactDecs locTitle={"Phone"} locDesc={"+7912382***4"}/>
+                            </FlexWrapper>
+
+                            <FlexWrapper gap={"26px"}>
+                                <EmailImg/>
+                                <ContactDecs locTitle={"Email"} locDesc={"ozornin_kirill@inbox.ru"}/>
+                            </FlexWrapper>
+                        </FlexWrapper>
+
+
                     </FlexWrapper>
 
-
-                    <FlexWrapper direction={"column"}>
-                        <FlexWrapper gap={"26px"}>
-                            <LocationImg/>
-                            <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
-                        </FlexWrapper>
-
-                        <FlexWrapper gap={"26px"}>
-                            <PhoneImg/>
-                            <ContactDecs locTitle={"Phone"} locDesc={"+7912382***4"}/>
-                        </FlexWrapper>
-
-                        <FlexWrapper gap={"26px"}>
-                            <EmailImg/>
-                            <ContactDecs locTitle={"Email"} locDesc={"ozornin_kirill@inbox.ru"}/>
-                        </FlexWrapper>
-                    </FlexWrapper>
-
-
-                </StyledForm>
+                    <ButtonSend/>
+                </StyledFormWrapper>
 
             </Container>
         </StyledContacts>
@@ -67,14 +70,10 @@ export const Contact = () => {
 const StyledContacts = styled.section`
   background: #FFF;
   margin-bottom: 60px;
+  margin-top: 61px;
 `;
 
-const StyledForm = styled.form`
-  //display: flex;
-  //flex-direction: row;
-  //align-items: center;
-  
-  
+const StyledFormWrapper = styled.div`
   width: 932px;
   height: 462px;
   background: ${theme.whiteThemeColors.primaryBg};
@@ -82,7 +81,21 @@ const StyledForm = styled.form`
   margin: 0 auto;
 `;
 
+const InputWrapper = styled.form`
+  width: 429px;
+`;
+
+
 const StyledField = styled.input`
+  border-radius: 9px;
+  width: 100%;
+  background: ${theme.whiteThemeColors.bgColorInputContacts};
+ 
+`;
+
+const StyledFieldMessageTextArea = styled.input`
+  width: 429px;
+  height: 152px;
   border-radius: 9px;
   background: ${theme.whiteThemeColors.bgColorInputContacts};
 `;
