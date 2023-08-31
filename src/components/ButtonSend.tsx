@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import React from 'react';
+import {theme} from "../styles/Theme";
 
 export const ButtonSend = () => {
     return (
@@ -12,5 +13,6 @@ export const ButtonSend = () => {
 
 
 const ButtonStyled = styled.button`
-  color: blue;
+  color: ${theme.whiteThemeColors.primaryBg};
+  background-color: ${theme.whiteThemeColors.accent};
 `;

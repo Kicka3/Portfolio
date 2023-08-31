@@ -18,11 +18,20 @@ export const Contact = () => {
                 </FlexWrapper>
 
                 <StyledForm>
-                    <SectionTitle size={"36px"}>Get in touch</SectionTitle>
-                    <StyledField placeholder={"E-mail"}/>
-                    <StyledField placeholder={"Phone"}/>
-                    <StyledField placeholder={"Massage"} as={"textarea"}/>
-                    <ButtonSend/>
+                    <FlexWrapper direction={"column"}>
+                        <SectionTitle size={"36px"}>Get in touch</SectionTitle>
+                        <StyledField placeholder={"E-mail"}/>
+                        <StyledField placeholder={"Phone"}/>
+                        <StyledField placeholder={"Massage"} as={"textarea"}/>
+                        <ButtonSend/>
+                    </FlexWrapper>
+
+                    <FlexWrapper>
+                        <Location/>
+                        <Phone/>
+                        <Email/>
+                    </FlexWrapper>
+
                 </StyledForm>
 
             </Container>
