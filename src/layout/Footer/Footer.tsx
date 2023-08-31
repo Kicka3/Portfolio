@@ -17,11 +17,11 @@ export const Footer = () => {
                 <FlexWrapper marginB={"195px"} marginT={"65px"}>
                     <SocialIconLink>
 
-                    <FlexWrapper gap={"40px"}>
-                        <WhatsUpIconFooter/>
-                        <TelegramIconFooter/>
-                        <LinkedInIconFooter/>
-                    </FlexWrapper>
+                        <FlexWrapper gap={"40px"}>
+                            <WhatsUpIconFooter/>
+                            <TelegramIconFooter/>
+                            <LinkedInIconFooter/>
+                        </FlexWrapper>
 
                     </SocialIconLink>
                 </FlexWrapper>
@@ -37,7 +37,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  
+
 `;
 
 const SocialIconLink = styled.nav`

@@ -21,4 +21,13 @@ export const theme = {
         darkBeAccent: "#00A3FF",
         darkBorder: "#4C546C",
     },
+    iconsColor: {
+        linkedInFooter: "#00B2FF",
+        telegramFooter: "#34B7F1",
+        whatUpFooter: "#25d35c",
+
+        hoverLinkedInFooter: "rgba(0,178,255,0.6)",
+        hoverTelegramFooter: "rgba(52,183,241,0.63)",
+        hoverWhatUpFooter: "rgba(37,211,60,0.7)",
+    }
 }
