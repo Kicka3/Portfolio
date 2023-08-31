@@ -37,7 +37,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-
+  
 `;
 
 const SocialIconLink = styled.nav`

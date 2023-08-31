@@ -11,10 +11,8 @@ export const Slogan = () => {
             <Container>
                 <FlexWrapper>
                     <SectionTitle>
-                        {/*<blockquote>*/}
                             <p>When we will code?</p>
                             <footer>— <cite>Timothy John</cite></footer>
-                        {/*</blockquote>*/}
                     </SectionTitle>
                 </FlexWrapper>
             </Container>

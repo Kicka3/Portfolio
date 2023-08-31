@@ -18,7 +18,7 @@ export const AboutMeTextWrapper = () => {
                 </FlexWrapper>
 
             </FlexWrapper>
-            <BgAboutMeChel/>
+            {/*<BgAboutMeChel/>*/}
         </AboutMeTextWrapperStyled>
     );
 };
@@ -33,8 +33,8 @@ const AboutMeTextWrapperStyled = styled.div`
   border-radius: 100px 0;
   backdrop-filter: blur(10px);
   background-image: url("../assets/images/Chel.png");
-  //background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
-  background: #A6BCFA;
+  background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
+  //background: #A6BCFA;
   box-shadow: 0px 2px 27px 0px rgba(0, 0, 0, 0.05);
 `;
 

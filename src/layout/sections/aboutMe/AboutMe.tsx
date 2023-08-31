@@ -4,6 +4,7 @@ import {AboutMeTextWrapper} from "../../../components/AboutMeTextWrapper";
 import bgImgUral from "../../../assets/images/mapOrig.png"
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {BgAboutMeChel} from "../../../components/backGrounds/BgAboutMeChel";
 
 
 export const AboutMe = () => {
@@ -13,6 +14,7 @@ export const AboutMe = () => {
                 <BgColorWrap>
                 <AboutMeTextWrapper/>
                 </BgColorWrap>
+                <BgAboutMeChel/>
             </Container>
         </AboutMeStyled>
     );
