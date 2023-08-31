@@ -6,6 +6,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ButtonSend} from "../../../components/ButtonSend";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {ContactDecs} from "./contactDecs/ContactDecs";
 
 
 export const Contact = () => {
@@ -27,9 +28,7 @@ export const Contact = () => {
                     </FlexWrapper>
 
                     <FlexWrapper>
-                        <Location/>
-                        <Phone/>
-                        <Email/>
+                        <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
                     </FlexWrapper>
 
                 </StyledForm>

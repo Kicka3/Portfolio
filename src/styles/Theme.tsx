@@ -11,6 +11,7 @@ export const theme = {
         fontFive: "#2157F2",
         dontForms: "#A5A5A5",
         aboutColor: "rgba(33, 87, 242, 0.27)",
+        locationCityColor: "#8B8B8B",
     },
     darkThemeColors: {
         darkPrimaryBg: "#222",
