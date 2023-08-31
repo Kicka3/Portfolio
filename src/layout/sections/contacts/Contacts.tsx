@@ -5,6 +5,7 @@ import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ButtonSend} from "../../../components/ButtonSend";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 
 export const Contact = () => {
@@ -12,15 +13,18 @@ export const Contact = () => {
         <StyledContacts>
             <Container>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"65px"}>
-                    <SectionTitle>Contact</SectionTitle>
+                    <SectionTitle size={"32px"}>Contact Us</SectionTitle>
                     <CircleIcon/>
                 </FlexWrapper>
+
                 <StyledForm>
+                    <SectionTitle size={"36px"}>Get in touch</SectionTitle>
                     <StyledField placeholder={"E-mail"}/>
                     <StyledField placeholder={"Phone"}/>
                     <StyledField placeholder={"Massage"} as={"textarea"}/>
                     <ButtonSend/>
                 </StyledForm>
+
             </Container>
         </StyledContacts>
     );
@@ -33,13 +37,19 @@ const StyledContacts = styled.section`
 `;
 
 const StyledForm = styled.form`
-  max-width: 500px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  //max-width: 500px;
+  //width: 100%;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+  //gap: 30px;
+  //margin: 0 auto;
+
+  width: 932px;
+  height: 462px;
+  background: ${theme.whiteThemeColors.primaryBg};
+  box-shadow: 8px 8px 34px 0px rgba(0, 0, 0, 0.05);
   margin: 0 auto;
 `;
 

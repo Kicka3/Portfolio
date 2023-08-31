@@ -10,6 +10,7 @@ export const theme = {
         fontThree: "#000",
         fontFive: "#2157F2",
         dontForms: "#A5A5A5",
+        aboutColor: "rgba(33, 87, 242, 0.27)",
     },
     darkThemeColors: {
         darkPrimaryBg: "#222",
@@ -17,5 +18,5 @@ export const theme = {
         darkAccent: "#353535",
         darkBeAccent: "#00A3FF",
         darkBorder: "#4C546C",
-    }
+    },
 }

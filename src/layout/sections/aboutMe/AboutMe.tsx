@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {AboutMeTextWrapper} from "../../../components/AboutMeTextWrapper";
 import bgImgUral from "../../../assets/images/mapOrig.png"
 import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 
 export const AboutMe = () => {
@@ -18,7 +19,8 @@ export const AboutMe = () => {
 };
 
 const BgColorWrap = styled.div`
-  background-color: rgba(33, 87, 242, 0.27);
+  //background-color: rgba(33, 87, 242, 0.27);
+  background-color: ${theme.whiteThemeColors.aboutColor};
   height: 738px;
 `;
 
