@@ -1,7 +1,6 @@
 import React, {PropsWithChildren, ReactNode} from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
-import {LocationImg} from "./LocationImg";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 

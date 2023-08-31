@@ -12,6 +12,7 @@ export const theme = {
         dontForms: "#A5A5A5",
         aboutColor: "rgba(33, 87, 242, 0.27)",
         locationCityColor: "#8B8B8B",
+        bgColorInputContacts: "#F5F5F5",
     },
     darkThemeColors: {
         darkPrimaryBg: "#222",

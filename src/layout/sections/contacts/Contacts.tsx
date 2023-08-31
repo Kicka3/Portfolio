@@ -7,7 +7,9 @@ import {ButtonSend} from "../../../components/ButtonSend";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 import {ContactDecs} from "./contactDecs/ContactDecs";
-import {LocationImg} from "./contactDecs/LocationImg";
+import {LocationImg} from "./contactDecs/imgCons/LocationImg";
+import {EmailImg} from "./contactDecs/imgCons/EmailImg";
+import {PhoneImg} from "./contactDecs/imgCons/PhoneImg";
 
 
 export const Contact = () => {
@@ -19,29 +21,40 @@ export const Contact = () => {
                     <CircleIcon/>
                 </FlexWrapper>
 
+
                 <StyledForm>
-                    <FlexWrapper direction={"column"}>
+
+
+                    <FlexWrapper direction={"column"} wrap={"nowrap"} gap={"23px"} justify={"flex-start"}>
                         <SectionTitle size={"36px"}>Get in touch</SectionTitle>
+
+                        <FlexWrapper gap={"7px"}>
                         <StyledField placeholder={"E-mail"}/>
                         <StyledField placeholder={"Phone"}/>
+                        </FlexWrapper>
+
                         <StyledField placeholder={"Massage"} as={"textarea"}/>
                         <ButtonSend/>
                     </FlexWrapper>
 
-                    <FlexWrapper gap={"26px"}>
-                        <LocationImg/>
-                        <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
+
+                    <FlexWrapper direction={"column"}>
+                        <FlexWrapper gap={"26px"}>
+                            <LocationImg/>
+                            <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
+                        </FlexWrapper>
+
+                        <FlexWrapper gap={"26px"}>
+                            <PhoneImg/>
+                            <ContactDecs locTitle={"Phone"} locDesc={"+7912382***4"}/>
+                        </FlexWrapper>
+
+                        <FlexWrapper gap={"26px"}>
+                            <EmailImg/>
+                            <ContactDecs locTitle={"Email"} locDesc={"ozornin_kirill@inbox.ru"}/>
+                        </FlexWrapper>
                     </FlexWrapper>
 
-                    <FlexWrapper gap={"26px"}>
-                        <LocationImg/>
-                        <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
-                    </FlexWrapper>
-
-                    <FlexWrapper gap={"26px"}>
-                        <LocationImg/>
-                        <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
-                    </FlexWrapper>
 
                 </StyledForm>
 
@@ -57,22 +70,19 @@ const StyledContacts = styled.section`
 `;
 
 const StyledForm = styled.form`
-  //max-width: 500px;
-  //width: 100%;
   //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
+  //flex-direction: row;
   //align-items: center;
-  //gap: 30px;
-  //margin: 0 auto;
-
+  
+  
   width: 932px;
   height: 462px;
   background: ${theme.whiteThemeColors.primaryBg};
-  box-shadow: 8px 8px 34px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 8px 34px 0 rgba(0, 0, 0, 0.05);
   margin: 0 auto;
 `;
 
 const StyledField = styled.input`
-
+  border-radius: 9px;
+  background: ${theme.whiteThemeColors.bgColorInputContacts};
 `;
