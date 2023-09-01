@@ -13,7 +13,7 @@ const StyledBgAboutMeChel = styled.div`
   background-image: url("${bgChel}");
   width: 521px;
   height: 615px;
-  flex-shrink: 0;
+  //flex-shrink: 0;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;

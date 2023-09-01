@@ -82,8 +82,9 @@ const StyledContacts = styled.section`
 `;
 
 const StyledFormWrapper = styled.div`
-  width: 932px;
   height: 462px;
+  max-width: 932px;
+  width: 100%;
   background: ${theme.whiteThemeColors.primaryBg};
   box-shadow: 8px 8px 34px 0 rgba(0, 0, 0, 0.05);
   margin: 0 auto;
