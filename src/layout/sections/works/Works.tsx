@@ -21,10 +21,10 @@ export const Works = () => {
         <StyledWorks>
             <Container>
                 <BgDotsWork/>
-                <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"0px"}>
-                    <SectionTitle color={"#42446E"} size={"48px"}>Projects</SectionTitle>
+                <FlexWrapper wrap={"wrap"} justify={"center"} align={"center"} direction={"column"} gap={"0px"}>
+                    <SectionTitle size={"48px"}>Projects</SectionTitle>
                     <CircleIcon/>
-                    <Subtitle color={"#666"} lineH={"26px"} size={"32px"}>Things I’ve built so far</Subtitle>
+                    <Subtitle lineH={"26px"} size={"32px"}>Things I’ve built so far</Subtitle>
                     <BgXWork/>
 
                     <FlexWrapper gap={"34px"} wrap={"wrap"}>

@@ -10,9 +10,12 @@ export const BgImgFooter = () => {
 
 const StyledBgImFooter = styled.div`
   min-width: 100%;
+  max-width: 5000px;
   height: 151px;
   background-repeat: no-repeat;
-  background-image: url("${bgImgFooter}");
   z-index: 1;
   position: relative;
+  background-image: url("${bgImgFooter}");
+  background-position: center;
+  background-size: cover;
 `;

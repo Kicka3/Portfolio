@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper marginB={"195px"} marginT={"65px"}>
+                <FlexWrapper marginB={"195px"} marginT={"90px"}>
                     <SocialIconLink>
 
                         <FlexWrapper gap={"40px"}>
@@ -37,7 +37,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-
+  
 `;
 
 const SocialIconLink = styled.nav`

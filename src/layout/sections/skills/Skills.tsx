@@ -11,7 +11,7 @@ const Skills = () => {
         <StyledSkill>
             <Container>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"50px"}>
-                    <SectionTitle color={"#6C92FF"}>My Tech Stack</SectionTitle>
+                    <SectionTitle marginT={"70px"}>My Tech Stack</SectionTitle>
                     <CircleIcon/>
                 </FlexWrapper>
                 <FlexWrapper wrap={"wrap"} gap={"60px"}>
@@ -32,7 +32,7 @@ const Skills = () => {
 export default Skills;
 
 export const StyledSkill = styled.section`
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 
 `;
 

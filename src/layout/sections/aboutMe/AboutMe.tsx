@@ -21,7 +21,6 @@ export const AboutMe = () => {
 };
 
 const BgColorWrap = styled.div`
-  //background-color: rgba(33, 87, 242, 0.27);
   background-color: ${theme.whiteThemeColors.aboutColor};
   height: 738px;
 `;
@@ -31,12 +30,13 @@ const AboutMeStyled = styled.section`
   max-height: 946px;
   margin-bottom: 47px;
   overflow: hidden;
+  
   background-image: url("${bgImgUral}");
   background-repeat: no-repeat;
-
-  position: relative;
   background-position: center;
   background-size: contain;
+
+  position: relative;
   width: 100%;
   height: 738px;
 

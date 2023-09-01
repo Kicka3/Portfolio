@@ -3,7 +3,6 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Button} from "../../../../components/Button";
 import work3 from "../../../../assets/images/Rectangle2.png"
-import {BgXWork} from "../../../../components/BgXWork";
 
 
 type WorkPropsType = {
