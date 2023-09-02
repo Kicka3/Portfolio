@@ -1,4 +1,4 @@
-import React, {PropsWithChildren, ReactNode} from 'react';
+import React, {PropsWithChildren} from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
