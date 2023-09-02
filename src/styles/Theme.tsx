@@ -36,6 +36,8 @@ export const theme = {
     //Media
     media: {
         mobile1433: "screen and (max-width: 1433px)",
+        mobile1347: "screen and (max-width: 1347px)",
+
         mobile1207: "screen and (max-width: 1207px)",
         mobile1048: "screen and (max-width: 1048px)",
 

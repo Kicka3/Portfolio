@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {font} from "../../../styles/Common";
 
 
 export const Slogan = () => {
@@ -32,17 +33,17 @@ const StyledSlogan = styled.section`
 
     border-top: 5px solid #EAF9F9;
     border-bottom: 5px solid #EAF9F9;
-    //color: #020202;
     padding: 30px 30px 30px 30px;
-    //position: relative;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    ${font({family: "Lato , sans-serif",weight: "300"})};
+    //font-family: 'Lato', sans-serif;
+    //font-weight: 300;
+
   }
-  
-  font-family: Roboto, sans-serif;
-  font-size: 58px;
+  ${font({family: "Roboto, sans-serif",weight: "700", Fmin: 10, Fmax: 58})};
+  //font-family: Roboto, sans-serif;
+  //font-size: 58px;
   font-style: normal;
-  font-weight: 700;
+  //font-weight: 700;
   letter-spacing: -1px;
 `;
 

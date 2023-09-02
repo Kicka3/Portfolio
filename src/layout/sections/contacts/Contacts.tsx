@@ -10,6 +10,7 @@ import {ContactDecs} from "./contactDecs/ContactDecs";
 import {LocationImg} from "./contactDecs/imgCons/LocationImg";
 import {EmailImg} from "./contactDecs/imgCons/EmailImg";
 import {PhoneImg} from "./contactDecs/imgCons/PhoneImg";
+import {font} from "../../../styles/Common";
 
 
 export const Contact = () => {
@@ -99,8 +100,9 @@ const InputWrapper = styled.form`
 const StyledField = styled.input`
   background-color: ${theme.whiteThemeColors.bgColorInputContacts};
   color: ${theme.whiteThemeColors.dontForms};
-  font-family: Roboto, sans-serif;
-  font-size: 13px;
+  ${font({family: "Roboto , sans-serif", Fmin: 10, Fmax: 13})};
+  //font-family: Roboto, sans-serif;
+  //font-size: 13px;
   border-radius: 9px;
   width: 100%;
   border: none;
@@ -114,8 +116,9 @@ const StyledField = styled.input`
 const StyledFieldMessageTextArea = styled.input`
   background: ${theme.whiteThemeColors.bgColorInputContacts};
   color: ${theme.whiteThemeColors.dontForms};
-  font-family: Roboto, sans-serif;
-  font-size: 13px;
+  ${font({family: "Roboto , sans-serif", Fmin: 10, Fmax: 13})};
+  //font-family: Roboto, sans-serif;
+  //font-size: 13px;
   border: none;
   width: 429px;
   height: 152px;

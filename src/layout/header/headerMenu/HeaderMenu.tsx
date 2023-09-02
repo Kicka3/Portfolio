@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 
 export const HeaderMenu = () => {
@@ -53,7 +54,8 @@ const StyledHeaderUl = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 58px;
-  font-size: 16px;
+  ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 10, Fmax: 16})};
+  //font-size: 16px;
   align-items: center;
 `;
 

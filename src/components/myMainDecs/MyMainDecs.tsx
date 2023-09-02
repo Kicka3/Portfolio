@@ -5,13 +5,14 @@ import {Button} from "../Button";
 import {Icon} from "../icon/icon";
 import {FlexWrapper} from "../FlexWrapper";
 import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Common";
 
 export const MyMainDecs = () => {
     return (
         <StyledMainDecs>
             <h2>I’m <Name color={"#2157F2"}> Kirill </Name>Ozornin</h2>
             <h1>A Web Developer</h1>
-            <span style={{width: '376px'}}>
+            <span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ea.
             </span>
             <FlexWrapper justify={"flex-start"} align={"center"} gap={"30px"}>
@@ -52,12 +53,23 @@ const StyledMainDecs = styled.div`
 
   & h2 {
     margin-bottom: 10px;
-    font-size: 55px;
+    ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 25, Fmax: 55})};
+    // font-size: 55px;
   }
 
   & h1 {
+    //font-size: 40px;
+    ${font({family: "Roboto , sans-serif",weight: "700", Fmin: 25, Fmax: 40})};
     margin-bottom: 17px;
-    font-size: 40px;
+  }
+  
+  & > span {
+    width: 376px;
+    ${font({family: "Roboto , sans-serif",weight: "400", Fmin: 10, Fmax: 20})};
   }
 
+  @media ${theme.media.mobile1347} {
+    margin-left: 20px;
+  }
+  
 `;

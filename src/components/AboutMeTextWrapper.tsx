@@ -4,6 +4,7 @@ import {FlexWrapper} from "./FlexWrapper";
 import {CircleIcon} from "./svgIcons/icons/CircleIcon";
 import {BgAboutMeChel} from "./backGrounds/BgAboutMeChel";
 import {theme} from "../styles/Theme";
+import {font} from "../styles/Common";
 
 export const AboutMeTextWrapper = () => {
     return (
@@ -27,7 +28,8 @@ export const AboutMeTextWrapper = () => {
 };
 
 const AboutMeTextWrapperStyled = styled.div`
-  width: 496px;
+  max-width: 525px;
+  width: 100%;
   height: 346px;
   position: relative;
   z-index: 1;
@@ -60,11 +62,12 @@ const AboutMeTextWrapperStyled = styled.div`
 
 const AboutMeTextStyled = styled.h2`
   color: #393939;
-  font-family: Roboto, sans-serif;
-  font-size: 40px;
+  ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 30, Fmax: 40})};
   font-style: normal;
-  font-weight: 700;
   margin: 74px 51px 22px 59px;
+  //font-family: Roboto, sans-serif;
+  //font-size: 40px;
+  //font-weight: 700;
 
   & span {
     color: #2157F2;
@@ -73,10 +76,12 @@ const AboutMeTextStyled = styled.h2`
 
 const AboutMeTextTitles = styled.p`
   color: #393939;
-  max-width: 463px;
-  font-family: Roboto, sans-serif;
-  font-size: 19px;
+  max-width: 513px;
+  width: 100%;
+  ${font({family: "Roboto , sans-serif", weight: "400", Fmin: 15, Fmax: 20})};
   font-style: normal;
-  font-weight: 400;
   padding-left: 59px;
+  //font-family: Roboto, sans-serif;
+  //font-size: 19px;
+  //font-weight: 400;
 `;

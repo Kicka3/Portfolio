@@ -2,18 +2,19 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 
 export const MobileHeaderMenu = () => {
     return (
         <StyledHeaderNav>
 
-            <BurgerButton isOpen={false}>
+            <BurgerButton isOpen={true}>
                 <span></span>
             </BurgerButton>
 
             <StyledHeadMenu>
-                <MobileMenuPopUp isOpen={false}>
+                <MobileMenuPopUp isOpen={true}>
                     <ul>
                         <StyledHedLi>
                             <Link href="#">Home</Link>
@@ -129,7 +130,8 @@ const MobileMenuPopUp = styled.div<{isOpen: Boolean}>`
     flex-direction: column;
     align-items: center;
     gap: 58px;
-    font-size: 16px;
+    ${font({Fmax: 10, Fmin: 16})};
+    //font-size: 16px;
   }
 `;
 
@@ -139,9 +141,10 @@ const StyledHedLi = styled.li`
 `;
 
 const Link = styled.a`
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  ${font({family: "Roboto , sans-serif",weight: "400", Fmin: 10, Fmax: 16})};
+  //font-family: Roboto, sans-serif;
+  //font-size: 16px;
+  //font-weight: 400;
   color: ${theme.whiteThemeColors.fontOne};
   position: relative;
   cursor: pointer;
