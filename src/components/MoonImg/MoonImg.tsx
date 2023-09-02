@@ -9,6 +9,12 @@ import moon from "../../assets/images/moon.webp";
   width: 36px;
   height: 37px;
   cursor: pointer;
+  transition: .5s;
+
+  &:hover {
+   transform: scale(1.1) rotate(10deg);
+   //transition: .5s;
+  }
  `;
 
 

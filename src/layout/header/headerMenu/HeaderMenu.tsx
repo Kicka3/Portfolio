@@ -29,7 +29,7 @@ export const HeaderMenu = () => {
                     </StyledHedLi>
 
                     <StyledHedLi>
-                        <MoonStyled/>
+                            <MoonStyled/>
                     </StyledHedLi>
                 </StyledHeaderUl>
             </StyledHeadMenu>
@@ -90,7 +90,10 @@ const Link = styled.a`
     background-color: ${theme.whiteThemeColors.fontOne}; /* Цвет подчеркивания при появлении линии*/
     transition: width 0.5s;  /* Время эффекта */
   }
-  
-  
+`;
+
+const MoonWrapper = styled.div`
+  transition-property: all;
+  transition: all ease 1s;
 `;
 

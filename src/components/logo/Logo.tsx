@@ -18,12 +18,16 @@ const LinkLogo = styled.a`
   text-decoration: none;
   position: relative;
   z-index: 999999;
+  transition: .5s;
   
- 
+  &:hover {
+    transform: scale(1.1);
+    //transition: .5s;
+  }
 `;
 
-const LogoImgWrapper = styled.div`
-  background-image: url(${logoImg});
-  width: 68px;
-  height: 60px;
-`;
+// const LogoImgWrapper = styled.div`
+//   background-image: url(${logoImg});
+//   width: 68px;
+//   height: 60px;
+// `;
