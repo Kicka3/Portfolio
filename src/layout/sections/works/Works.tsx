@@ -13,10 +13,10 @@ import work1 from "../../../assets/images/Work1.png";
 import work2 from "../../../assets/images/Work2.png";
 import work3 from "../../../assets/images/Work3.png";
 import work4 from "../../../assets/images/Work4.png";
-import work5 from "../../../assets/images/Work5.png";
-import work6 from "../../../assets/images/Work6.png";
-import work7 from "../../../assets/images/Work7.png";
-import work8 from "../../../assets/images/Work8.png";
+import work5 from "../../../assets/images/Work4.png";
+import work6 from "../../../assets/images/Work1.png";
+import work7 from "../../../assets/images/Work2.png";
+import work8 from "../../../assets/images/Work3.png";
 
 
 

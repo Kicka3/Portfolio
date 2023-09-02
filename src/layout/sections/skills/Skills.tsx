@@ -18,11 +18,11 @@ const Skills = () => {
                     <Icon iconId={"css"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
                     <Icon iconId={"html"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
                     <Icon iconId={"js"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"githubFill"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"react"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"ts"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"redux"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"Git"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
+                    <Icon iconId={"githubFill"} width={"80px"} height={"75px"} viewBox={"0 0 120 120"}/>
+                    <Icon iconId={"react"} width={"70px"} height={"80px"} viewBox={"0 0 120 120"}/>
+                    <Icon iconId={"ts"} width={"60px"} height={"70px"} viewBox={"0 0 120 120"}/>
+                    <Icon iconId={"redux"} width={"70px"} height={"70px"} viewBox={"0 0 110 110"}/>
+                    <Icon iconId={"Git"} width={"64px"} height={"64px"} viewBox={"0 0 90 90"}/>
                 </FlexWrapper>
             </Container>
         </StyledSkill>
