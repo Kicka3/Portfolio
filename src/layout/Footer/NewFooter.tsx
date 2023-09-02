@@ -70,8 +70,8 @@ const SocialLink = styled.a`
   cursor: pointer;
   
   &:hover svg {
-    color: red;
-    transform: translateY(-4px);
+    color: ${theme.iconsColor.hoverTelegramFooter};
+    transform: translateY(-5px);
   }
 `;
 

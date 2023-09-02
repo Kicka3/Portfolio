@@ -14,9 +14,17 @@ export const ButtonSend = () => {
 
 const ButtonStyled = styled.button`
   color: ${theme.whiteThemeColors.primaryBg};
-  background-color: ${theme.whiteThemeColors.accent};
+  background-color: ${theme.whiteThemeColors.fontFive};
   width: 117px;
   height: 43px;
   border-radius: 9px;
   cursor: pointer;
+  
+  &:hover {
+    background-color: ${theme.whiteThemeColors.fontSix};
+  }
+  
+  &:active {
+    transform: translateY(3px);
+  }
 `;

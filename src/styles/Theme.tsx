@@ -9,6 +9,7 @@ export const theme = {
         fontTwo: "#1F1F1F",
         fontThree: "#000",
         fontFive: "#2157F2",
+        fontSix: "#013bd7",
         dontForms: "#A5A5A5",
         aboutColor: "rgba(33, 87, 242, 0.27)",
         locationCityColor: "#8B8B8B",
