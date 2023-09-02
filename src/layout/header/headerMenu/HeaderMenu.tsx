@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {MoonStyled} from "../../../components/MoonImg/MoonImg";
+import {theme} from "../../../styles/Theme";
 // import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 
 
@@ -8,35 +9,41 @@ export const HeaderMenu = () => {
     return (
 
         <StyledHeaderNav>
-            <menu>
+            <StyledHeadMenu>
                 <StyledHeaderUl>
-                    <li>
-                        <Link href="">Home</Link>
-                    </li>
 
-                    <li>
-                        <Link href="">Projects</Link>
-                    </li>
+                    <StyledHedLi>
+                        <Link href="#">Home</Link>
+                    </StyledHedLi>
 
-                    <li>
-                        <Link href="">About</Link>
-                    </li>
+                    <StyledHedLi>
+                        <Link href="#">Projects</Link>
+                    </StyledHedLi>
 
-                    <li>
-                        <Link href="">Content</Link>
-                    </li>
+                    <StyledHedLi>
+                        <Link href="#">About</Link>
+                    </StyledHedLi>
 
-                    <li>
+                    <StyledHedLi>
+                        <Link href="#">Content</Link>
+                    </StyledHedLi>
+
+                    <StyledHedLi>
                         <MoonStyled/>
-                    </li>
+                    </StyledHedLi>
                 </StyledHeaderUl>
-            </menu>
+            </StyledHeadMenu>
         </StyledHeaderNav>
     );
 };
 
 const StyledHeaderNav = styled.nav`
 
+`;
+
+const StyledHeadMenu = styled.menu`
+  position: relative;
+  z-index: 99999;
 `;
 
 const StyledHeaderUl = styled.ul`
@@ -47,11 +54,43 @@ const StyledHeaderUl = styled.ul`
   align-items: center;
 `;
 
+const StyledHedLi = styled.li`
+ 
+`;
 
 const Link = styled.a`
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #393939;
+  color: ${theme.whiteThemeColors.fontOne};
+  
+  position: relative;
+  cursor: pointer;
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: ${theme.whiteThemeColors.fontOne}; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+  }
+  
+  &:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: ${theme.whiteThemeColors.fontOne}; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+  }
+  
+  
 `;
 
