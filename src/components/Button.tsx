@@ -1,5 +1,6 @@
 import React, {ReactNode} from 'react';
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
 type ButtonsWrapperPropsType = {
     background?: string,
@@ -11,6 +12,8 @@ type ButtonsWrapperPropsType = {
     padding?: string,
     marginT?: string,
     marginB?: string,
+    activeColor?: string,
+    hoverColor?: string,
     children: ReactNode
 }
 
@@ -35,8 +38,15 @@ export const StyledButton = styled.a<ButtonsWrapperPropsType>`
   justify-content: space-evenly;
   align-items: center;
   
-  :hover {
-    background-color: blueviolet;
+  &:hover {
+    background-color: ${theme.whiteThemeColors.fontSix};
+    border-radius: 20px;
+    color: ${theme.whiteThemeColors.primaryBg};
+  }
+  
+  &:active {
+    transform: translateY(-2px);
+    color: ${theme.whiteThemeColors.primaryBg};
   }
   
 `;
