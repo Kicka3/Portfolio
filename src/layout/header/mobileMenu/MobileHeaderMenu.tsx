@@ -8,12 +8,12 @@ export const MobileHeaderMenu = () => {
     return (
         <StyledHeaderNav>
 
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
             <StyledHeadMenu>
-                <MobileMenuPopUp isOpen={true}>
+                <MobileMenuPopUp isOpen={false}>
                     <ul>
                         <StyledHedLi>
                             <Link href="#">Home</Link>
@@ -62,7 +62,7 @@ const BurgerButton = styled.button<{isOpen: Boolean}>`
     display: block;
     width: 36px;
     height: 2px;
-    background-color: ${theme.whiteThemeColors.primaryBg};
+    background-color: ${theme.whiteThemeColors.accent};
     position: absolute;
     left: 40px;
     bottom: 50px;
@@ -77,7 +77,7 @@ const BurgerButton = styled.button<{isOpen: Boolean}>`
       display: block;
       width: 36px;
       height: 2px;
-      background-color: ${theme.whiteThemeColors.primaryBg};
+      background-color: ${theme.whiteThemeColors.accent};
       position: absolute;
       transform: translateY(-10px);
 
@@ -91,7 +91,7 @@ const BurgerButton = styled.button<{isOpen: Boolean}>`
       display: block;
       width: 24px;
       height: 2px;
-      background-color: ${theme.whiteThemeColors.primaryBg};
+      background-color: ${theme.whiteThemeColors.accent};
       position: absolute;
       transform: translateY(10px);
 
@@ -143,9 +143,12 @@ const Link = styled.a`
   font-size: 16px;
   font-weight: 400;
   color: ${theme.whiteThemeColors.fontOne};
-
   position: relative;
   cursor: pointer;
+
+  @media ${theme.media.tablet} {
+    font-size: 50px;
+  }
 
   &:after {
     content: "";
@@ -171,9 +174,4 @@ const Link = styled.a`
     transition: width 0.5s; /* Время эффекта */
   }
 `;
-
-// const MoonWrapper = styled.div`
-//   transition-property: all;
-//   transition: all ease 1s;
-// `;
 

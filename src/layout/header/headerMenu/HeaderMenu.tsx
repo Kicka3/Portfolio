@@ -94,9 +94,9 @@ const Link = styled.a`
     transition: width 0.5s;  /* Время эффекта */
   }
 `;
-
-const MoonWrapper = styled.div`
-  transition-property: all;
-  transition: all ease 1s;
-`;
+//
+// const MoonWrapper = styled.div`
+//   transition-property: all;
+//   transition: all ease 1s;
+// `;
 

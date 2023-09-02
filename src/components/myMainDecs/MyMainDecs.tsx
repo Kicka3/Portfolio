@@ -17,7 +17,6 @@ export const MyMainDecs = () => {
             <FlexWrapper justify={"flex-start"} align={"center"} gap={"30px"}>
                 <div>
                     <FlexWrapper gap={"32px"}>
-
                         <FlexWrapper>
                             <Button marginT={"42px"} padding={"1px 5px"} fSize={"15px"} color={"#FFF"}
                                     background={"#2157F2"}

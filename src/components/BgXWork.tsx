@@ -13,9 +13,6 @@ const StyledBgXWork = styled.div`
   background-image: url("${BgXImg}");
   width: 383px;
   height: 346px;
-  //right: -82px;
-  //bottom: -161px;
-  //padding-bottom: 152px;
   position: absolute;
   background-size: contain;
   z-index: 0;

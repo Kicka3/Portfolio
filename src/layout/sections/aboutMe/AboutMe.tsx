@@ -12,9 +12,9 @@ export const AboutMe = () => {
         <AboutMeStyled>
             <Container>
                 <BgColorWrap>
-                <AboutMeTextWrapper/>
+                    <AboutMeTextWrapper/>
                 </BgColorWrap>
-                <BgAboutMeChel/>
+            <BgAboutMeChel/>
             </Container>
         </AboutMeStyled>
     );
@@ -23,6 +23,7 @@ export const AboutMe = () => {
 const BgColorWrap = styled.div`
   background-color: ${theme.whiteThemeColors.aboutColor};
   height: 738px;
+  position: relative;
 `;
 
 const AboutMeStyled = styled.section`
@@ -30,7 +31,7 @@ const AboutMeStyled = styled.section`
   max-height: 946px;
   margin-bottom: 47px;
   overflow: hidden;
-  
+
   background-image: url("${bgImgUral}");
   background-repeat: no-repeat;
   background-position: center;

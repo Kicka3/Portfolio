@@ -2,7 +2,6 @@ import React from 'react';
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Button} from "../../../../components/Button";
-import work3 from "../../../../assets/images/Rectangle2.png"
 import {theme} from "../../../../styles/Theme";
 
 
@@ -73,20 +72,16 @@ const StyledWork = styled.div<WorkPropsType>`
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  z-index: 99999;
+  z-index: 8888;
   background-image: url(${props => props.src});
   background-repeat: no-repeat;
-    //background-image: url(${work3});
 `;
 
 const Title = styled.h3`
-  //padding-left: 33px;
   padding-right: 33px;
   margin-bottom: 29px;
-  //text-align: left;
   font-size: 20px;
   color: #2157F2;
   overflow: hidden;
-
   width: 250px;
 `;

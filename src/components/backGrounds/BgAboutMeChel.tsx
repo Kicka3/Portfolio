@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import bgChel from "../../assets/images/Chel.png"
+import {theme} from "../../styles/Theme";
 
 
 export  const BgAboutMeChel = () => {
@@ -10,15 +11,29 @@ export  const BgAboutMeChel = () => {
 };
 
 const StyledBgAboutMeChel = styled.div`
+  display: flex;
+  flex-shrink: 1;
   background-image: url("${bgChel}");
-  width: 521px;
+  max-width: 521px;
+  width: 100%;
   height: 615px;
-  //flex-shrink: 0;
+  position: relative;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-  //top: 85px;
-  //left: 850px;
-  top: 142px;
-  left: 905px;
+  top: -81%;
+  left: 63%;
+  z-index: 77777;
+
+  @media ${theme.media.mobile1433} {
+    top: -72%;
+    left: 49%;
+  }
+
+  @media ${theme.media.mobile1207} {
+    display: none;
+  }
+
+
+
+
 `;
