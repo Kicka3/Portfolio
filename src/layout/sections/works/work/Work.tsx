@@ -16,7 +16,6 @@ export const Work = (props: WorkPropsType) => {
     return (
 
         <StyledWork>
-            {/*<BgXWork/>*/}
 
             <WorkCardsWrapper>
                 <Title>{props.title}</Title>
@@ -57,6 +56,7 @@ const WorkCardsWrapper = styled.div`
 const StyledWork = styled.div`
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.20);
   max-width: 270px;
+  width: 100%;
   height: 394px;
   cursor: pointer;
   border-radius: 26px 26px;
@@ -78,43 +78,6 @@ const Title = styled.h3`
   font-size: 20px;
   color: #2157F2;
   overflow: hidden;
-
-  //Ограничить ширину!!
+  
   width: 250px;
 `;
-
-
-// const Image = styled.img`
-//   border-radius: 26px;
-//   max-width: 270px;
-//   height: 394px;
-//   flex-shrink: 0;
-//   object-fit: contain;
-//   margin-bottom: 17px;
-// `;
-
-// const TitleWrapper = styled.div`
-//   width: 270px;
-//   height: 154px;
-//   flex-shrink: 0;
-// `;
-
-// const Text = styled.p`
-//   margin-bottom: 21px;
-//   padding-right: 32px;
-//   padding-left: 29px;
-// `;
-//
-// const Link = styled.a`
-//   color: #000;
-//   font-family: Poppins, sans-serif;
-//   font-size: 16px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 26px;
-//   text-decoration-line: underline;
-
-//   :hover {
-//     background-color: #A6BCFA;
-//   }
-// `;

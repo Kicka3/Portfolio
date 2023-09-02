@@ -8,6 +8,7 @@ import work1 from "../../../assets/images/Work1.png";
 import work2 from "../../../assets/images/Work2.png";
 import work3 from "../../../assets/images/Work3.png";
 import work4 from "../../../assets/images/Work4.png";
+import work5 from "../../../assets/images/Rectangle3.png"
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {Container} from "../../../components/Container";
 import {BgDotsWork} from "../../../components/BgDotsWork";
@@ -35,15 +36,13 @@ export const Works = () => {
                         <Work src={work3} title={"Project Tile goes here"}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                         <Work src={work4} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/> <Work src={work1} title={"Project Tile goes here"}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work2} title={"Project Tile goes here"}
+                        <Work src={work1} title={"Project Tile goes here"}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work3} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work4} title={"Project Tile goes here"}
+                        <Work src={work5} title={"Project Tile goes here"}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                     </FlexWrapper>
+
                 </FlexWrapper>
             </Container>
         </StyledWorks>
