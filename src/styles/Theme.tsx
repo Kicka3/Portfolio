@@ -25,6 +25,7 @@ export const theme = {
         linkedInFooter: "#00B2FF",
         telegramFooter: "#34B7F1",
         whatUpFooter: "#25d35c",
+        vkFooter: "#4376A6",
 
         hoverLinkedInFooter: "rgba(0,178,255,0.6)",
         hoverTelegramFooter: "rgba(52,183,241,0.63)",

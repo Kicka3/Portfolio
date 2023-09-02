@@ -13,14 +13,30 @@ export const NewFooter = () => {
         <StyledFooter>
             <Container>
 
-                <FlexWrapper marginB={"195px"} marginT={"90px"}>
+                <FlexWrapper wrap={"wrap"} marginB={"195px"} marginT={"90px"}>
                     <SocialList>
+
                         <SocialItem>
                             <SocialLink>
-                                <Icon iconId={"vkFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
-                                <Icon iconId={"linkedInFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
-                                <Icon iconId={"whatsUpFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
-                                <Icon iconId={"telegramFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
+                                <Icon color={theme.iconsColor.vkFooter} iconId={"vkFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
+                            </SocialLink>
+                        </SocialItem>
+
+                        <SocialItem>
+                            <SocialLink>
+                                <Icon color={theme.iconsColor.linkedInFooter} iconId={"linkedInFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
+                            </SocialLink>
+                        </SocialItem>
+
+                        <SocialItem>
+                            <SocialLink >
+                                <Icon color={theme.iconsColor.whatUpFooter} iconId={"whatsUpFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
+                            </SocialLink>
+                        </SocialItem>
+
+                        <SocialItem>
+                            <SocialLink >
+                                <Icon color={theme.iconsColor.telegramFooter} iconId={"telegramFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
                             </SocialLink>
                         </SocialItem>
                     </SocialList>
@@ -33,7 +49,8 @@ export const NewFooter = () => {
 
             </Container>
         </StyledFooter>
-    );
+    )
+        ;
 };
 
 const StyledFooter = styled.footer`
@@ -41,15 +58,21 @@ const StyledFooter = styled.footer`
 `;
 
 const SocialList = styled.ul`
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 `;
 
 const SocialItem = styled.li`
-
 `;
 
 const SocialLink = styled.a`
-
+  cursor: pointer;
+  
+  &:hover svg {
+    color: red;
+    transform: translateY(-4px);
+  }
 `;
 
 const StyledSmall = styled.small`
