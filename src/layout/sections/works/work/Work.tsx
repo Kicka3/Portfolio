@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Button} from "../../../../components/Button";
 import work3 from "../../../../assets/images/Rectangle2.png"
+import {theme} from "../../../../styles/Theme";
 
 
 type WorkPropsType = {
@@ -19,11 +20,11 @@ export const Work = (props: WorkPropsType) => {
 
             <WorkCardsWrapper>
                 <Title>{props.title}</Title>
-                <FlexWrapper justify={"flex-start"} gap={"21px"} >
+                <FlexWrapper justify={"flex-start"} gap={"21px"}>
                     <FlexWrapper justify={"space-between"} gap={"11px"}>
                         <Button href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
                                 background={"#2157F2"}
-                                borderRadius={"12px"}  width={"109px"} height={"29px"}>
+                                borderRadius={"12px"} width={"109px"} height={"29px"}>
                             <span>Live Preview</span>
                         </Button>
                     </FlexWrapper>
@@ -43,14 +44,20 @@ export const Work = (props: WorkPropsType) => {
     );
 };
 
+
 const WorkCardsWrapper = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: white;
   padding: 20px 30px;
   border-radius: 0 0 26px 26px;
+  transition: .5s;
+
+  &:hover {
+    background-color: ${theme.whiteThemeColors.secondaryBg};
+  }
 `;
 
 
@@ -62,14 +69,14 @@ const StyledWork = styled.div<WorkPropsType>`
   cursor: pointer;
   border-radius: 26px 26px;
   background-color: #F9F9FC;
-  
-  //background-image: url(${work3});
-  background-image: url(${props => props.src});
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
   z-index: 99999;
+  background-image: url(${props => props.src});
+  background-repeat: no-repeat;
+    //background-image: url(${work3});
 `;
 
 const Title = styled.h3`
@@ -80,6 +87,6 @@ const Title = styled.h3`
   font-size: 20px;
   color: #2157F2;
   overflow: hidden;
-  
+
   width: 250px;
 `;
