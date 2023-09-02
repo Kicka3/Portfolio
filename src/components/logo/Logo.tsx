@@ -1,11 +1,13 @@
 import React from 'react';
 import logoImg from "../../assets/images/logo.png";
 import styled from "styled-components";
+import {Icon} from "../icon/icon";
 
 export const Logo = () => {
     return (
         <LinkLogo href="#">
-            <LogoImgWrapper/>
+            <Icon color={"#FFF"} iconId={"headLogo"} height={"60px"} width={"60px"} viewBox={"0 0 60 60"}/>
+            {/*<LogoImgWrapper/>*/}
         </LinkLogo>
     );
 };
@@ -14,6 +16,8 @@ const LinkLogo = styled.a`
   cursor: pointer;
   outline: none;
   text-decoration: none;
+  position: relative;
+  z-index: 999999;
   
  
 `;
