@@ -31,5 +31,11 @@ export const theme = {
         hoverLinkedInFooter: "rgba(0,178,255,0.6)",
         hoverTelegramFooter: "rgba(52,183,241,0.63)",
         hoverWhatUpFooter: "rgba(37,211,60,0.7)",
+    },
+
+    //Media
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
     }
 }

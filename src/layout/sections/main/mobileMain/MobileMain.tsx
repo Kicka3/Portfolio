@@ -1,56 +1,56 @@
 import React from 'react';
-import myImg from "../../../assets/images/myPhoto2.png";
-import {FlexWrapper} from "../../../components/FlexWrapper";
+import myImg from "../../../../assets/images/myPhoto2.png";
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 import styled from "styled-components";
-import {Container} from "../../../components/Container";
-import {MyMainDecs} from "../../../components/myMainDecs/MyMainDecs";
-import {BgLeftPicture} from "../../../components/bgLeftPicture";
-import {Logo} from "../../../components/logo/Logo";
-import {HeaderMenu} from "../../header/headerMenu/HeaderMenu";
-import {CircleBg} from "../../../components/CircleBg";
-import {XBgIcon} from "../../../components/xBgIcon";
-import {MobileHeaderMenu} from "../../header/mobileMenu/MobileHeaderMenu";
+import {Container} from "../../../../components/Container";
+import {MyMainDecs} from "../../../../components/myMainDecs/MyMainDecs";
+import {BgLeftPicture} from "../../../../components/bgLeftPicture";
+import {Logo} from "../../../../components/logo/Logo";
+import {HeaderMenu} from "../../../header/headerMenu/HeaderMenu";
+import {CircleBg} from "../../../../components/CircleBg";
+import {XBgIcon} from "../../../../components/xBgIcon";
+import {MobileHeaderMenu} from "../../../header/mobileMenu/MobileHeaderMenu";
 
 
-export const Main = () => {
+export const MobileMain = () => {
     return (
-        <StyledMain>
+        <StyledMobileMain>
             <Container>
-                <StyledHeader>
+                <StyledMobileHeader>
                     <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                         <Logo/>
                         <HeaderMenu/>
                         <MobileHeaderMenu/>
                     </FlexWrapper>
-                </StyledHeader>
+                </StyledMobileHeader>
                 <BgLeftPicture/>
                 <CircleBg/>
                 <XBgIcon/>
 
-                <TitleMainWrapper>
+                <TitleMobileMainWrapper>
                     <FlexWrapper gap={"0"} wrap={"no-wrap"}>
                         <MyPhoto alt="My Photo"/>
                         <MyMainDecs/>
                     </FlexWrapper>
-                </TitleMainWrapper>
+                </TitleMobileMainWrapper>
 
             </Container>
-        </StyledMain>
+        </StyledMobileMain>
     );
 }
 
 
-const StyledHeader = styled.header`
+const StyledMobileHeader = styled.header`
   background-color: #FFF;
   padding: 15px 0;
 `;
 
 
-const StyledMain = styled.section`
+const StyledMobileMain = styled.section`
 
 `;
 
-const TitleMainWrapper = styled.div`
+const TitleMobileMainWrapper = styled.div`
   gap: 75px;
   border-radius: 200px 0;
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
@@ -78,8 +78,4 @@ const MyPhoto = styled.img`
   border: 25px solid #FFF;
   object-fit: cover;
   background: url("${myImg}") 50% / cover no-repeat, #2157F2;
-`;
-
-const StyledLink = styled.a`
-
 `;

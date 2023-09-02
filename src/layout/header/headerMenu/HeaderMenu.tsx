@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
-// import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 
 
 export const HeaderMenu = () => {
@@ -38,7 +37,11 @@ export const HeaderMenu = () => {
 };
 
 const StyledHeaderNav = styled.nav`
-
+  
+  
+    @media ${theme.media.tablet} {
+      display: none;
+    }
 `;
 
 const StyledHeadMenu = styled.menu`
