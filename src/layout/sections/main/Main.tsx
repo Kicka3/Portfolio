@@ -10,6 +10,7 @@ import {HeaderMenu} from "../../header/headerMenu/HeaderMenu";
 import {CircleBg} from "../../../components/CircleBg";
 import {XBgIcon} from "../../../components/xBgIcon";
 import {MobileHeaderMenu} from "../../header/mobileMenu/MobileHeaderMenu";
+import {theme} from "../../../styles/Theme";
 
 
 export const Main = () => {
@@ -28,7 +29,7 @@ export const Main = () => {
                 <XBgIcon/>
 
                 <TitleMainWrapper>
-                    <FlexWrapper gap={"0"} wrap={"no-wrap"}>
+                    <FlexWrapper gap={"0"} wrap={"wrap"}>
                         <MyPhoto alt="My Photo"/>
                         <MyMainDecs/>
                     </FlexWrapper>
@@ -68,6 +69,13 @@ const TitleMainWrapper = styled.div`
   & h1 {
     margin-bottom: 19px;
   }
+  @media ${theme.media.mobile1350} {
+    max-width: 1158px;
+    height: 885px;
+    margin: 114px 131px 30px 151px;
+    padding: 45px;
+  }
+  
 `;
 
 const MyPhoto = styled.img`

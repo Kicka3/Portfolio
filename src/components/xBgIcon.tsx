@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import XIcon from "../assets/images/x.png"
+import {theme} from "../styles/Theme";
 
 
 export const XBgIcon = () => {
@@ -21,4 +22,7 @@ const StyledXBgIcon = styled.div`
   left: 563px;
   top: 192px;
 
+  @media ${theme.media.mobile1350} {
+    top: 123px;
+  }
 `;

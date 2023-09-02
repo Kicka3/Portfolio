@@ -1,3 +1,4 @@
+
 import React, {ReactNode} from 'react';
 import styled from "styled-components";
 import {theme} from "../styles/Theme";
@@ -18,13 +19,13 @@ type ButtonsWrapperPropsType = {
     children: ReactNode,
 }
 
-export const Button = (props:ButtonsWrapperPropsType) => {
+export const ButtonWorks = (props:ButtonsWrapperPropsType) => {
     return (
-        <StyledButton {...props}>{props.children}</StyledButton>
+        <StyledButtonWorks {...props}>{props.children}</StyledButtonWorks>
     );
 };
 
-export const StyledButton = styled.a<ButtonsWrapperPropsType>`
+export const StyledButtonWorks = styled.a<ButtonsWrapperPropsType>`
   width: ${props => props.width};
   height: ${props => props.height};
   border-radius: ${props => props.borderRadius};

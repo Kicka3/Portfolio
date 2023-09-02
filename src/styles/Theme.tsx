@@ -36,10 +36,17 @@ export const theme = {
     //Media
     media: {
         mobile1433: "screen and (max-width: 1433px)",
-        mobile1347: "screen and (max-width: 1347px)",
-
+        mobile1350: "screen and (max-width: 1350px)",
+        mobile1274: "screen and (max-width: 1274px)",
         mobile1207: "screen and (max-width: 1207px)",
         mobile1048: "screen and (max-width: 1048px)",
+        mobile1060: "screen and (max-width: 1060px)",
+        mobile1000: "screen and (max-width: 1000px)",
+        mobile948: "screen and (max-width: 948px)",
+        newTablet895: "screen and (max-width: 895px)",
+        newTablet830: "screen and (max-width: 830px)",
+        newTablet660: "screen and (max-width: 660px)",
+
 
         tablet: "screen and (max-width: 768px)",
         mobile: "screen and (max-width: 576px)",

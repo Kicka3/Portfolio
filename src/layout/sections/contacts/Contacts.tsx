@@ -90,6 +90,15 @@ const StyledFormWrapper = styled.div`
   box-shadow: 8px 8px 34px 0 rgba(0, 0, 0, 0.05);
   margin: 0 auto;
   padding: 53px 113px 46px 82px;
+
+
+  @media ${theme.media.mobile948} {
+    height: 434px;
+    max-width: 822px;
+    width: 100%;
+    padding: 49px 62px 34px 58px;
+  }
+  
 `;
 
 const InputWrapper = styled.form`

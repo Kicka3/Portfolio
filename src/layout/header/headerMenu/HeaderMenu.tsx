@@ -40,9 +40,15 @@ export const HeaderMenu = () => {
 const StyledHeaderNav = styled.nav`
   
   
-    @media ${theme.media.tablet} {
+    // @media ${theme.media.tablet} {
+    //   display: none;
+    // }
+    
+    @media ${theme.media.newTablet895} {
       display: none;
     }
+  
+  
 `;
 
 const StyledHeadMenu = styled.menu`
@@ -57,6 +63,14 @@ const StyledHeaderUl = styled.ul`
   ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 10, Fmax: 16})};
   //font-size: 16px;
   align-items: center;
+  @media ${theme.media.mobile1000} {
+    gap: 43px;
+  }
+  
+  @media ${theme.media.mobile948} {
+    gap: 32px;
+
+  }
 `;
 
 const StyledHedLi = styled.li`

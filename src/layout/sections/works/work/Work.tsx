@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Button} from "../../../../components/Button";
 import {theme} from "../../../../styles/Theme";
+import {ButtonWorks} from "../../../../components/ButtonWorks";
 
 
 type WorkPropsType = {
@@ -21,19 +22,19 @@ export const Work = (props: WorkPropsType) => {
                 <Title>{props.title}</Title>
                 <FlexWrapper justify={"flex-start"} gap={"21px"}>
                     <FlexWrapper justify={"space-between"} gap={"11px"}>
-                        <Button href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
+                        <ButtonWorks href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
                                 background={"#2157F2"}
                                 borderRadius={"12px"} width={"109px"} height={"29px"}>
                             <span>Live Preview</span>
-                        </Button>
+                        </ButtonWorks>
                     </FlexWrapper>
 
                     <FlexWrapper gap={"11px"}>
-                        <Button href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
+                        <ButtonWorks href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
                                 background={"#2157F2"}
                                 borderRadius={"12px"} width={"109px"} height={"29px"}>
                             <span>View Code</span>
-                        </Button>
+                        </ButtonWorks>
                     </FlexWrapper>
 
                 </FlexWrapper>

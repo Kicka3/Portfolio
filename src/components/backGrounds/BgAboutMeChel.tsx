@@ -29,11 +29,15 @@ const StyledBgAboutMeChel = styled.div`
     left: 49%;
   }
 
-  @media ${theme.media.mobile1207} {
-    display: none;
+  @media ${theme.media.mobile1060} {
+    top: -60%;
+    left: 46%;
+    max-width: 433px;
   }
 
-
+  @media ${theme.media.newTablet830} {
+    display: none;
+  }
 
 
 `;

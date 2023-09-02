@@ -4,7 +4,7 @@ type FontPropsType = {
     family?: string,
     weight?: string,
     color?: string,
-    lineHeight?: number,
+    lineHeight?: string,
     Fmin?: number,
     Fmax?: number,
 }

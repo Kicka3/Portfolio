@@ -40,23 +40,31 @@ const AboutMeTextWrapperStyled = styled.div`
   background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
   box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.05);
 
-    @media ${theme.media.mobile1433} {
+  @media ${theme.media.mobile1433} {
     top: 88px;
     left: 186px;
   }
 
+
+  @media ${theme.media.mobile1207} {
+    top: 25px;
+    left: 44px;
+  }
   
-    @media ${theme.media.mobile1207} {
-    top: 222px;
-    left: 513px;
+  @media ${theme.media.newTablet830} {
+    display: flex;
+    align-items: center;
+    top: 51px;
+    left: 129px;
+    height: 280px;
+    max-width: 489px;
   }
-
-    @media ${theme.media.mobile1048} {
-      top: 48px;
-      left: 271px;
+  
+  @media ${theme.media.newTablet660} {
+    left: 60px;
+    top: 91px;
   }
-
-
+  
 
 `;
 
@@ -72,6 +80,11 @@ const AboutMeTextStyled = styled.h2`
   & span {
     color: #2157F2;
   }
+
+  @media ${theme.media.newTablet830} {
+    margin: 6px 51px 22px 59px;
+  }
+  
 `;
 
 const AboutMeTextTitles = styled.p`

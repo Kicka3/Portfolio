@@ -9,12 +9,12 @@ export const MobileHeaderMenu = () => {
     return (
         <StyledHeaderNav>
 
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
             <StyledHeadMenu>
-                <MobileMenuPopUp isOpen={true}>
+                <MobileMenuPopUp isOpen={false}>
                     <ul>
                         <StyledHedLi>
                             <Link href="#">Home</Link>
@@ -46,9 +46,14 @@ export const MobileHeaderMenu = () => {
 const StyledHeaderNav = styled.nav`
   display: none;
 
-  @media ${theme.media.tablet} {
+  // @media ${theme.media.tablet} {
+  //   display: block;
+  // } 
+  
+  @media ${theme.media.newTablet895} {
     display: block;
   }
+  
 `;
 
 const BurgerButton = styled.button<{isOpen: Boolean}>`
@@ -141,7 +146,7 @@ const StyledHedLi = styled.li`
 `;
 
 const Link = styled.a`
-  ${font({family: "Roboto , sans-serif",weight: "400", Fmin: 10, Fmax: 16})};
+  ${font({family: "Roboto , sans-serif", weight: "400", Fmin: 10, Fmax: 16})};
   //font-family: Roboto, sans-serif;
   //font-size: 16px;
   //font-weight: 400;
@@ -149,7 +154,11 @@ const Link = styled.a`
   position: relative;
   cursor: pointer;
 
-  @media ${theme.media.tablet} {
+    // @media ${theme.media.tablet} {
+  //   font-size: 50px;
+  // }
+
+    @media ${theme.media.newTablet895} {
     font-size: 50px;
   }
 
