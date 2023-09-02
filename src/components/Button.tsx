@@ -14,7 +14,8 @@ type ButtonsWrapperPropsType = {
     marginB?: string,
     activeColor?: string,
     hoverColor?: string,
-    children: ReactNode
+    href?: string,
+    children: ReactNode,
 }
 
 export const Button = (props:ButtonsWrapperPropsType) => {

@@ -21,7 +21,7 @@ export const Work = (props: WorkPropsType) => {
                 <Title>{props.title}</Title>
                 <FlexWrapper justify={"flex-start"} gap={"21px"} >
                     <FlexWrapper justify={"space-between"} gap={"11px"}>
-                        <Button padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
+                        <Button href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
                                 background={"#2157F2"}
                                 borderRadius={"12px"}  width={"109px"} height={"29px"}>
                             <span>Live Preview</span>
@@ -29,7 +29,7 @@ export const Work = (props: WorkPropsType) => {
                     </FlexWrapper>
 
                     <FlexWrapper gap={"11px"}>
-                        <Button padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
+                        <Button href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
                                 background={"#2157F2"}
                                 borderRadius={"12px"} width={"109px"} height={"29px"}>
                             <span>View Code</span>
