@@ -8,6 +8,7 @@ import {AboutMe} from "./layout/sections/aboutMe/AboutMe";
 import {Contact} from "./layout/sections/contacts/Contacts";
 import {Slogan} from "./layout/sections/slogan/Slogan";
 import {Footer} from "./layout/Footer/Footer";
+import {NewFooter} from "./layout/Footer/NewFooter";
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
             <AboutMe/>
             <Contact/>
             <Slogan/>
-            <Footer/>
+            {/*<Footer/>*/}
+            <NewFooter/>
         </div>
     );
 }

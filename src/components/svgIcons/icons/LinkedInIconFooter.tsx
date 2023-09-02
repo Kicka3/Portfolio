@@ -4,7 +4,7 @@ import {theme} from "../../../styles/Theme";
 
 export const LinkedInIconFooter = () => {
     return (
-        <StyledLinkedInFooter>
+        <StyledLinkedInFooter href={"www.linkedin.com/in/kirill-ozornin-904768264"}>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="60" fill="currentColor" className="bi bi-linkedin"
                  viewBox="0 0 16 16">
                 <path
