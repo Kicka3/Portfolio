@@ -28,7 +28,6 @@ export const MyMainDecs = () => {
                             </Button>
                         </FlexWrapper>
 
-
                         <Button activeColor={theme.whiteThemeColors.primaryBg} marginT={"42px"} color={"#6C92FF"}
                                 fSize={"15px"}
                                 borderRadius={"20px"} width={"200px"} height={"54px"}>
@@ -37,11 +36,28 @@ export const MyMainDecs = () => {
                             {/*            viewBox="0 0 28 28"/></span>*/}
                         </Button>
                     </FlexWrapperButtons>
+
                 </FlexWrapperButtons>
+                {/*<IconsWrapp>*/}
+                {/*<Icon color={"#013bd7"} iconId={"arrowR"} width={"20px"} height={"20px"}*/}
+                {/*      viewBox={"0 0 50 50"}/>*/}
+                {/*<Icon color={"#013bd7"} iconId={"downloadMain"} width={"40px"} height={"40px"}*/}
+                {/*      viewBox={"0 0 20 20"}/>*/}
+                {/*</IconsWrapp>*/}
             </FlexWrapper>
         </StyledMainDecs>
     );
 };
+
+// const IconsWrapp = styled.svg`
+//   cursor: pointer;
+//   display: none;
+//   //display: block;
+//   @media ${theme.media.mobile502} {
+//     display: block;
+//     //display: none;
+//   }
+// `;
 
 const StyledMainDecs = styled.div`
   display: flex;
@@ -53,17 +69,18 @@ const StyledMainDecs = styled.div`
 
   & h2 {
     margin-bottom: 10px;
-    ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 25, Fmax: 55})};
+    ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 20, Fmax: 55})};
     // font-size: 55px;
 
     @media ${theme.media.tablet} {
-        margin-right: 0;
+      margin-top: 39px;
     }
+    
   }
 
   & h1 {
     //font-size: 40px;
-    ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 25, Fmax: 40})};
+    ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 17, Fmax: 40})};
     margin-bottom: 17px;
 
   }
@@ -106,32 +123,79 @@ const StyledMainDecs = styled.div`
 `;
 
 
-  const FlexWrapperButtons = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    //flex-wrap: wrap;
-    gap: 32px;
+const FlexWrapperButtons = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+
+
+  @media ${theme.media.newTablet910} {
+    gap: 12px;
+    position: absolute;
+    left: 41px;
+  }
+
+  @media ${theme.media.newTablet850} {
+    left: 26px;
+  }
+
+  @media ${theme.media.newTablet850} {
+    left: 29px;
+  }
+
+  @media ${theme.media.tablet} {
+    left: 58px;
+  }
+
+  @media ${theme.media.newTablet730} {
+    left: 52px;
+  }
+
+  @media ${theme.media.newTablet699} {
+    left: 40px;
+  }
+
+  @media ${theme.media.newTablet646} {
+    left: 29px;
+  }
+
+  @media ${theme.media.newTablet610} {
+    left: 18px;
+  }
+
+  @media ${theme.media.newTablet586} {
+    flex-wrap: wrap;
+    left: 62px;
+    gap: 0;
+  }
+
+  @media ${theme.media.newMobile543} {
+    left: 45px;
+  }
+
+  @media ${theme.media.mobile502} {
+    left: 76px;
+  }
+
+  @media ${theme.media.mobile481} {
+    left: 75px;
+  }
+
+  @media ${theme.media.mobile444} {
+    left: 68px;
     
-    
-    @media ${theme.media.newTablet910} {
-      gap: 12px;
-      position: absolute;
-      left: 41px;
+    & ${FlexWrapper} {
+      font-size: 10px;
+      width: 137px;
     }
     
-    @media ${theme.media.newTablet850} {
-      left: 26px;
+    &:last-child{
+      font-size: 10px;
+      width: 137px;
     }
-    
-    @media ${theme.media.newTablet850} {
-      left: 29px;
-    }
-    
-    @media ${theme.media.tablet} {
-      left: 48px;
-      flex-wrap: wrap;
-    }
-    
-    
-  `;
+  }
+  
+  @media ${theme.media.mobile493} {
+    left: 57px;
+`;

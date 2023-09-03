@@ -29,7 +29,7 @@ export const StyledButton = styled.a<ButtonsWrapperPropsType>`
   height: ${props => props.height};
   border-radius: ${props => props.borderRadius};
   background: ${props => props.background || "transparent"};
-  font-size: ${props => props.fSize || "15px"};
+   font-size: ${props => props.fSize || "15px"};
   color: ${props => props.color};
   padding: ${props => props.padding};
   margin-top: ${props => props.marginT};
@@ -64,6 +64,7 @@ export const StyledButton = styled.a<ButtonsWrapperPropsType>`
     &:last-child{
     background-color: #2157F2;
       color: #FFF;
+      font-size: 12px;
     }
   }
 `;

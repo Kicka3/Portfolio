@@ -24,5 +24,6 @@ const StyledCircleBg = styled.div`
 
   @media ${theme.media.newTablet808} {
     display: none;
+    //right: 73px;
   }
 `;
