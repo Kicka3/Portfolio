@@ -92,7 +92,6 @@ const TitleMainWrapper = styled.div`
   @media ${theme.media.tablet} {
     padding-top: 95px;
   }
-
 `;
 
 const MyPhoto = styled.img`
