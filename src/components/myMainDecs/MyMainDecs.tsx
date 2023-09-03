@@ -129,7 +129,8 @@ const StyledMainDecs = styled.div`
     }
     
     @media ${theme.media.tablet} {
-      left: 14px;
+      left: 48px;
+      flex-wrap: wrap;
     }
     
     
