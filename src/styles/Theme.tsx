@@ -43,8 +43,14 @@ export const theme = {
         mobile1060: "screen and (max-width: 1060px)",
         mobile1000: "screen and (max-width: 1000px)",
         mobile948: "screen and (max-width: 948px)",
+        //Для buttons в mainDecs:
+        newTablet910: "screen and (max-width: 910px)",
+
         newTablet895: "screen and (max-width: 895px)",
+        newTablet887: "screen and (max-width: 887px)",
+        newTablet850: "screen and (max-width: 850px)",
         newTablet830: "screen and (max-width: 830px)",
+        newTablet808: "screen and (max-width: 808px)",
 
         tablet: "screen and (max-width: 768px)",
         newTablet621: "screen and (max-width: 621px)",

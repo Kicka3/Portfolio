@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import OBgImg from "../assets/images/Ellipse.png"
+import {theme} from "../styles/Theme";
 
 export const CircleBg = () => {
     return (
@@ -20,4 +21,8 @@ const StyledCircleBg = styled.div`
   transform: rotate(-45deg);
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media ${theme.media.newTablet808} {
+    display: none;
+  }
 `;

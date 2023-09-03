@@ -50,5 +50,20 @@ export const StyledButton = styled.a<ButtonsWrapperPropsType>`
     transform: translateY(-2px);
     color: ${theme.whiteThemeColors.primaryBg};
   }
+
+  @media ${theme.media.newTablet895} {
+    width: 174px;
+  }
+
+  @media ${theme.media.tablet} {
+    margin-top: 15px;
+  }
   
+  
+  @media ${theme.media.tablet} {
+    &:last-child{
+    background-color: #2157F2;
+      color: #FFF;
+    }
+  }
 `;

@@ -59,33 +59,58 @@ const TitleMainWrapper = styled.div`
   max-width: 1158px;
   height: 507px;
   margin: 188px 131px 251px 151px;
-  padding: 45px; 
+  padding: 45px;
 
   & h2 {
     margin-top: 64px;
-    margin-right: 80px
+    margin-right: 80px;
+    
+    @media ${theme.media.tablet} {
+      margin-right: 0;
+    }
   }
 
   & h1 {
     margin-bottom: 19px;
   }
+
   @media ${theme.media.mobile1350} {
     max-width: 1158px;
     height: 885px;
     margin: 114px 131px 30px 151px;
     padding: 45px;
   }
-  
+
+  @media ${theme.media.mobile1207} {
+    height: 837px;
+  }
+
+  @media ${theme.media.newTablet910} {
+    height: 742px;
+  }
+
+  @media ${theme.media.tablet} {
+    padding-top: 95px;
+  }
+
 `;
 
 const MyPhoto = styled.img`
   width: 401px;
   height: 401px;
   flex-shrink: 0;
-  border-radius: 334px;
+  border-radius: 50%;
   border: 25px solid #FFF;
   object-fit: cover;
   background: url("${myImg}") 50% / cover no-repeat, #2157F2;
+
+  
+
+  @media ${theme.media.newTablet910} {
+    width: 301px;
+    height: 301px;
+  }
+  
 `;
 
 const StyledLink = styled.a`
