@@ -60,9 +60,45 @@ const AboutMeTextWrapperStyled = styled.div`
     max-width: 489px;
   }
   
-  @media ${theme.media.newTablet660} {
-    left: 60px;
-    top: 91px;
+  @media ${theme.media.tablet} {
+    top: 51px;
+    left: 85px;
+  }
+  
+  @media ${theme.media.newTablet621} {
+    top: 78px;
+    left: 42px;
+  }
+  
+  @media ${theme.media.mobile} {
+    top: 78px;
+    left: 42px;
+    height: 298px;
+    max-width: 446px;
+  }
+  
+  @media ${theme.media.mobile533} {
+    top: 70px;
+    left: 23px;
+  } 
+  
+  @media ${theme.media.mobile507} {
+    height: 331px;
+    max-width: 407px;
+  }
+  
+  @media ${theme.media.mobile470} {
+    height: 355px;
+    max-width: 341px;
+    top: 41px;
+    left: 43px;
+  }
+  @media ${theme.media.mobile438} {
+    left: 25px;
+  }
+  
+  @media ${theme.media.mobileIphone} {
+    left: 19px;
   }
   
 

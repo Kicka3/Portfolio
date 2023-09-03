@@ -45,10 +45,14 @@ export const theme = {
         mobile948: "screen and (max-width: 948px)",
         newTablet895: "screen and (max-width: 895px)",
         newTablet830: "screen and (max-width: 830px)",
-        newTablet660: "screen and (max-width: 660px)",
-
 
         tablet: "screen and (max-width: 768px)",
+        newTablet621: "screen and (max-width: 621px)",
         mobile: "screen and (max-width: 576px)",
+        mobile533: "screen and (max-width: 533px)",
+        mobile507: "screen and (max-width: 507px)",
+        mobile470: "screen and (max-width: 470px)",
+        mobile438: "screen and (max-width: 438px)",
+        mobileIphone: "screen and (max-width: 414px)",
     }
 }
