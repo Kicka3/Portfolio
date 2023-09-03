@@ -90,9 +90,9 @@ const StyledMainDecs = styled.div`
     ${font({family: "Roboto , sans-serif", weight: "400", Fmin: 10, Fmax: 20})};
 
 
-    @media ${theme.media.tablet} {
-      display: none;
-    }
+    // @media ${theme.media.tablet} {
+    //   display: none;
+    // }
 
   }
 

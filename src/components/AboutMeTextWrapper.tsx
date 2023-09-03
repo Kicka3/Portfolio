@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "./FlexWrapper";
 import {CircleIcon} from "./svgIcons/icons/CircleIcon";
-import {BgAboutMeChel} from "./backGrounds/BgAboutMeChel";
 import {theme} from "../styles/Theme";
 import {font} from "../styles/Common";
 
@@ -21,8 +20,16 @@ export const AboutMeTextWrapper = () => {
                     </FlexWrapper>
 
                 </FlexWrapper>
-
             </AboutMeTextWrapperStyled>
+            <AboutEkb>
+                <AboutWrapper>
+                    <AboutMeTextTitles><CircleIcon/> Yekaterinburg is the largest city on the land border between Europe and Asia.</AboutMeTextTitles>
+                    <AboutMeTextTitles><CircleIcon/> Yekaterinburg is the most compact city with a population of one million in the country.</AboutMeTextTitles>
+                    <AboutMeTextTitles><CircleIcon/> The frame for the Statue of Liberty in the USA is made from metal mined in Yekaterinburg.
+                        2022</AboutMeTextTitles>
+                </AboutWrapper>
+            </AboutEkb>
+
         </>
     );
 };
@@ -133,4 +140,38 @@ const AboutMeTextTitles = styled.p`
   //font-family: Roboto, sans-serif;
   //font-size: 19px;
   //font-weight: 400;
+`;
+
+const AboutEkb = styled.div`
+  display: none;
+  
+  @media ${theme.media.newTablet830} {
+    display: block;
+  }
+ 
+`;
+
+const AboutWrapper = styled.div`
+  ${font({family: "Roboto , sans-serif", weight: "400", Fmin: 13, Fmax: 20})};
+  height: 208px;
+  max-width: 517px;
+  width: 100%;
+  left: 232px;
+  bottom: -218px;
+  position: relative;
+  border-radius: 0 100px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(132deg,rgba(255,255,255,0.50) 0%,rgba(0,71,255,0.05) 100%);
+  box-shadow: 0 2px 27px 0 rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap: 12px;
+
+  @media ${theme.media.newTablet794} {
+    display: none;
+  }
+ 
 `;

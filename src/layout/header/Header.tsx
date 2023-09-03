@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
 
-const items = ["Home", "Projects", "About", "Content",];
+// const items = ["Home", "Projects", "About", "Content",];
 
 export const Header = () => {
     return (
@@ -26,4 +26,5 @@ export const Header = () => {
 const StyledHeader = styled.header`
   background-color: #FFF;
   padding: 15px 0;
+  display: none;
 `;

@@ -116,19 +116,19 @@ const MyPhoto = styled.img`
 
 
   @media ${theme.media.newTablet910} {
-    width: 301px;
-    height: 301px;
+    width: 334px;
+    height: 334px;
   }
 
   @media ${theme.media.mobile502} {
     left: 28px;
-    width: 250px;
-    height: 250px;
+    width: 334px;
+    height: 334px;
   }
 
   @media ${theme.media.mobile444} {
-    width: 251px;
-    height: 251px
+    width: 334px;
+    height: 334px;
   ;
   }
 

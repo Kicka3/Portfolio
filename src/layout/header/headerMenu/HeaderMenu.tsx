@@ -38,11 +38,6 @@ export const HeaderMenu = () => {
 };
 
 const StyledHeaderNav = styled.nav`
-  
-  
-    // @media ${theme.media.tablet} {
-    //   display: none;
-    // }
     
     @media ${theme.media.newTablet895} {
       display: none;
