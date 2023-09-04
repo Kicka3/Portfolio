@@ -10,7 +10,8 @@ export const BgDotsWork = () => {
 
 const StyledBgDotsWork = styled.div`
   background-image: url("${BgDots}");
-  width: 413px;
+  max-width: 413px;
+  width: 60%;
   height: 505px;
   position: absolute;
   z-index: 0;

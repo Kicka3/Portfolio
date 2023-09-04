@@ -10,7 +10,7 @@ export const BgImgFooterTwo = () => {
 };
 
 const StyledBgImFooter = styled.div`
-  min-width: 100%;
+  //min-width: 100%;
   max-width: 5000px;
   height: 151px;
   position: relative;
