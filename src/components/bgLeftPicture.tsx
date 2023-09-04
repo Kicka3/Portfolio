@@ -10,7 +10,7 @@ export const BgLeftPicture = () => {
 };
 
 const StyledBgLeftPicture = styled.div`
-  width: 506px;
+  width: 453px;
   height: 946px;
   background-color: ${theme.whiteThemeColors.secondaryBg};
   position: absolute;
@@ -18,13 +18,8 @@ const StyledBgLeftPicture = styled.div`
   left: 0;
   z-index: 0;
 
-  @media ${theme.media.tablet} {
-    width: 506px;
-    height: 683px;
-   
+  @media ${theme.media.mobile1110} {
+    height: 1060px;
   }
-  
-  @media ${theme.media.newTablet730} {
-    display: none;
-  }
+
 `;

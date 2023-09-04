@@ -38,47 +38,28 @@ export const MyMainDecs = () => {
                     </FlexWrapperButtons>
 
                 </FlexWrapperButtons>
-                {/*<IconsWrapp>*/}
-                {/*<Icon color={"#013bd7"} iconId={"arrowR"} width={"20px"} height={"20px"}*/}
-                {/*      viewBox={"0 0 50 50"}/>*/}
-                {/*<Icon color={"#013bd7"} iconId={"downloadMain"} width={"40px"} height={"40px"}*/}
-                {/*      viewBox={"0 0 20 20"}/>*/}
-                {/*</IconsWrapp>*/}
             </FlexWrapper>
         </StyledMainDecs>
     );
 };
 
-// const IconsWrapp = styled.svg`
-//   cursor: pointer;
-//   display: none;
-//   //display: block;
-//   @media ${theme.media.mobile502} {
-//     display: block;
-//     //display: none;
-//   }
-// `;
 
 const StyledMainDecs = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2px;
+  gap: 9px;
   margin-left: 76px;
   font-family: Roboto, sans-serif;
 
-  & h2 {
-    margin-bottom: 10px;
+  & > h2 {
+    margin-top: 0;
+    margin-right: 2px;
     ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 20, Fmax: 55})};
-    // font-size: 55px;
 
-    @media ${theme.media.tablet} {
-      margin-top: 39px;
-    }
-    
   }
 
-  & h1 {
+  & > h1 {
     //font-size: 40px;
     ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 17, Fmax: 40})};
     margin-bottom: 17px;
@@ -89,11 +70,11 @@ const StyledMainDecs = styled.div`
     width: 376px;
     ${font({family: "Roboto , sans-serif", weight: "400", Fmin: 10, Fmax: 20})};
 
+  }
 
-    // @media ${theme.media.tablet} {
-    //   display: none;
-    // }
 
+  @media ${theme.media.mobile1300} {
+    margin-left: 35px;
   }
 
   @media ${theme.media.newTablet910} {
@@ -130,58 +111,23 @@ const FlexWrapperButtons = styled.div`
   gap: 32px;
 
 
-  @media ${theme.media.newTablet910} {
+  @media ${theme.media.mobile1333} {
     gap: 12px;
-    position: absolute;
-    left: 41px;
+    position: relative;
+    left: -2px;
+  } 
+  
+  @media ${theme.media.mobile1300} {
+    left: -17px;
   }
-
-  @media ${theme.media.newTablet850} {
-    left: 26px;
+  
+  @media ${theme.media.mobile1300} {
+    left: -17px;
   }
-
-  @media ${theme.media.newTablet850} {
-    left: 29px;
-  }
-
-  @media ${theme.media.tablet} {
-    left: 58px;
-  }
-
-  @media ${theme.media.newTablet730} {
-    left: 52px;
-  }
-
-  @media ${theme.media.newTablet699} {
-    left: 40px;
-  }
-
-  @media ${theme.media.newTablet646} {
-    left: 29px;
-  }
-
-  @media ${theme.media.newTablet610} {
-    left: 18px;
-  }
-
-  @media ${theme.media.newTablet586} {
-    flex-wrap: wrap;
-    left: 62px;
-    gap: 0;
-  }
-
-  @media ${theme.media.newMobile543} {
-    left: 45px;
-  }
-
-  @media ${theme.media.mobile502} {
-    left: 76px;
-  }
-
-  @media ${theme.media.mobile481} {
-    left: 75px;
-  }
-
+  
+  
+ 
+  
   @media ${theme.media.mobile444} {
     left: 68px;
     
@@ -196,6 +142,4 @@ const FlexWrapperButtons = styled.div`
     }
   }
   
-  @media ${theme.media.mobile493} {
-    left: 57px;
 `;

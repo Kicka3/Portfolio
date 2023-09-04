@@ -35,14 +35,20 @@ export const theme = {
 
     //Media
     media: {
-        mobile1709: "screen and (max-width: 1709px)",
         mobile1433: "screen and (max-width: 1433px)",
-        mobile1350: "screen and (max-width: 1350px)",
-        mobile1274: "screen and (max-width: 1274px)",
+        mobile1345: "screen and (max-width: 1345px)",
+        mobile1333: "screen and (max-width: 1333px)",
+        mobile1300: "screen and (max-width: 1300px)",
+        mobile1249: "screen and (max-width: 1249px)",
         mobile1207: "screen and (max-width: 1207px)",
-        mobile1048: "screen and (max-width: 1048px)",
+        mobile1174: "screen and (max-width: 1174px)",
+        mobile1161: "screen and (max-width: 1161px)",
+        mobile1140: "screen and (max-width: 1140px)",
+        mobile127: "screen and (max-width: 1127px)",
         mobile1060: "screen and (max-width: 1060px)",
+        mobile1110: "screen and (max-width: 1110px)",
         mobile1000: "screen and (max-width: 1000px)",
+
         mobile948: "screen and (max-width: 948px)",
         //Для buttons в mainDecs:
         newTablet910: "screen and (max-width: 910px)",
@@ -52,20 +58,24 @@ export const theme = {
         newTablet850: "screen and (max-width: 850px)",
         newTablet830: "screen and (max-width: 830px)",
         newTablet808: "screen and (max-width: 808px)",
+
         newTablet794: "screen and (max-width: 794px)",
         tablet: "screen and (max-width: 768px)",
         newTablet730: "screen and (max-width: 730px)",
+
         newTablet699: "screen and (max-width: 699px)",
         newTablet677: "screen and (max-width: 677px)",
         newTablet646: "screen and (max-width: 646px)",
         newTablet621: "screen and (max-width: 621px)",
         newTablet610: "screen and (max-width: 610px)",
+
         newTablet586: "screen and (max-width: 585px)",
         mobile: "screen and (max-width: 576px)",
         newMobile543: "screen and (max-width: 543px)",
         mobile533: "screen and (max-width: 533px)",
         mobile507: "screen and (max-width: 507px)",
         mobile502: "screen and (max-width: 502px)",
+
         mobile490: "screen and (max-width: 490px)",
         mobile493: "screen and (max-width: 493px)",
         mobile481: "screen and (max-width: 481px)",
