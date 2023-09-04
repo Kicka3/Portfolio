@@ -68,6 +68,10 @@ const TitleMainWrapper = styled.div`
     @media ${theme.media.tablet} {
       margin-right: 0;
     }
+
+    @media ${theme.media.newTablet730} {
+      margin-top: 27px;
+    }
   }
 
   & h1 {
@@ -81,13 +85,41 @@ const TitleMainWrapper = styled.div`
   @media ${theme.media.mobile1161} {
     height: 477px;
   }
-  
+
   @media ${theme.media.mobile1110} {
     height: 806px;
     margin: 49px 131px 120px 151px;
     & ${FlexWrapper} {
       flex-wrap: wrap;
     }
+  }
+
+  @media ${theme.media.newTablet895} {
+    height: 845px;
+    max-width: 590px;
+  }
+
+  @media ${theme.media.newTablet808} {
+    margin: 49px 83px 120px 92px;
+  }
+
+  @media ${theme.media.newTablet730} {
+    margin: 49px 47px 120px 91px;
+    height: 680px;
+    max-width: 530px;
+  }
+
+  @media ${theme.media.newTablet677} {
+    height: 630px;
+  }
+
+  @media ${theme.media.newTablet610} {
+    border-radius: 20px;
+  }
+
+  @media ${theme.media.mobile507} {
+    margin: 49px 59px 120px 56px;
+    height: 604px;
   }
   
   
@@ -107,24 +139,27 @@ const MyPhoto = styled.img`
     width: 361px;
     height: 361px;
   }
-  
+
   @media ${theme.media.mobile1161} {
     width: 333px;
     height: 333px;
   }
 
-  @media ${theme.media.mobile502} {
-    left: 28px;
-    width: 334px;
-    height: 334px;
+  @media ${theme.media.newTablet895} {
+    margin-top: 27px;
   }
-
-  @media ${theme.media.mobile444} {
-    width: 334px;
-    height: 334px;
-  ;
+  
+  @media ${theme.media.newTablet730} {
+    width: 317px;
+    height: 317px;
+    margin-top: -14px;
   }
-
+  
+  @media ${theme.media.newTablet677} {
+    width: 268px;
+    height: 268px;
+  }
+  
 `;
 
 const StyledLink = styled.a`

@@ -14,6 +14,7 @@ export const theme = {
         aboutColor: "rgba(33, 87, 242, 0.27)",
         locationCityColor: "#8B8B8B",
         bgColorInputContacts: "#F5F5F5",
+        gradientMainWrapper: "linear-gradient(132deg,rgba(255,255,255,0.50) 0%",
     },
     darkThemeColors: {
         darkPrimaryBg: "#222",
@@ -71,6 +72,7 @@ export const theme = {
 
         newTablet586: "screen and (max-width: 585px)",
         mobile: "screen and (max-width: 576px)",
+        mobile560: "screen and (max-width: 560px)",
         newMobile543: "screen and (max-width: 543px)",
         mobile533: "screen and (max-width: 533px)",
         mobile507: "screen and (max-width: 507px)",
@@ -80,7 +82,9 @@ export const theme = {
         mobile493: "screen and (max-width: 493px)",
         mobile481: "screen and (max-width: 481px)",
         mobile470: "screen and (max-width: 470px)",
+        mobile466: "screen and (max-width: 466px)",
         mobile444: "screen and (max-width: 444px)",
+        mobile435: "screen and (max-width: 435px)",
         mobile438: "screen and (max-width: 438px)",
         mobileIphone: "screen and (max-width: 414px)",
     }

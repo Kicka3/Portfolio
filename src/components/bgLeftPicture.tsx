@@ -22,4 +22,25 @@ const StyledBgLeftPicture = styled.div`
     height: 1060px;
   }
 
+  @media ${theme.media.tablet} {
+    width: 400px;
+  }
+
+  @media ${theme.media.newTablet730} {
+    width: 358px;
+    height: 909px;
+  }
+
+  @media ${theme.media.newTablet677} {
+    width: 319px;
+  }
+
+  @media ${theme.media.mobile507} {
+    width: 242px;
+  }
+
+  @media ${theme.media.mobile444} {
+    width: 199px;
+    height: 869px;
+  }
 `;

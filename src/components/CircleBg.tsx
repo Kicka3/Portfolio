@@ -22,8 +22,26 @@ const StyledCircleBg = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media ${theme.media.newTablet808} {
-    display: none;
-    //right: 73px;
+  @media ${theme.media.newTablet730} {
+    right: 91px;
   }
+
+  @media ${theme.media.newTablet677} {
+    right: 66px;
+  }
+
+  @media ${theme.media.newTablet677} {
+    right: 40px;
+  }
+
+  @media ${theme.media.newTablet610} {
+    bottom: -60px;
+    right: 20px;
+  }
+
+  @media ${theme.media.newTablet677} {
+    right: 55px;
+  }
+  
+
 `;

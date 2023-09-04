@@ -6,6 +6,7 @@ import {Icon} from "../icon/icon";
 import {FlexWrapper} from "../FlexWrapper";
 import {theme} from "../../styles/Theme";
 import {font} from "../../styles/Common";
+import {MobileButton} from "../MobileButton";
 
 export const MyMainDecs = () => {
     return (
@@ -32,9 +33,11 @@ export const MyMainDecs = () => {
                                 fSize={"15px"}
                                 borderRadius={"20px"} width={"200px"} height={"54px"}>
                             <div>Download Resume</div>
-                            {/*<span><Icon iconId={"arrowRed"} width={"28px"} height={"28px"}*/}
-                            {/*            viewBox="0 0 28 28"/></span>*/}
                         </Button>
+
+                        <MobileButton text={"See projects"}/>
+                        <MobileButton text={"Download resume"}/>
+
                     </FlexWrapperButtons>
 
                 </FlexWrapperButtons>
@@ -70,6 +73,14 @@ const StyledMainDecs = styled.div`
     width: 376px;
     ${font({family: "Roboto , sans-serif", weight: "400", Fmin: 10, Fmax: 20})};
 
+    @media ${theme.media.tablet} {
+      width: 313px;
+    }
+
+    @media ${theme.media.mobile507} {
+      width: 250px;
+    }
+
   }
 
 
@@ -78,27 +89,19 @@ const StyledMainDecs = styled.div`
   }
 
   @media ${theme.media.newTablet910} {
-    margin-left: -35px;
+    margin-left: 62px;
   }
 
   @media ${theme.media.newTablet850} {
-    margin-left: -27px;
+    margin-left: 48px;
   }
 
-  @media ${theme.media.newTablet830} {
-    margin-left: -2px;
+  @media ${theme.media.mobile507} {
+    margin-left: 30px;
   }
 
-  @media ${theme.media.newTablet887} {
-    margin-left: -2px;
-  }
-
-  @media ${theme.media.newTablet808} {
-    margin-left: 27px;
-  }
-
-  @media ${theme.media.tablet} {
-    margin-left: 21px;
+  @media ${theme.media.mobile435} {
+    margin-left: 17px;
   }
 
 `;
@@ -115,31 +118,14 @@ const FlexWrapperButtons = styled.div`
     gap: 12px;
     position: relative;
     left: -2px;
-  } 
-  
+  }
+
   @media ${theme.media.mobile1300} {
     left: -17px;
   }
-  
-  @media ${theme.media.mobile1300} {
-    left: -17px;
+
+  @media ${theme.media.mobile1110} {
+    left: -3px;
   }
-  
-  
- 
-  
-  @media ${theme.media.mobile444} {
-    left: 68px;
-    
-    & ${FlexWrapper} {
-      font-size: 10px;
-      width: 137px;
-    }
-    
-    &:last-child{
-      font-size: 10px;
-      width: 137px;
-    }
-  }
-  
+
 `;

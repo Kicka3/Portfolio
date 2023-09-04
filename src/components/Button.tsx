@@ -54,17 +54,23 @@ export const StyledButton = styled.a<ButtonsWrapperPropsType>`
   @media ${theme.media.newTablet895} {
     width: 174px;
   }
-
-  @media ${theme.media.tablet} {
-    margin-top: 15px;
+  
+  @media ${theme.media.newTablet677} {
+    margin-top: 22px;
+  }
+  
+  @media ${theme.media.newTablet610} {
+    width: 142px;
+    height: 43px;
+  }
+  
+  @media ${theme.media.mobile466} {
+    //width: 123px;
+    //height: 50px;
+    display: none;
+    
   }
   
   
-  @media ${theme.media.tablet} {
-    &:last-child{
-    background-color: #2157F2;
-      color: #FFF;
-      font-size: 12px;
-    }
-  }
+  
 `;

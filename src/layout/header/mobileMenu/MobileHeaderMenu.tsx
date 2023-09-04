@@ -153,10 +153,7 @@ const Link = styled.a`
   color: ${theme.whiteThemeColors.fontOne};
   position: relative;
   cursor: pointer;
-
-    // @media ${theme.media.tablet} {
-  //   font-size: 50px;
-  // }
+  
 
     @media ${theme.media.newTablet895} {
     font-size: 50px;
