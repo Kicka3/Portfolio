@@ -35,8 +35,17 @@ export const MyMainDecs = () => {
                             <div>Download Resume</div>
                         </Button>
 
-                        <MobileButton text={"See projects"}/>
-                        <MobileButton text={"Download resume"}/>
+                        <MobileButtonsWrapper>
+                            <MobileButton color={"#FFF"}
+                                          background={"#2157F2"}
+                                          borderRadius={"20px"}>
+                                <div>See projects</div>
+                            </MobileButton>
+                            <MobileButton color={"#6C92FF"}
+                                          borderRadius={"20px"}>
+                                <div>Dowload</div>
+                            </MobileButton>
+                        </MobileButtonsWrapper>
 
                     </FlexWrapperButtons>
 
@@ -81,6 +90,10 @@ const StyledMainDecs = styled.div`
       width: 250px;
     }
 
+    @media ${theme.media.mobileIphone} {
+      width: 200px;
+    }
+
   }
 
 
@@ -102,6 +115,14 @@ const StyledMainDecs = styled.div`
 
   @media ${theme.media.mobile435} {
     margin-left: 17px;
+  }
+
+  @media ${theme.media.mobileIphone} {
+    margin-left: 49px;
+  }
+
+  @media ${theme.media.mobileIphone360} {
+    margin-left: 39px;
   }
 
 `;
@@ -127,5 +148,12 @@ const FlexWrapperButtons = styled.div`
   @media ${theme.media.mobile1110} {
     left: -3px;
   }
+  
+`;
 
+const MobileButtonsWrapper = styled.div`
+  display: flex;
+  gap: 5px;
+  position: relative;
+  left: -7px;
 `;

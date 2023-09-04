@@ -60,4 +60,8 @@ const StyledXBgIcon = styled.div`
     left: 260px;
   }
 
+  @media ${theme.media.mobileIphone375} {
+    left: 229px;
+  }
+
 `;

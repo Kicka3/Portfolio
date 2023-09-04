@@ -43,4 +43,9 @@ const StyledBgLeftPicture = styled.div`
     width: 199px;
     height: 869px;
   }
+
+  @media ${theme.media.mobileIphone} {
+    height: 791px;
+    
+  }
 `;

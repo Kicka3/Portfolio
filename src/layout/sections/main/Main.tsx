@@ -121,8 +121,11 @@ const TitleMainWrapper = styled.div`
     margin: 49px 59px 120px 56px;
     height: 604px;
   }
-  
-  
+
+  @media ${theme.media.mobileIphone} {
+    margin: 49px 46px 120px 50px;
+    height: 537px;
+  }
 `;
 
 const MyPhoto = styled.img`
@@ -158,6 +161,12 @@ const MyPhoto = styled.img`
   @media ${theme.media.newTablet677} {
     width: 268px;
     height: 268px;
+  }
+  
+  @media ${theme.media.mobileIphone} {
+    width: 203px;
+    height: 203px;
+    border: 20px solid #FFF;
   }
   
 `;

@@ -42,6 +42,13 @@ const StyledCircleBg = styled.div`
   @media ${theme.media.newTablet677} {
     right: 55px;
   }
-  
 
+  @media ${theme.media.mobileIphone} {
+    width: 120px;
+    height: 120px;
+  }
+  
+  @media ${theme.media.mobileIphone375} {
+    right: 22px;
+  }
 `;
