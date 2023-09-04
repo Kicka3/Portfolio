@@ -42,14 +42,14 @@ export const NewFooter = () => {
                     </SocialList>
                 </FlexWrapper>
 
-                {/*<BgImgFooter/>*/}
-                {/*<BgImgFooterTwo/>*/}
+                <BgImgFooter/>
+                <BgImgFooterTwo/>
                 <StyledSmall>Coded by Oz Kirill</StyledSmall>
                 <Copyright>All Rights Reserved 2023</Copyright>
 
             </Container>
-            <BgImgFooter/>
-            <BgImgFooterTwo/>
+            {/*<BgImgFooter/>*/}
+            {/*<BgImgFooterTwo/>*/}
         </StyledFooter>
     )
         ;

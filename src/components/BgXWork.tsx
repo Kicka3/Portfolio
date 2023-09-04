@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import BgXImg from "../assets/images/BgXWork.png";
+import {theme} from "../styles/Theme";
 
 
 export const BgXWork = () => {
@@ -21,4 +22,9 @@ const StyledBgXWork = styled.div`
   background-position-y: bottom;
   background-position-x: right;
   background-repeat: no-repeat;
+
+  @media ${theme.media.mobileIphone} {
+    width: 253px;
+    height: 226px;
+  }
 `;

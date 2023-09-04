@@ -1,7 +1,6 @@
 import React from 'react';
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import styled from "styled-components";
-import {Button} from "../../../../components/Button";
 import {theme} from "../../../../styles/Theme";
 import {ButtonWorks} from "../../../../components/ButtonWorks";
 
