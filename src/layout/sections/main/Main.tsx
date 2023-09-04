@@ -29,7 +29,7 @@ export const Main = () => {
                 <XBgIcon/>
 
                 <TitleMainWrapper>
-                    <FlexWrapper gap={"0"} wrap={"wrap"}>
+                    <FlexWrapper gap={"0"}>
                         <MyPhoto alt="My Photo"/>
                         <MyMainDecs/>
                     </FlexWrapper>
@@ -74,35 +74,23 @@ const TitleMainWrapper = styled.div`
     margin-bottom: 19px;
   }
 
-  @media ${theme.media.mobile1350} {
-    max-width: 1158px;
-    height: 885px;
-    margin: 114px 131px 30px 151px;
-    padding: 45px;
-    
+  @media ${theme.media.mobile1345} {
+    flex-wrap: wrap;
   }
 
-  @media ${theme.media.mobile1207} {
-    height: 837px;
+  @media ${theme.media.mobile1161} {
+    height: 477px;
   }
-
-  @media ${theme.media.newTablet910} {
-    height: 742px;
-    border-radius: 20px;
+  
+  @media ${theme.media.mobile1110} {
+    height: 806px;
+    margin: 49px 131px 120px 151px;
+    & ${FlexWrapper} {
+      flex-wrap: wrap;
+    }
   }
-
-  @media ${theme.media.tablet} {
-    border-radius: 40px;
-    margin: -9px 60px 3px 86px;
-    height: 672px;
-  }
-  @media ${theme.media.mobile502} {
-    height: 633px;
-    margin: 29px 3px 51px;
-  }
-}
-
-
+  
+  
 `;
 
 const MyPhoto = styled.img`
@@ -115,9 +103,14 @@ const MyPhoto = styled.img`
   background: url("${myImg}") 50% / cover no-repeat, #2157F2;
 
 
-  @media ${theme.media.newTablet910} {
-    width: 334px;
-    height: 334px;
+  @media ${theme.media.mobile1207} {
+    width: 361px;
+    height: 361px;
+  }
+  
+  @media ${theme.media.mobile1161} {
+    width: 333px;
+    height: 333px;
   }
 
   @media ${theme.media.mobile502} {

@@ -22,15 +22,5 @@ const StyledXBgIcon = styled.div`
   left: 563px;
   top: 192px;
 
-  @media ${theme.media.mobile1350} {
-    top: 123px;
-  }
 
-  @media ${theme.media.newTablet677} {
-    display: none;
-  }
-  
-  // @media ${theme.media.newTablet586} {
-  //   display: none;
-  // }
 `;
