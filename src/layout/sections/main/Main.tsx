@@ -164,8 +164,8 @@ const MyPhoto = styled.img`
   }
   
   @media ${theme.media.mobileIphone} {
-    width: 203px;
-    height: 203px;
+    width: 227px;
+    height: 227px;
     border: 20px solid #FFF;
   }
   
