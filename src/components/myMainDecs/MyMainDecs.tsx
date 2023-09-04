@@ -118,7 +118,7 @@ const StyledMainDecs = styled.div`
   }
 
   @media ${theme.media.mobileIphone} {
-    margin-left: 49px;
+    margin-left: 37px;
   }
 
   @media ${theme.media.mobileIphone360} {
