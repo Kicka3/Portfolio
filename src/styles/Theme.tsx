@@ -86,6 +86,7 @@ export const theme = {
         mobile444: "screen and (max-width: 444px)",
         mobile435: "screen and (max-width: 435px)",
         mobile438: "screen and (max-width: 438px)",
+        mobile425: "screen and (max-width: 425px)",
         mobileIphone: "screen and (max-width: 415px)",
         mobileIphone375: "screen and (max-width: 375px)",
         mobileIphone399: "screen and (max-width: 399px)",

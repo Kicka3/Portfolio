@@ -90,12 +90,12 @@ const AboutMeTextWrapperStyled = styled.div`
   } 
   
   @media ${theme.media.mobile507} {
-    height: 331px;
+    height: 300px;
     max-width: 407px;
   }
   
   @media ${theme.media.mobile470} {
-    height: 355px;
+    height: 300px;
     max-width: 341px;
     top: 41px;
     left: 43px;
@@ -105,7 +105,7 @@ const AboutMeTextWrapperStyled = styled.div`
   }
   
   @media ${theme.media.mobileIphone} {
-    left: 19px;
+    left: 13px;
   }
   
 

@@ -23,6 +23,7 @@ const Skills = () => {
                     <Icon iconId={"ts"} width={"60px"} height={"70px"} viewBox={"0 0 120 120"}/>
                     <Icon iconId={"redux"} width={"70px"} height={"70px"} viewBox={"0 0 110 110"}/>
                     <Icon iconId={"Git"} width={"64px"} height={"64px"} viewBox={"0 0 90 90"}/>
+                    <Icon iconId={"styledComponents"} width={"64px"} height={"64px"} viewBox={"0 0 120 120"}/>
                 </FlexWrapper>
             </Container>
         </StyledSkill>
