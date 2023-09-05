@@ -34,7 +34,7 @@ const StyledSlogan = styled.section`
     border-top: 5px solid #EAF9F9;
     border-bottom: 5px solid #EAF9F9;
     padding: 30px 30px 30px 30px;
-    ${font({family: "Lato , sans-serif",weight: "300"})};
+    ${font({family: "Lato , sans-serif", weight: "300"})};
     //font-family: 'Lato', sans-serif;
     //font-weight: 300;
 
