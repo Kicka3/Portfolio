@@ -99,6 +99,19 @@ const StyledFormWrapper = styled.div`
     padding: 49px 62px 34px 58px;
   }
   
+  @media ${theme.media.mobile948} {
+    height: 434px;
+    max-width: 822px;
+    width: 100%;
+    padding: 49px 37px 34px 37px;
+    
+    & > ${FlexWrapper} {
+      gap: 53px;
+    }
+  }
+  
+  
+  
 `;
 
 const InputWrapper = styled.form`

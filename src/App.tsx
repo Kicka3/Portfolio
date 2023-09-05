@@ -20,7 +20,7 @@ function App() {
             <Skills/>
             <Works/>
             <AboutMe/>
-            {/*<Contact/>*/}
+            <Contact/>
             <Slogan/>
             {/*<Footer/>*/}
             <NewFooter/>

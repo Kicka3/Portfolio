@@ -64,6 +64,9 @@ export const theme = {
         tablet: "screen and (max-width: 768px)",
         newTablet730: "screen and (max-width: 730px)",
 
+
+        newTablet768: "screen and (max-width: 768px)",
+
         newTablet699: "screen and (max-width: 699px)",
         newTablet677: "screen and (max-width: 677px)",
         newTablet646: "screen and (max-width: 646px)",
@@ -88,7 +91,7 @@ export const theme = {
         mobile438: "screen and (max-width: 438px)",
         mobile425: "screen and (max-width: 425px)",
         mobileIphone: "screen and (max-width: 415px)",
-        mobileIphone375: "screen and (max-width: 375px)",
+        mobileIphone375: "screen and (max-width: 376px)",
         mobileIphone399: "screen and (max-width: 399px)",
         mobileIphone360: "screen and (max-width: 360px)",
     }
