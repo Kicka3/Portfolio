@@ -60,6 +60,8 @@ const TitleMainWrapper = styled.div`
   height: 507px;
   margin: 188px 131px 251px 151px;
   padding: 45px;
+  position: relative;
+  z-index: 1;
 
   & h2 {
     margin-top: 64px;
