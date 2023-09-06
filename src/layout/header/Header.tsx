@@ -22,7 +22,7 @@ export const Header = () => {
             </Container>
 
             <BgLeftPicture/>
-            <CircleBg/>
+            {/*<CircleBg/>*/}
             <XBgIcon/>
 
         </StyledHeader>

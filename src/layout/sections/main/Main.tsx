@@ -28,8 +28,8 @@ export const Main = () => {
                 {/*</StyledHeader>*/}
                 {/*//Decor*/}
                 {/*<BgLeftPicture/>*/}
-                {/*<CircleBg/>*/}
                 {/*<XBgIcon/>*/}
+                <CircleBg/>
 
                 <TitleMainWrapper>
                     <FlexWrapper gap={"0"}>
