@@ -10,12 +10,14 @@ import {Slogan} from "./layout/sections/slogan/Slogan";
 // import {Footer} from "./layout/Footer/Footer";
 import {NewFooter} from "./layout/Footer/NewFooter";
 import {Header} from "./layout/header/Header";
+import {MobileHeaderMenu} from "./layout/header/mobileMenu/MobileHeaderMenu";
 
 
 function App() {
     return (
         <div className="App">
             <Header/>
+            <MobileHeaderMenu/>
             <Main/>
             <Skills/>
             <Works/>

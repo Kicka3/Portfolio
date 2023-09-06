@@ -17,16 +17,20 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <StyledHeader>
-                    <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
-                        <Logo/>
-                        <HeaderMenu/>
-                        <MobileHeaderMenu/>
-                    </FlexWrapper>
-                </StyledHeader>
-                <BgLeftPicture/>
-                <CircleBg/>
-                <XBgIcon/>
+
+                {/*//WasAHeader*/}
+                {/*<StyledHeader>*/}
+                {/*    <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>*/}
+                {/*        <Logo/>*/}
+                {/*        <HeaderMenu/>*/}
+                {/*        <MobileHeaderMenu/>*/}
+                {/*    </FlexWrapper>*/}
+                {/*</StyledHeader>*/}
+
+                {/*//Decor*/}
+                {/*<BgLeftPicture/>*/}
+                {/*<CircleBg/>*/}
+                {/*<XBgIcon/>*/}
 
                 <TitleMainWrapper>
                     <FlexWrapper gap={"0"}>
