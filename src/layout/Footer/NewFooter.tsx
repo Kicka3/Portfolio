@@ -48,7 +48,7 @@ export const NewFooter = () => {
 
             </Container>
             <BgImgFooter/>
-            <BgImgFooterTwo/>
+            {/*<BgImgFooterTwo/>*/}
         </StyledFooter>
     )
         ;
@@ -56,6 +56,11 @@ export const NewFooter = () => {
 
 const StyledFooter = styled.footer`
 
+  @media ${theme.media.mobile1060} {
+    & ${FlexWrapper} {
+      margin-bottom: 60px;
+    }
+  }
 `;
 
 const SocialList = styled.ul`
@@ -84,7 +89,7 @@ const StyledSmall = styled.small`
   //font-weight: 700;
   z-index: 1;
   position: relative;
-  bottom: -250px;
+  bottom: -209px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +103,7 @@ const Copyright = styled.small`
   //font-size: 12px;
   z-index: 1;
   position: relative;
-  bottom: -252px;
+  bottom: -204px;
   display: flex;
   justify-content: center;
   align-items: center;

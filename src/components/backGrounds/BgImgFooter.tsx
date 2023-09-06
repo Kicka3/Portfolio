@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 // import bgImgFooter from "../../assets/images/footerWave.jpg";
 import bgImgFooter from "../../assets/images/footerWave2.png";
+import {theme} from "../../styles/Theme";
 
 export const BgImgFooter = () => {
     return (
@@ -19,4 +20,16 @@ const StyledBgImFooter = styled.div`
   background-image: url("${bgImgFooter}");
   background-position: center;
   background-size: cover;
+
+  
+  
+  @media ${theme.media.mobile1060} {
+    height: 142px;
+    bottom: -86px;
+  }
+  
+  @media ${theme.media.newTablet768} {
+    height: 111px;
+    bottom: -113px;
+  }
 `;

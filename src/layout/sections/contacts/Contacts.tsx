@@ -12,6 +12,7 @@ import {EmailImg} from "./contactDecs/imgCons/EmailImg";
 import {PhoneImg} from "./contactDecs/imgCons/PhoneImg";
 import {font} from "../../../styles/Common";
 import {HThreeTitle} from "../../../components/H3title";
+import {ContactMobile} from "./contactDecs/imgCons/ContactMobile";
 
 
 export const Contact = () => {
@@ -32,7 +33,7 @@ export const Contact = () => {
                                      wrap={"wrap"}>
                             <InputWrapper>
 
-                                <FlexWrapper  direction={"column"} wrap={"wrap"} gap={"23px"}>
+                                <FlexWrapper direction={"column"} wrap={"wrap"} gap={"23px"}>
                                     <FlexWrapper gap={"7px"}>
                                         <StyledField placeholder={"E-mail"}/>
                                         <StyledField placeholder={"Phone"}/>
@@ -45,46 +46,61 @@ export const Contact = () => {
                             <ButtonSend/>
                         </FlexWrapper>
 
-                        <FlexWrapper gap={"48px"} alignContent={"center"} direction={"column"} justify={"flex-start"}
-                                     align={"flex-start"} wrap={"wrap"}>
-                            <FlexWrapper gap={"26px"}>
-                                <LocationImg/>
-                                <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
-                            </FlexWrapper>
+                        <ContactDecsWrapperDesktop>
+                            <FlexWrapper gap={"48px"} alignContent={"center"} direction={"column"}
+                                         justify={"flex-start"}
+                                         align={"flex-start"} wrap={"wrap"}>
+                                <FlexWrapper gap={"26px"}>
+                                    <LocationImg/>
+                                    <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
+                                </FlexWrapper>
 
-                            <FlexWrapper gap={"26px"}>
-                                <PhoneImg/>
-                                <ContactDecs locTitle={"Phone"} locDesc={"+7912382***4"}/>
-                            </FlexWrapper>
+                                <FlexWrapper gap={"26px"}>
+                                    <PhoneImg/>
+                                    <ContactDecs locTitle={"Phone"} locDesc={"+7912382***4"}/>
+                                </FlexWrapper>
 
-                            <FlexWrapper gap={"26px"}>
-                                <EmailImg/>
-                                <ContactDecs locTitle={"Email"} locDesc={"ozornin_kirill@inbox.ru"}/>
+                                <FlexWrapper gap={"26px"}>
+                                    <EmailImg/>
+                                    <ContactDecs locTitle={"Email"} locDesc={"ozornin_kirill@inbox.ru"}/>
+                                </FlexWrapper>
                             </FlexWrapper>
-                        </FlexWrapper>
-
+                        </ContactDecsWrapperDesktop>
 
                     </FlexWrapper>
                 </StyledFormWrapper>
+
+                <FlexWrapper>
+                    <ContactMobile/>
+                </FlexWrapper>
+
 
             </Container>
         </StyledContacts>
     );
 };
 
+const ContactDecsWrapperDesktop = styled.div`
+  display: block;
+
+  @media ${theme.media.newTablet768} {
+    display: none;
+
+  }
+`;
 
 const StyledContacts = styled.section`
   background: #FFF;
   margin-bottom: 60px;
   margin-top: 61px;
-  
+
   textarea {
     resize: none;
   }
 `;
 
 const StyledFormWrapper = styled.div`
-  height: 462px;
+  //min-height: 462px;
   max-width: 932px;
   width: 100%;
   background: ${theme.whiteThemeColors.primaryBg};
@@ -94,25 +110,39 @@ const StyledFormWrapper = styled.div`
 
 
   @media ${theme.media.mobile948} {
-    height: 434px;
+    //height: 434px;
     max-width: 822px;
     width: 100%;
     padding: 49px 62px 34px 58px;
   }
-  
+
   @media ${theme.media.mobile948} {
-    height: 434px;
+    //height: 434px;
     max-width: 822px;
     width: 100%;
     padding: 49px 37px 34px 37px;
-    
+
     & > ${FlexWrapper} {
       gap: 53px;
     }
+
   }
-  
-  
-  
+
+
+  @media ${theme.media.newTablet768}{
+    max-width: 593px;
+    margin-bottom: 42px;
+
+    & > ${FlexWrapper} {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
+
+
 `;
 
 const InputWrapper = styled.form`
@@ -122,6 +152,9 @@ const InputWrapper = styled.form`
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
+
+ 
+  
 `;
 
 
@@ -135,9 +168,13 @@ const StyledField = styled.input`
   width: 100%;
   border: none;
   padding: 10px 20px 8px 29px;
-  
+
   &:focus-visible {
     outline: 1px solid ${theme.whiteThemeColors.dontForms};
+  }
+
+  @media ${theme.media.mobileIphone375} {
+    width: 44%;
   }
 `;
 
@@ -153,8 +190,19 @@ const StyledFieldMessageTextArea = styled.input`
   border-radius: 9px;
   padding: 17px 25px 17px 29px;
   text-transform: capitalize;
-  
+
   &:focus-visible {
     outline: 1px solid ${theme.whiteThemeColors.dontForms};
   }
+
+  @media ${theme.media.mobile493} {
+    max-width: 341px;
+  }
+  
+  @media ${theme.media.mobileIphone375} {
+    max-width: 300px;
+    position: relative;
+    left: 14px;
+  }
+}
 `;

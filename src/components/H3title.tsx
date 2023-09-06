@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {font} from "../styles/Common";
+import {theme} from "../styles/Theme";
 
 
 
@@ -21,6 +22,13 @@ const StyledHThreeTitle = styled.h3<Omit<HThreeTitlePropsType, 'title'>>`
   margin-bottom: ${props => props.marginB};
   margin-top: ${props => props.marginT};
   line-height: ${props => props.lineH};
+
+  @media ${theme.media.newTablet768} {
+    position: relative;
+    left: 44px;
+  }
   
-  
+  @media ${theme.media.mobile493} {
+    left: 26px;
+  }
 `;

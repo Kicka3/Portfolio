@@ -17,4 +17,6 @@ const StyledBgImFooter = styled.div`
   top: -2px;
   background-size: cover;
   background: transparent url("${bgImgFooterTwo}") no-repeat center;
+  
+  
 `;

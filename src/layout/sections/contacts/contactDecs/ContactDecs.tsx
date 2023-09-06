@@ -2,6 +2,7 @@ import React, {PropsWithChildren} from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
+import {font} from "../../../../styles/Common";
 
 
 type ContactDecsPropsType = {
@@ -23,11 +24,14 @@ export const ContactDecs = (props: PropsWithChildren<ContactDecsPropsType>) => {
 const LocationTitle = styled.p`
   color: ${theme.whiteThemeColors.fontThree};
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 30px;
+  font-weight: 500;
+
 `;
 
 const LocationDesc = styled.p`
   color: ${theme.whiteThemeColors.locationCityColor};
   font-family: Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 22px;
+  font-weight: 500;
 `;
