@@ -11,6 +11,7 @@ import {LocationImg} from "./contactDecs/imgCons/LocationImg";
 import {EmailImg} from "./contactDecs/imgCons/EmailImg";
 import {PhoneImg} from "./contactDecs/imgCons/PhoneImg";
 import {font} from "../../../styles/Common";
+import {HThreeTitle} from "../../../components/H3title";
 
 
 export const Contact = () => {
@@ -24,7 +25,7 @@ export const Contact = () => {
 
 
                 <StyledFormWrapper>
-                    <SectionTitle marginB={"23px"} size={"36px"}>Get in touch</SectionTitle>
+                    <HThreeTitle marginB={"20px"} title={"Get in Touch"}/>
 
                     <FlexWrapper align={"flex-start"} gap={"128px"}>
                         <FlexWrapper gap={"37px"} direction={"column"} justify={"flex-start"} align={"stretch"}
@@ -116,6 +117,11 @@ const StyledFormWrapper = styled.div`
 
 const InputWrapper = styled.form`
   width: 429px;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 

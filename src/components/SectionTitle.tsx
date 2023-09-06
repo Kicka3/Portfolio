@@ -11,7 +11,7 @@ type SectionTitlePropsType = {
 
 export const SectionTitle = styled.h2<SectionTitlePropsType>`
   
-  ${font({family: "Roboto , sans-serif",weight: "700", Fmin: 20, Fmax: 48})};
+  ${font({family: "Roboto , sans-serif",weight: "600", Fmin: 20, Fmax: 48})};
   margin-bottom: ${props => props.marginB || "5px"};
   margin-top: ${props => props.marginT};
   line-height: ${props => props.lineH};

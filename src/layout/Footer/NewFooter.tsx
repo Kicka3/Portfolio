@@ -44,7 +44,7 @@ export const NewFooter = () => {
                 </FlexWrapper>
 
                 <StyledSmall>Coded by Oz Kirill</StyledSmall>
-                <Copyright>All Rights Reserved 2023</Copyright>
+                <Copyright>All Rights Reserved 2023<span> @</span></Copyright>
 
             </Container>
             <BgImgFooter/>
@@ -78,28 +78,34 @@ const SocialLink = styled.a`
 
 const StyledSmall = styled.small`
   color: ${theme.whiteThemeColors.primaryBg};
-  ${font({family: "Inter, sans-serif", weight: "700", Fmin: 13, Fmax: 18})};
+  ${font({family: "Inter, sans-serif", weight: "700", Fmin: 12, Fmax: 16})};
   //font-family: Inter, sans-serif;
   //font-size: 17px;
+  //font-weight: 700;
   z-index: 1;
   position: relative;
   bottom: -250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
   margin-bottom: 8px;
 `;
 
 const Copyright = styled.small`
   color: ${theme.whiteThemeColors.primaryBg};
+  ${font({family: "Inter, sans-serif", weight: "400", Fmin: 8, Fmax: 11})};
+  //font-family: Inter, sans-serif;
+  //font-size: 12px;
   z-index: 1;
   position: relative;
   bottom: -252px;
-  font-family: Inter, sans-serif;
-  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  & > span {
+    ${font({family: "Inter, sans-serif", weight: "700", Fmin: 4, Fmax: 6})};
+      
+  }
 `;
 
