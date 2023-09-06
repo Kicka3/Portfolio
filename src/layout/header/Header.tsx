@@ -33,6 +33,4 @@ export const Header = () => {
 const StyledHeader = styled.header`
   background-color: #FFF;
   padding: 15px 0;
-  //display: none;
-  
 `;

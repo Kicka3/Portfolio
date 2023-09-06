@@ -26,7 +26,6 @@ export const Main = () => {
                 {/*        <MobileHeaderMenu/>*/}
                 {/*    </FlexWrapper>*/}
                 {/*</StyledHeader>*/}
-
                 {/*//Decor*/}
                 {/*<BgLeftPicture/>*/}
                 {/*<CircleBg/>*/}
@@ -45,10 +44,10 @@ export const Main = () => {
 }
 
 
-const StyledHeader = styled.header`
-  background-color: #FFF;
-  padding: 15px 0;
-`;
+// const StyledHeader = styled.header`
+//   background-color: #FFF;
+//   padding: 15px 0;
+// `;
 
 
 const StyledMain = styled.section`
