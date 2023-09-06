@@ -6,6 +6,7 @@ import {BgImgFooter} from "../../components/backGrounds/BgImgFooter";
 import {BgImgFooterTwo} from "../../components/backGrounds/BgImgFooterTwo";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {font} from "../../styles/Common";
 
 
 export const NewFooter = () => {
@@ -42,14 +43,12 @@ export const NewFooter = () => {
                     </SocialList>
                 </FlexWrapper>
 
-                <BgImgFooter/>
-                <BgImgFooterTwo/>
                 <StyledSmall>Coded by Oz Kirill</StyledSmall>
                 <Copyright>All Rights Reserved 2023</Copyright>
 
             </Container>
-            {/*<BgImgFooter/>*/}
-            {/*<BgImgFooterTwo/>*/}
+            <BgImgFooter/>
+            <BgImgFooterTwo/>
         </StyledFooter>
     )
         ;
@@ -79,23 +78,24 @@ const SocialLink = styled.a`
 
 const StyledSmall = styled.small`
   color: ${theme.whiteThemeColors.primaryBg};
-  z-index: 9999999;
+  ${font({family: "Inter, sans-serif", weight: "700", Fmin: 13, Fmax: 18})};
+  //font-family: Inter, sans-serif;
+  //font-size: 17px;
+  z-index: 1;
   position: relative;
-  top: -165px;
+  bottom: -250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Inter, sans-serif;
-  font-size: 17px;
   font-weight: 700;
   margin-bottom: 8px;
 `;
 
 const Copyright = styled.small`
   color: ${theme.whiteThemeColors.primaryBg};
-  z-index: 9999999;
+  z-index: 1;
   position: relative;
-  top: -165px;
+  bottom: -252px;
   font-family: Inter, sans-serif;
   font-size: 12px;
   display: flex;

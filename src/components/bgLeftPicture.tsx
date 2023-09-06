@@ -13,6 +13,9 @@ const StyledBgLeftPicture = styled.div`
   width: 453px;
   height: 946px;
   background-color: ${theme.whiteThemeColors.secondaryBg};
+  //background: var(--gradient-heading,linear-gradient(90deg,#13B0F5 2.60%,#E70FAA 100%));
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
