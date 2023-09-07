@@ -9,7 +9,7 @@ import {BgAboutMeChel} from "../../../components/backGrounds/BgAboutMeChel";
 
 export const AboutMe = () => {
     return (
-        <AboutMeStyled>
+        <AboutMeStyled id={"about"}>
             <Container>
                 <BgColorWrap>
                     <AboutMeTextWrapper/>

@@ -25,7 +25,7 @@ import work8 from "../../../assets/images/Work3.png";
 
 export const Works = () => {
     return (
-        <StyledWorks>
+        <StyledWorks id={"projects"}>
             <Container>
                 <BgDotsWork/>
                 <FlexWrapper wrap={"wrap"} justify={"center"} align={"center"} direction={"column"} gap={"0px"}>

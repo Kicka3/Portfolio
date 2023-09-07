@@ -10,7 +10,7 @@ import {CircleBg} from "../../../components/CircleBg";
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id={"home"}>
             <Container>
 
                 {/*//WasAHeader*/}

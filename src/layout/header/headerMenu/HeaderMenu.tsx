@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
+import {Link} from 'react-scroll';
 
 
 export const HeaderMenu = () => {
@@ -13,23 +14,31 @@ export const HeaderMenu = () => {
                 <StyledHeaderUl>
 
                     <StyledHedLi>
-                        <Link href="#">Home</Link>
+                        <NavLink
+                            to={"home"}
+                            smooth={true}
+                            activeClass="active"
+                            spy={true}>Home</NavLink>
                     </StyledHedLi>
 
                     <StyledHedLi>
-                        <Link href="#">Projects</Link>
+                        <NavLink to={"skills"} smooth={true}>Skills</NavLink>
                     </StyledHedLi>
 
                     <StyledHedLi>
-                        <Link href="#">About</Link>
+                        <NavLink to={"projects"} smooth={true}>Projects</NavLink>
                     </StyledHedLi>
 
                     <StyledHedLi>
-                        <Link href="#">Content</Link>
+                        <NavLink to={"about"} smooth={true}>About</NavLink>
                     </StyledHedLi>
 
                     <StyledHedLi>
-                            <MoonStyled/>
+                        <NavLink to={"contact"} smooth={true}>Contacts</NavLink>
+                    </StyledHedLi>
+
+                    <StyledHedLi>
+                        <MoonStyled/>
                     </StyledHedLi>
                 </StyledHeaderUl>
             </StyledHeadMenu>
@@ -38,12 +47,12 @@ export const HeaderMenu = () => {
 };
 
 const StyledHeaderNav = styled.nav`
-    
-    @media ${theme.media.newTablet895} {
-      display: none;
-    }
-  
-  
+
+  @media ${theme.media.newTablet895} {
+    display: none;
+  }
+
+
 `;
 
 const StyledHeadMenu = styled.menu`
@@ -61,7 +70,7 @@ const StyledHeaderUl = styled.ul`
   @media ${theme.media.mobile1000} {
     gap: 43px;
   }
-  
+
   @media ${theme.media.mobile948} {
     gap: 32px;
 
@@ -69,18 +78,17 @@ const StyledHeaderUl = styled.ul`
 `;
 
 const StyledHedLi = styled.li`
- 
+
 `;
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: ${theme.whiteThemeColors.fontOne};
-  
   position: relative;
   cursor: pointer;
-  
+
   &:after {
     content: "";
     display: block;
@@ -92,8 +100,8 @@ const Link = styled.a`
     background-color: ${theme.whiteThemeColors.fontOne}; /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.5s; /* Время эффекта */
   }
-  
-  &:hover:after {
+
+  &:hover:after, & .active {
     content: "";
     width: 100%;
     display: block;
@@ -102,7 +110,7 @@ const Link = styled.a`
     bottom: -3px;
     height: 2px; /* Высота линии */
     background-color: ${theme.whiteThemeColors.fontOne}; /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
+    transition: width 0.5s; /* Время эффекта */
   }
 `;
 //

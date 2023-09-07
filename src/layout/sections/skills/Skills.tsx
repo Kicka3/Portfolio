@@ -8,7 +8,7 @@ import {Container} from "../../../components/Container";
 
 const Skills = () => {
     return (
-        <StyledSkill>
+        <StyledSkill id={"skills"}>
             <Container>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"50px"}>
                     <SectionTitle marginT={"70px"}>My Tech Stack</SectionTitle>

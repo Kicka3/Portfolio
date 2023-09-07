@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../icon/icon";
+import {animateScroll as scroll} from "react-scroll";
+
 
 export const Logo = () => {
     return (
-        <LinkLogo href="#">
+        <LinkLogo onClick={() => {scroll.scrollToTop()}}>
             <Icon color={"#FFF"} iconId={"headLogo"} height={"60px"} width={"60px"} viewBox={"0 0 60 60"}/>
             {/*<LogoImgWrapper/>*/}
         </LinkLogo>

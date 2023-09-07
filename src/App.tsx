@@ -11,11 +11,13 @@ import {Slogan} from "./layout/sections/slogan/Slogan";
 import {NewFooter} from "./layout/Footer/NewFooter";
 import {Header} from "./layout/header/Header";
 import {MobileHeaderMenu} from "./layout/header/mobileMenu/MobileHeaderMenu";
+import {Partical} from "./components/parctical/Partical";
 
 
 function App() {
     return (
         <div className="App">
+            <Partical/>
             <Header/>
             <MobileHeaderMenu/>
             <Main/>

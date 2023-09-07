@@ -6,6 +6,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {BgLeftPicture} from "../../components/bgLeftPicture";
 import {XBgIcon} from "../../components/xBgIcon";
+import {Partical} from "../../components/parctical/Partical";
 
 
 // const items = ["Home", "Projects", "About", "Content",];

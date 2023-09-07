@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components';
 import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
+import {Link} from "react-scroll";
 
 
 export const MobileHeaderMenu = () => {
@@ -24,19 +25,23 @@ export const MobileHeaderMenu = () => {
                 }}>
                     <ul>
                         <StyledHedLi>
-                            <Link href="#">Home</Link>
+                            <NavLink to={"home"} smooth={true}>Home</NavLink>
                         </StyledHedLi>
 
                         <StyledHedLi>
-                            <Link href="#">Projects</Link>
+                            <NavLink to={"skills"} smooth={true}>Skills</NavLink>
                         </StyledHedLi>
 
                         <StyledHedLi>
-                            <Link href="#">About</Link>
+                            <NavLink to={"projects"} smooth={true}>Projects</NavLink>
                         </StyledHedLi>
 
                         <StyledHedLi>
-                            <Link href="#">Content</Link>
+                            <NavLink to={"about"} smooth={true}>About</NavLink>
+                        </StyledHedLi>
+
+                        <StyledHedLi>
+                            <NavLink to={"contact"} smooth={true}>Content</NavLink>
                         </StyledHedLi>
 
                         <StyledHedLi>
@@ -150,7 +155,7 @@ const StyledHedLi = styled.li`
 
 `;
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   ${font({family: "Roboto , sans-serif", weight: "400", Fmin: 10, Fmax: 16})};
   //font-family: Roboto, sans-serif;
   //font-size: 16px;

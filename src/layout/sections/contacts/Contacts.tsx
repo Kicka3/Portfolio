@@ -17,7 +17,7 @@ import {ContactMobile} from "./contactDecs/imgCons/ContactMobile";
 
 export const Contact = () => {
     return (
-        <StyledContacts>
+        <StyledContacts id={"contact"}>
             <Container>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"65px"}>
                     <SectionTitle size={"32px"}>Contact Us</SectionTitle>
