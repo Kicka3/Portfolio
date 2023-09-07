@@ -19,7 +19,9 @@ export const MobileHeaderMenu = () => {
             </BurgerButton>
 
             <StyledHeadMenu>
-                <MobileMenuPopUp isOpen={menuIsOpen}>
+                <MobileMenuPopUp isOpen={menuIsOpen} onClick={() => {
+                    setmenuIsOpen(false)
+                }}>
                     <ul>
                         <StyledHedLi>
                             <Link href="#">Home</Link>
