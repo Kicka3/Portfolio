@@ -5,7 +5,6 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {BgLeftPicture} from "../../components/bgLeftPicture";
-import {CircleBg} from "../../components/CircleBg";
 import {XBgIcon} from "../../components/xBgIcon";
 
 
