@@ -7,12 +7,25 @@ import {FlexWrapper} from "../FlexWrapper";
 import {theme} from "../../styles/Theme";
 import {font} from "../../styles/Common";
 import {MobileButton} from "../MobileButton";
+import Typewriter from 'typewriter-effect';
+
 
 export const MyMainDecs = () => {
     return (
         <StyledMainDecs>
-            <h2>I’m <Name color={"#2157F2"}> Kirill </Name>Ozornin</h2>
-            <h1>A Web Developer</h1>
+            <MainDescTitle>I’m <Name color={"#2157F2"}> Kirill </Name>Ozornin</MainDescTitle>
+            <MainDescProf>
+                <p>A Web Developer</p>
+                <p>Front-end developer</p>
+                <Typewriter
+                    options={{
+                        strings: ['A Developer', 'A Web Developer.'],
+                        autoStart: true,
+                        loop: true,
+
+                    }}
+                />
+            </MainDescProf>
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ea.
             </span>
@@ -55,6 +68,21 @@ export const MyMainDecs = () => {
     );
 };
 
+const MainDescTitle = styled.h2`
+  margin-top: 0;
+  margin-right: 2px;
+  ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 20, Fmax: 55})};
+`;
+
+const MainDescProf = styled.h1`
+  //font-size: 40px;
+  ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 17, Fmax: 40})};
+  margin-bottom: 17px;
+  
+  p {
+    display: none;
+  }
+`;
 
 const StyledMainDecs = styled.div`
   display: flex;
@@ -64,19 +92,18 @@ const StyledMainDecs = styled.div`
   margin-left: 76px;
   font-family: Roboto, sans-serif;
 
-  & > h2 {
-    margin-top: 0;
-    margin-right: 2px;
-    ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 20, Fmax: 55})};
+  // & > h2 {
+  //   margin-top: 0;
+  //   margin-right: 2px;
+    //   ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 20, Fmax: 55})};
+  //
+  // }
 
-  }
-
-  & > h1 {
-    //font-size: 40px;
-    ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 17, Fmax: 40})};
-    margin-bottom: 17px;
-
-  }
+  // & > h1 {
+  //   //font-size: 40px;
+    //   ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 17, Fmax: 40})};
+  //   margin-bottom: 17px;
+  // }
 
   & > span {
     width: 376px;
@@ -148,7 +175,7 @@ const FlexWrapperButtons = styled.div`
   @media ${theme.media.mobile1110} {
     left: -3px;
   }
-  
+
 `;
 
 const MobileButtonsWrapper = styled.div`
