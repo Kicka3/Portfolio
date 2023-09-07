@@ -6,9 +6,7 @@ import {theme} from "../styles/Theme";
 
 export const XBgIcon = () => {
     return (
-        <StyledXBgIcon>
-
-        </StyledXBgIcon>
+        <StyledXBgIcon/>
     );
 };
 

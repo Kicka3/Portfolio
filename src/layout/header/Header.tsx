@@ -22,7 +22,6 @@ export const Header = () => {
             </Container>
 
             <BgLeftPicture/>
-            {/*<CircleBg/>*/}
             <XBgIcon/>
 
         </StyledHeader>

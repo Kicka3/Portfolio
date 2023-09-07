@@ -4,14 +4,9 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Container} from "../../../components/Container";
 import {MyMainDecs} from "../../../components/myMainDecs/MyMainDecs";
-import {BgLeftPicture} from "../../../components/bgLeftPicture";
-import {Logo} from "../../../components/logo/Logo";
-import {HeaderMenu} from "../../header/headerMenu/HeaderMenu";
-import {CircleBg} from "../../../components/CircleBg";
-import {XBgIcon} from "../../../components/xBgIcon";
-import {MobileHeaderMenu} from "../../header/mobileMenu/MobileHeaderMenu";
 import {theme} from "../../../styles/Theme";
-
+import OBgImg from "../../../assets/images/Ellipse.png"
+import {CircleBg} from "../../../components/CircleBg";
 
 export const Main = () => {
     return (
@@ -29,7 +24,6 @@ export const Main = () => {
                 {/*//Decor*/}
                 {/*<BgLeftPicture/>*/}
                 {/*<XBgIcon/>*/}
-                <CircleBg/>
 
                 <TitleMainWrapper>
                     <FlexWrapper gap={"0"}>
@@ -38,6 +32,7 @@ export const Main = () => {
                     </FlexWrapper>
                 </TitleMainWrapper>
 
+                <CircleBg/>
             </Container>
         </StyledMain>
     );
@@ -65,6 +60,18 @@ const TitleMainWrapper = styled.div`
   padding: 45px;
   position: relative;
   z-index: 1;
+  
+  // &:before {
+  //   content: "";
+  //   background-image: url("${OBgImg}");
+  //   position: absolute;
+  //   width: 152px;
+  //   height: 152px;
+  //   right: -12px;
+  //   bottom: -13px;
+  //   z-index: 0;
+  // }
+
 
   & h2 {
     margin-top: 64px;

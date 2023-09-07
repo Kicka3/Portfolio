@@ -20,6 +20,7 @@ const StyledBgLeftPicture = styled.div`
   top: 0;
   left: 0;
   z-index: 0;
+  background-image: linear-gradient(90deg, #F498AD 25%, #2E9AFF 25% 50%, #FFD829 75%);
 
   @media ${theme.media.mobile1110} {
     height: 1060px;
