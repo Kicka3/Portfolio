@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled, {css} from 'styled-components';
 import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
@@ -6,15 +6,20 @@ import {font} from "../../../styles/Common";
 
 
 export const MobileHeaderMenu = () => {
+    const [menuIsOpen, setmenuIsOpen] = useState(false)
+    const onBurgerBtnClick = () => {
+        setmenuIsOpen(!menuIsOpen)
+    }
+
     return (
         <StyledHeaderNav>
 
-            <BurgerButton isOpen={false}>
+            <BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                 <span></span>
             </BurgerButton>
 
             <StyledHeadMenu>
-                <MobileMenuPopUp isOpen={false}>
+                <MobileMenuPopUp isOpen={menuIsOpen}>
                     <ul>
                         <StyledHedLi>
                             <Link href="#">Home</Link>
@@ -46,17 +51,17 @@ export const MobileHeaderMenu = () => {
 const StyledHeaderNav = styled.nav`
   display: none;
 
-  // @media ${theme.media.tablet} {
+    // @media ${theme.media.tablet} {
   //   display: block;
   // } 
-  
+
   @media ${theme.media.newTablet895} {
     display: block;
   }
-  
+
 `;
 
-const BurgerButton = styled.button<{isOpen: Boolean}>`
+const BurgerButton = styled.button<{ isOpen: Boolean }>`
   position: fixed;
   top: -100px;
   right: -100px;
@@ -77,7 +82,6 @@ const BurgerButton = styled.button<{isOpen: Boolean}>`
     ${props => props.isOpen && css<{ isOpen: Boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
-    
     &::before {
       content: "";
       display: block;
@@ -115,7 +119,7 @@ const StyledHeadMenu = styled.menu`
   z-index: 99999;
 `;
 
-const MobileMenuPopUp = styled.div<{isOpen: Boolean}>`
+const MobileMenuPopUp = styled.div<{ isOpen: Boolean }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -152,9 +156,9 @@ const Link = styled.a`
   color: ${theme.whiteThemeColors.fontOne};
   position: relative;
   cursor: pointer;
-  
 
-    @media ${theme.media.newTablet895} {
+
+  @media ${theme.media.newTablet895} {
     font-size: 50px;
   }
 

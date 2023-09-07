@@ -18,10 +18,10 @@ export const Header = () => {
                     <Logo/>
                     <HeaderMenu/>
                 </FlexWrapper>
-            </Container>
+                </Container>
 
-            <BgLeftPicture/>
-            <XBgIcon/>
+                <BgLeftPicture/>
+                <XBgIcon/>
 
         </StyledHeader>
     );
