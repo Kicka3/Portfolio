@@ -10,18 +10,19 @@ export const BgLeftPicture = () => {
 };
 
 const StyledBgLeftPicture = styled.div`
-  width: 453px;
+  min-width: 453px;
+  width: 100%;
   height: 946px;
   background-color: ${theme.whiteThemeColors.secondaryBg};
-  //background: var(--gradient-heading,linear-gradient(90deg,#13B0F5 2.60%,#E70FAA 100%));
-  //-webkit-background-clip: text;
-  //-webkit-text-fill-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: linear-gradient(90deg, #F498AD 25%, #2E9AFF 25% 50%, #FFD829 75%);
-
+  background-image: linear-gradient(90deg,#ffffff 12%,#A6BCFA 11% 35%,#ffffff 33%);
+  //background: var(--gradient-heading,linear-gradient(90deg,#13B0F5 2.60%,#E70FAA 100%));
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
+  
   @media ${theme.media.mobile1110} {
     height: 1060px;
   }
@@ -50,6 +51,6 @@ const StyledBgLeftPicture = styled.div`
 
   @media ${theme.media.mobileIphone} {
     height: 791px;
-    
+
   }
 `;
