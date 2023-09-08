@@ -17,7 +17,7 @@ import {Partical} from "./components/parctical/Partical";
 function App() {
     return (
         <div className="App">
-            <Partical/>
+            {/*<Partical/>*/}
             <Header/>
             <MobileHeaderMenu/>
             <Main/>

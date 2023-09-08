@@ -4,6 +4,7 @@ export const theme = {
         primaryBg: "#FFF",
         secondaryBg: "#A6BCFA",
         accent: "#2350D6",
+        goTopBtn: "#A5BBF8",
         //Font's colors
         fontOne: "#393939",
         fontTwo: "#1F1F1F",

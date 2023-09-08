@@ -7,6 +7,7 @@ import {BgImgFooterTwo} from "../../components/backGrounds/BgImgFooterTwo";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {font} from "../../styles/Common";
+import {GoTop} from "../../components/goTop/GoTop";
 
 
 export const NewFooter = () => {
@@ -45,7 +46,7 @@ export const NewFooter = () => {
 
                 <StyledSmall>Coded by Oz Kirill</StyledSmall>
                 <Copyright>All Rights Reserved 2023<span> @</span></Copyright>
-
+            <GoTop/>
             </Container>
             <BgImgFooter/>
             {/*<BgImgFooterTwo/>*/}
