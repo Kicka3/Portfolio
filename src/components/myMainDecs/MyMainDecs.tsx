@@ -175,7 +175,6 @@ const FlexWrapperButtons = styled.div`
   @media ${theme.media.mobile1110} {
     left: -3px;
   }
-
 `;
 
 const MobileButtonsWrapper = styled.div`
