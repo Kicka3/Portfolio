@@ -46,7 +46,6 @@ export const NewFooter = () => {
 
                 <StyledSmall>Coded by Oz Kirill</StyledSmall>
                 <Copyright>All Rights Reserved 2023<span> @</span></Copyright>
-            <GoTop/>
             </Container>
             <BgImgFooter/>
             {/*<BgImgFooterTwo/>*/}

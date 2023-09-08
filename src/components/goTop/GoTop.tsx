@@ -2,24 +2,29 @@ import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../icon/icon";
 import {theme} from "../../styles/Theme";
+import {animateScroll as scroll} from "react-scroll";
 
 export const GoTop = () => {
    return (
       <StyledGoTop>
-            <Icon iconId={"goTop"} height={"40px"} width={"40px"} viewBox={"0 0 40 40"} color={theme.whiteThemeColors.primaryBg}/>
+            <Icon iconId={"arrowR"} height={"30px"} width={"30px"} viewBox={"0 0 30 30"} color={theme.whiteThemeColors.goTopBtn}/>
       </StyledGoTop>
    );
 };
 
 const StyledGoTop = styled.button`
-  cursor: pointer;
-   width: 61px;
-   height: 201px;
-   filter: drop-shadow(2px 1px 14px rgba(0, 0, 0, 0.10));
-   background-color: ${theme.whiteThemeColors.goTopBtn};
-   
+   background-color: transparent;
+   transform: rotate(-90deg);
+   text-align: center;
+   border: none;
+   cursor: pointer;
+   padding: 8px;
    position: fixed;
-   z-index: 1;
-   bottom: 314px;
-   left: 0;
+   bottom: 280px;
+   right: 30px;
+   transition: all 0.2s ease 0s;
+   
+   &:hover {
+      transform: rotate(-90deg) scale(1.2)
+   }
 `;

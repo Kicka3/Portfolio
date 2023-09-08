@@ -12,6 +12,8 @@ import {NewFooter} from "./layout/Footer/NewFooter";
 import {Header} from "./layout/header/Header";
 import {MobileHeaderMenu} from "./layout/header/mobileMenu/MobileHeaderMenu";
 import {Partical} from "./components/parctical/Partical";
+import {GoTop} from "./components/goTop/GoTop";
+import React from "react";
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
             <Slogan/>
             {/*<Footer/>*/}
             <NewFooter/>
+            <GoTop/>
         </div>
     );
 }

@@ -2,16 +2,12 @@
     <g>
 
         <g id="goTop">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="currentColor">
-                <g clip-path="url(#clip0_20_2005)">
-                    <rect width="30" height="30" fill="transparent" fill-opacity="0.3"/>
-                    <path d="M13.8072 11.2806V22H16.1928V11.2806L21.3134 16.0812L23 14.5L15 7L7 14.5L8.6866 16.0812L13.8072 11.2806Z" fill="white"/>
-                </g>
-                <defs>
-                    <clipPath id="clip0_20_2005">
-                        <rect width="30" height="30" fill="white"/>
-                    </clipPath>
-                </defs>
+
+        </g>
+
+        <g id="goTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="currentColor">
+                <path d="M6.80722 4.2806V15H9.19278V4.2806L14.3134 9.08118L16 7.5L8 0L0 7.5L1.6866 9.08118L6.80722 4.2806Z" fill="white"/>
             </svg>
         </g>
 
@@ -69,7 +65,7 @@
             xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M2.33334 14.0002C2.33334 13.3559 2.85568 12.8335 3.5 12.8335H24.5C25.1443 12.8335 25.6667 13.3559 25.6667 14.0002C25.6667 14.6446 25.1443 15.1669 24.5 15.1669H3.5C2.85568 15.1669 2.33334 14.6446 2.33334 14.0002Z"
-                  fill="white"/>
+                  fill="currentColor"/>
             <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M16.6751 6.1752C17.1306 5.71959 17.8694 5.71959 18.325 6.1752L25.325 13.1753C25.7805 13.6308 25.7805 14.3696 25.325 14.8252L18.325 21.8252C17.8694 22.2807 17.1306 22.2807 16.6751 21.8252C16.2195 21.3696 16.2195 20.6308 16.6751 20.1753L22.8501 14.0002L16.6751 7.82512C16.2195 7.3695 16.2195 6.63082 16.6751 6.1752Z"
                   fill="currentColor"/>
