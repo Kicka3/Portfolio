@@ -4,7 +4,6 @@ import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {ButtonWorks} from "../../../../components/ButtonWorks";
 
-
 type WorkPropsType = {
     title?: string,
     text?: string,
@@ -14,7 +13,6 @@ type WorkPropsType = {
 
 export const Work = (props: WorkPropsType) => {
     return (
-
         <StyledWork src={props.src}>
 
             <WorkCardsWrapper>
@@ -22,20 +20,19 @@ export const Work = (props: WorkPropsType) => {
                 <FlexWrapper justify={"flex-start"} gap={"21px"}>
                     <FlexWrapper justify={"space-between"} gap={"11px"}>
                         <ButtonWorks href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
-                                background={"#2157F2"}
-                                borderRadius={"12px"} width={"109px"} height={"29px"}>
+                                     background={"#2157F2"}
+                                     borderRadius={"12px"} width={"109px"} height={"29px"}>
                             <span>Live Preview</span>
                         </ButtonWorks>
                     </FlexWrapper>
 
                     <FlexWrapper gap={"11px"}>
                         <ButtonWorks href={"#"} padding={"1px 5px"} fSize={"14px"} color={"#FFF"}
-                                background={"#2157F2"}
-                                borderRadius={"12px"} width={"109px"} height={"29px"}>
+                                     background={"#2157F2"}
+                                     borderRadius={"12px"} width={"109px"} height={"29px"}>
                             <span>View Code</span>
                         </ButtonWorks>
                     </FlexWrapper>
-
                 </FlexWrapper>
             </WorkCardsWrapper>
 

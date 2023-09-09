@@ -4,32 +4,46 @@ import {FlexWrapper} from "./FlexWrapper";
 import {CircleIcon} from "./svgIcons/icons/CircleIcon";
 import {theme} from "../styles/Theme";
 import {font} from "../styles/Common";
+import {Fade} from "react-awesome-reveal";
+
 
 export const AboutMeTextWrapper = () => {
     return (
         <>
             <AboutMeTextWrapperStyled>
                 <FlexWrapper direction={"row"} gap={"0px"} align={"center"} wrap={"wrap"} justify={"flex-start"}>
-                    <AboutMeTextStyled>I'm <span>Kirill</span> Ozornin</AboutMeTextStyled>
-
+                    <Fade cascade={true}
+                          damping={0.2}
+                          direction={"down"}
+                    >
+                        <AboutMeTextStyled>I'm <span>Kirill</span> Ozornin</AboutMeTextStyled>
+                    </Fade>
                     <FlexWrapper wrap={"wrap"} direction={"column"} align={"start"} justify={"start"} gap={"26px"}>
-                        <AboutMeTextTitles><CircleIcon/> I was born in Ekaterinburg</AboutMeTextTitles>
-                        <AboutMeTextTitles><CircleIcon/> I’m 25 years old</AboutMeTextTitles>
-                        <AboutMeTextTitles><CircleIcon/> I have started my interest in this field from
-                            2022</AboutMeTextTitles>
+                        <Fade cascade={true}
+                              damping={0.2}
+                              direction={"left"}
+                        >
+                            <AboutMeTextTitles><CircleIcon/> I was born in Ekaterinburg</AboutMeTextTitles>
+                            <AboutMeTextTitles><CircleIcon/> I’m 25 years old</AboutMeTextTitles>
+                            <AboutMeTextTitles><CircleIcon/> I have started my interest in this field from
+                                2022</AboutMeTextTitles>
+                        </Fade>
                     </FlexWrapper>
+                    {/*</Fade>*/}
 
                 </FlexWrapper>
             </AboutMeTextWrapperStyled>
             <AboutEkb>
                 <AboutWrapper>
-                    <AboutMeTextTitles><CircleIcon/> Yekaterinburg is the largest city on the land border between Europe and Asia.</AboutMeTextTitles>
-                    <AboutMeTextTitles><CircleIcon/> Yekaterinburg is the most compact city with a population of one million in the country.</AboutMeTextTitles>
-                    <AboutMeTextTitles><CircleIcon/> The frame for the Statue of Liberty in the USA is made from metal mined in Yekaterinburg.
+                    <AboutMeTextTitles><CircleIcon/> Yekaterinburg is the largest city on the land border between
+                        Europe and Asia.</AboutMeTextTitles>
+                    <AboutMeTextTitles><CircleIcon/> Yekaterinburg is the most compact city with a population of one
+                        million in the country.</AboutMeTextTitles>
+                    <AboutMeTextTitles><CircleIcon/> The frame for the Statue of Liberty in the USA is made from
+                        metal mined in Yekaterinburg.
                         2022</AboutMeTextTitles>
                 </AboutWrapper>
             </AboutEkb>
-
         </>
     );
 };
@@ -57,7 +71,7 @@ const AboutMeTextWrapperStyled = styled.div`
     top: 25px;
     left: 44px;
   }
-  
+
   @media ${theme.media.newTablet830} {
     display: flex;
     align-items: center;
@@ -66,34 +80,34 @@ const AboutMeTextWrapperStyled = styled.div`
     height: 280px;
     max-width: 489px;
   }
-  
+
   @media ${theme.media.tablet} {
     top: 51px;
     left: 85px;
   }
-  
+
   @media ${theme.media.newTablet621} {
     top: 78px;
     left: 42px;
   }
-  
+
   @media ${theme.media.mobile} {
     top: 78px;
     left: 42px;
     height: 298px;
     max-width: 446px;
   }
-  
+
   @media ${theme.media.mobile533} {
     top: 70px;
     left: 23px;
-  } 
-  
+  }
+
   @media ${theme.media.mobile507} {
     height: 300px;
     max-width: 407px;
   }
-  
+
   @media ${theme.media.mobile470} {
     height: 300px;
     max-width: 341px;
@@ -103,17 +117,17 @@ const AboutMeTextWrapperStyled = styled.div`
   @media ${theme.media.mobile438} {
     left: 25px;
   }
-  
+
   @media ${theme.media.mobileIphone375} {
     left: 12px;
     height: 304px;
     max-width: 316px;
   }
-  
+
   @media ${theme.media.mobileIphone} {
     left: 13px;
   }
-  
+
 
 `;
 
@@ -133,7 +147,7 @@ const AboutMeTextStyled = styled.h2`
   @media ${theme.media.newTablet830} {
     margin: 6px 51px 22px 59px;
   }
-  
+
 `;
 
 const AboutMeTextTitles = styled.p`
@@ -150,11 +164,11 @@ const AboutMeTextTitles = styled.p`
 
 const AboutEkb = styled.div`
   display: none;
-  
+
   @media ${theme.media.newTablet830} {
     display: block;
   }
- 
+
 `;
 
 const AboutWrapper = styled.div`
@@ -167,8 +181,8 @@ const AboutWrapper = styled.div`
   position: relative;
   border-radius: 0 100px;
   backdrop-filter: blur(10px);
-  background: linear-gradient(132deg,rgba(255,255,255,0.50) 0%,rgba(0,71,255,0.05) 100%);
-  box-shadow: 0 2px 27px 0 rgba(0,0,0,0.05);
+  background: linear-gradient(132deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 71, 255, 0.05) 100%);
+  box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -179,5 +193,5 @@ const AboutWrapper = styled.div`
   @media ${theme.media.newTablet794} {
     display: none;
   }
- 
+
 `;

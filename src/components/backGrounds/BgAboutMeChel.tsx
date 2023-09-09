@@ -4,9 +4,10 @@ import bgChel from "../../assets/images/Chel.png"
 import {theme} from "../../styles/Theme";
 
 
-export  const BgAboutMeChel = () => {
+export const BgAboutMeChel = () => {
     return (
         <StyledBgAboutMeChel/>
+
     );
 };
 
@@ -38,26 +39,26 @@ const StyledBgAboutMeChel = styled.div`
   @media ${theme.media.newTablet830} {
     display: none;
   }
-  
+
   @media ${theme.media.newTablet794} {
     display: block;
     top: -42%;
     left: 48%;
     height: 351px;
   }
-  
+
   @media ${theme.media.newTablet621} {
     top: -37%;
     left: 45%;
     height: 313px;
   }
-  
+
   @media ${theme.media.mobile425} {
     top: -33%;
     left: 23%;
     height: 276px;
   }
-  
+
 
 
 `;

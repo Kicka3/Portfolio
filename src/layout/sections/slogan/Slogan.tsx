@@ -27,8 +27,8 @@ const StyledSlogan = styled.section`
   border-top: 5px solid #EAF9F9;
   border-bottom: 5px solid #EAF9F9;
   padding: 15px;
-  
-  
+
+
   & div {
     background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
     //background-clip: text;
@@ -40,7 +40,8 @@ const StyledSlogan = styled.section`
     //padding: 15px;
 
   }
-  ${font({family: "Roboto, sans-serif",weight: "700", Fmin: 10, Fmax: 58})};
+
+  ${font({family: "Roboto, sans-serif", weight: "700", Fmin: 10, Fmax: 58})};
   //font-family: Roboto, sans-serif;
   font-style: normal;
   letter-spacing: -1px;

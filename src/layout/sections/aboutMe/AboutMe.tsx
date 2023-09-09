@@ -7,6 +7,7 @@ import {theme} from "../../../styles/Theme";
 import {BgAboutMeChel} from "../../../components/backGrounds/BgAboutMeChel";
 
 
+
 export const AboutMe = () => {
     return (
         <AboutMeStyled id={"about"}>
@@ -14,7 +15,7 @@ export const AboutMe = () => {
                 <BgColorWrap>
                     <AboutMeTextWrapper/>
                 </BgColorWrap>
-            <BgAboutMeChel/>
+                <BgAboutMeChel/>
             </Container>
         </AboutMeStyled>
     );

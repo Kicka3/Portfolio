@@ -9,6 +9,9 @@ import {Container} from "../../../components/Container";
 import {BgDotsWork} from "../../../components/BgDotsWork";
 import {BgXWork} from "../../../components/BgXWork";
 
+import {Fade} from "react-awesome-reveal";
+
+
 import work1 from "../../../assets/images/Work1.png";
 import work2 from "../../../assets/images/Work2.png";
 import work3 from "../../../assets/images/Work3.png";
@@ -17,8 +20,6 @@ import work5 from "../../../assets/images/Work4.png";
 import work6 from "../../../assets/images/Work1.png";
 import work7 from "../../../assets/images/Work2.png";
 import work8 from "../../../assets/images/Work3.png";
-
-
 
 
 // const worksItems = ["All", "Landing page", "react", "SPA",];
@@ -35,6 +36,10 @@ export const Works = () => {
                     <BgXWork/>
 
                     <FlexWrapper gap={"34px"} wrap={"wrap"}>
+                        <Fade cascade={true}
+                              damping={0.2}
+                              direction={"right"}
+                        >
                         <Work src={work1} title={"Project Tile goes here"}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                         <Work src={work2} title={"Project Tile goes here"}
@@ -51,7 +56,8 @@ export const Works = () => {
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                         <Work src={work8} title={"Project Tile goes here"}
                               text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                    </FlexWrapper>
+                        </Fade>
+                        </FlexWrapper>
 
                 </FlexWrapper>
             </Container>
