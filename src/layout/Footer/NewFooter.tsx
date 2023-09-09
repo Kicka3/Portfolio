@@ -72,7 +72,7 @@ const SocialList = styled.ul`
 const SocialItem = styled.li`
 `;
 
-const SocialLink = styled.a`
+export const SocialLink = styled.a`
   cursor: pointer;
   transition: ${theme.animations.transaction};
   

@@ -4,6 +4,8 @@ import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
 import {Link} from "react-scroll";
+import {SocialLink} from "../../Footer/NewFooter";
+import {Icon} from "../../../components/icon/icon";
 
 
 export const MobileHeaderMenu = () => {
@@ -23,31 +25,40 @@ export const MobileHeaderMenu = () => {
                 <MobileMenuPopUp isOpen={menuIsOpen} onClick={() => {
                     setmenuIsOpen(false)
                 }}>
-                    <ul>
-                        <StyledHedLi>
+                    <MenuItemsUl role={"menu"} aria-label={"Menu"}>
+                        <StyledHedLi role={"menuitem"}>
                             <NavLink to={"home"} smooth={true}>Home</NavLink>
                         </StyledHedLi>
 
-                        <StyledHedLi>
+                        <StyledHedLi role={"menuitem"}>
                             <NavLink to={"skills"} smooth={true}>Skills</NavLink>
                         </StyledHedLi>
 
-                        <StyledHedLi>
+                        <StyledHedLi role={"menuitem"}>
                             <NavLink to={"projects"} smooth={true}>Projects</NavLink>
                         </StyledHedLi>
 
-                        <StyledHedLi>
+                        <StyledHedLi role={"menuitem"}>
                             <NavLink to={"about"} smooth={true}>About</NavLink>
                         </StyledHedLi>
 
-                        <StyledHedLi>
+                        <StyledHedLi role={"menuitem"}>
                             <NavLink to={"contact"} smooth={true}>Content</NavLink>
                         </StyledHedLi>
 
-                        <StyledHedLi>
-                            <MoonStyled/>
-                        </StyledHedLi>
-                    </ul>
+                        {/*<StyledHedLi>*/}
+                        {/*    <MoonStyled/>*/}
+                        {/*</StyledHedLi>*/}
+                    </MenuItemsUl>
+
+                        <IconsMobileMenuUl>
+                            <IconListLi>
+                                <SocialLink>
+                                    <Icon iconId={"Git"} height={"20px"} width={"20px"} viewBox={"0 0 20 20"}/>
+                                </SocialLink>
+                            </IconListLi>
+                        </IconsMobileMenuUl>
+
                 </MobileMenuPopUp>
 
             </StyledHeadMenu>
@@ -129,7 +140,12 @@ const MobileMenuPopUp = styled.div<{ isOpen: Boolean }>`
   bottom: 0;
   z-index: 999999;
   background-color: rgba(166, 188, 250, 92%);
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  gap: 40px;
 
   ${props => props.isOpen && css<{ isOpen: Boolean }>`
     display: flex;
@@ -144,6 +160,10 @@ const MobileMenuPopUp = styled.div<{ isOpen: Boolean }>`
     ${font({Fmax: 10, Fmin: 16})};
     //font-size: 16px;
   }
+`;
+
+const MenuItemsUl = styled.ul`
+
 `;
 
 const StyledHedLi = styled.li`
@@ -188,3 +208,11 @@ const NavLink = styled(Link)`
   }
 `;
 
+
+const IconsMobileMenuUl = styled.ul`
+
+`;
+
+const IconListLi = styled.li`
+
+`;
