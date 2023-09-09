@@ -3,11 +3,11 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Icon} from "../../components/icon/icon";
 import {BgImgFooter} from "../../components/backGrounds/BgImgFooter";
-import {BgImgFooterTwo} from "../../components/backGrounds/BgImgFooterTwo";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {font} from "../../styles/Common";
-import {GoTop} from "../../components/goTop/GoTop";
+import {Fade} from "react-awesome-reveal";
+import {Zoom} from "react-awesome-reveal";
 
 
 export const NewFooter = () => {
@@ -17,36 +17,52 @@ export const NewFooter = () => {
 
                 <FlexWrapper wrap={"wrap"} marginB={"195px"} marginT={"90px"}>
                     <SocialList>
+                        <Fade cascade={true}
+                              damping={0.2}
+                              direction={"left"}
+                        >
+                            <SocialItem>
+                                <SocialLink href={"https://vk.com/yareyaredaz"} target="_blank">
+                                    <Icon color={theme.iconsColor.vkFooter} iconId={"vkFooter"} height={"50px"}
+                                          width={"50px"} viewBox={"0 0 16 16"}/>
+                                </SocialLink>
+                            </SocialItem>
 
-                        <SocialItem>
-                            <SocialLink href={"https://vk.com/yareyaredaz"} target="_blank">
-                                <Icon color={theme.iconsColor.vkFooter} iconId={"vkFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
-                            </SocialLink>
-                        </SocialItem>
+                            <SocialItem>
+                                <SocialLink href={"https://www.linkedin.com/in/kirill-ozornin-904768264/"}
+                                            target="_blank">
+                                    <Icon color={theme.iconsColor.linkedInFooter} iconId={"linkedInFooter"}
+                                          height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
+                                </SocialLink>
+                            </SocialItem>
+                        </Fade>
 
-                        <SocialItem>
-                            <SocialLink href={"https://www.linkedin.com/in/kirill-ozornin-904768264/"} target="_blank">
-                                <Icon color={theme.iconsColor.linkedInFooter} iconId={"linkedInFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
-                            </SocialLink>
-                        </SocialItem>
+                        <Fade cascade={true}
+                              damping={0.1}
+                              direction={"right"}
+                        >
+                            <SocialItem>
+                                <SocialLink
+                                    href={"https://wa.me/79193822014?text=Здравствуйте,%20давайте%20заинтересовало%20Ваше%20резюме,%20давайте%20кодить%20вместе!%20"}
+                                    target="_blank">
+                                    <Icon color={theme.iconsColor.whatUpFooter} iconId={"whatsUpFooter"} height={"50px"}
+                                          width={"50px"} viewBox={"0 0 16 16"}/>
+                                </SocialLink>
+                            </SocialItem>
 
-                        <SocialItem>
-                            <SocialLink href={"https://wa.me/79193822014?text=Здравствуйте,%20давайте%20заинтересовало%20Ваше%20резюме,%20давайте%20кодить%20вместе!%20"} target="_blank">
-                            <Icon color={theme.iconsColor.whatUpFooter} iconId={"whatsUpFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
-                            </SocialLink>
-                        </SocialItem>
+                            <SocialItem>
+                                <SocialLink href={"https://t.me/Kesarcjer/"} target="_blank">
+                                    <Icon color={theme.iconsColor.telegramFooter} iconId={"telegramFooter"}
+                                          height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
+                                </SocialLink>
+                            </SocialItem>
 
-                        <SocialItem>
-                            <SocialLink href={"https://t.me/Kesarcjer/"} target="_blank">
-                                <Icon color={theme.iconsColor.telegramFooter} iconId={"telegramFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
-                            </SocialLink>
-                        </SocialItem>
-
-                        <SocialItem>
-                            <SocialLink href={"https://github.com/Kicka3/"} target="_blank">
-                                <Icon iconId={"Git"} height={"50px"} width={"50px"} viewBox={"0 0 90 90"}/>
-                            </SocialLink>
-                        </SocialItem>
+                            <SocialItem>
+                                <SocialLink href={"https://github.com/Kicka3/"} target="_blank">
+                                    <Icon iconId={"Git"} height={"50px"} width={"50px"} viewBox={"0 0 90 90"}/>
+                                </SocialLink>
+                            </SocialItem>
+                        </Fade>
                     </SocialList>
                 </FlexWrapper>
 
@@ -54,7 +70,6 @@ export const NewFooter = () => {
                 <Copyright>All Rights Reserved 2023<span> @</span></Copyright>
             </Container>
             <BgImgFooter/>
-            {/*<BgImgFooterTwo/>*/}
         </StyledFooter>
     )
         ;
@@ -81,7 +96,7 @@ const SocialItem = styled.li`
 export const SocialLink = styled.a`
   cursor: pointer;
   transition: ${theme.animations.transaction};
-  
+
   &:hover svg {
     color: ${theme.iconsColor.hoverTelegramFooter};
     transform: translateY(-5px);
@@ -114,10 +129,10 @@ const Copyright = styled.small`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   & > span {
     ${font({family: "Inter, sans-serif", weight: "700", Fmin: 4, Fmax: 6})};
-      
+
   }
 `;
 

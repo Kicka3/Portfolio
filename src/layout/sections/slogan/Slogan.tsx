@@ -4,7 +4,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {font} from "../../../styles/Common";
-
+import {Fade} from "react-awesome-reveal";
 
 export const Slogan = () => {
     return (
@@ -12,8 +12,18 @@ export const Slogan = () => {
             <Container>
                 <FlexWrapper>
                     <SectionTitle>
+                        <Fade cascade={true}
+                              damping={0.2}
+                              direction={"left"}
+                        >
                             <p>When we will code?</p>
+                        </Fade>
+                        <Fade cascade={true}
+                              damping={0.2}
+                              direction={"right"}
+                        >
                             <footer>— <cite>Timothy John</cite></footer>
+                        </Fade>
                     </SectionTitle>
                 </FlexWrapper>
             </Container>
