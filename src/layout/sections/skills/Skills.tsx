@@ -5,6 +5,8 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {Icon} from "../../../components/icon/icon";
 import {Container} from "../../../components/Container";
+import {Fade} from "react-awesome-reveal";
+
 
 const Skills = () => {
     return (
@@ -15,15 +17,28 @@ const Skills = () => {
                     <CircleIcon/>
                 </FlexWrapper>
                 <FlexWrapper wrap={"wrap"} gap={"60px"}>
-                    <Icon iconId={"css"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"html"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"js"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"githubFill"} width={"80px"} height={"75px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"react"} width={"70px"} height={"80px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"ts"} width={"60px"} height={"70px"} viewBox={"0 0 120 120"}/>
-                    <Icon iconId={"redux"} width={"70px"} height={"70px"} viewBox={"0 0 110 110"}/>
-                    <Icon iconId={"Git"} width={"64px"} height={"64px"} viewBox={"0 0 90 90"}/>
-                    <Icon iconId={"styledComponents"} width={"64px"} height={"64px"} viewBox={"0 0 120 120"}/>
+                    {/*<Fade cascade={true} damping={0.2}>*/}
+                    {/*    <Icon iconId={"css"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>*/}
+                    {/*    <Icon iconId={"html"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>*/}
+                    {/*    <Icon iconId={"js"} width={"70px"} height={"70px"} viewBox={"0 0 120 120"}/>*/}
+                    {/*    <Icon iconId={"githubFill"} width={"80px"} height={"75px"} viewBox={"0 0 120 120"}/>*/}
+                    {/*    <Icon iconId={"react"} width={"70px"} height={"80px"} viewBox={"0 0 120 120"}/>*/}
+                    {/*    <Icon iconId={"ts"} width={"60px"} height={"70px"} viewBox={"0 0 120 120"}/>*/}
+                    {/*    <Icon iconId={"redux"} width={"70px"} height={"70px"} viewBox={"0 0 110 110"}/>*/}
+                    {/*    <Icon iconId={"Git"} width={"64px"} height={"64px"} viewBox={"0 0 90 90"}/>*/}
+                    {/*    <Icon iconId={"styledComponents"} width={"64px"} height={"64px"} viewBox={"0 0 120 120"}/>*/}
+                    {/*</Fade>*/}
+                    <Fade cascade={true} damping={0.2}>
+                        <Icon iconId={"css"} width={"120px"} height={"120px"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"html"} width={"120px"} height={"120px"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"js"} width={"120px"} height={"120px"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"githubFill"} width={"140px"} height={"130px"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"react"} width={"120px"} height={"130px"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"ts"} width={"110px"} height={"120px"} viewBox={"0 0 120 120"}/>
+                        <Icon iconId={"redux"} width={"120px"} height={"120px"} viewBox={"0 0 110 110"}/>
+                        <Icon iconId={"Git"} width={"120px"} height={"120px"} viewBox={"0 0 90 90"}/>
+                        <Icon iconId={"styledComponents"} width={"114px"} height={"114px"} viewBox={"0 0 120 120"}/>
+                    </Fade>
                 </FlexWrapper>
             </Container>
         </StyledSkill>

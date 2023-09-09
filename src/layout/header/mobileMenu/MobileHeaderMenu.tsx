@@ -25,7 +25,7 @@ export const MobileHeaderMenu = () => {
                 <MobileMenuPopUp isOpen={menuIsOpen} onClick={() => {
                     setmenuIsOpen(false)
                 }}>
-                    <FlexWrapper direction={"column"} gap={"40px"}>
+                    <FlexWrapper direction={"column"} gap={"50px"}>
                         <MenuItemsUl role={"menu"} aria-label={"Menu"}>
                             <StyledHedLi role={"menuitem"}>
                                 <NavLink to={"home"} smooth={true}>Home</NavLink>
@@ -53,18 +53,26 @@ export const MobileHeaderMenu = () => {
                         </MenuItemsUl>
 
                         <IconsMobileMenuUl>
-                            <FlexWrapper direction={"row"} gap={"30px"}>
+                            <FlexWrapper direction={"row"} gap={"40px"}>
                                 <IconListLi>
-                                    <SocialLink>
-                                        <Icon iconId={"Git"} height={"40px"} width={"40px"} viewBox={"0 0 90 90"}/>
+                                    <SocialLink href={"https://github.com/Kicka3/"} target="_blank">
+                                    <Icon iconId={"Git"} height={"40px"} width={"40px"} viewBox={"0 0 90 90"}/>
                                     </SocialLink>
                                 </IconListLi>
 
                                 <IconListLi>
-                                    <SocialLink>
-                                        <Icon iconId={"Git"} height={"40px"} width={"40px"} viewBox={"0 0 90 90"}/>
+                                    <SocialLink href={"https://t.me/Kesarcjer/"} target="_blank">
+                                        <Icon color={theme.whiteThemeColors.fontThree} iconId={"telegramFooter"} height={"40px"} width={"40px"} viewBox={"0 0 16 16"}/>
                                     </SocialLink>
                                 </IconListLi>
+
+                                <IconListLi>
+                                    <SocialLink href={"https://www.linkedin.com/in/kirill-ozornin-904768264/"} target="_blank">
+                                        <Icon color={theme.whiteThemeColors.fontThree} iconId={"linkedInFooter"} height={"40px"} width={"40px"} viewBox={"0 0 16 16"}/>
+                                    </SocialLink>
+                                </IconListLi>
+
+
                             </FlexWrapper>
                         </IconsMobileMenuUl>
 
@@ -150,19 +158,22 @@ const MobileMenuPopUp = styled.div<{ isOpen: Boolean }>`
   bottom: 0;
   z-index: 999999;
   background-color: rgba(166, 188, 250, 92%);
-  display: none;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 1s ease-in-out;
 
   ${props => props.isOpen && css<{ isOpen: Boolean }>`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transform: translateY(0);
+    
   `}
+  
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 58px;
+    gap: 40px;
     ${font({Fmax: 10, Fmin: 16})};
     //font-size: 16px;
   }

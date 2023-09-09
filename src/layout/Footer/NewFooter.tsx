@@ -41,6 +41,12 @@ export const NewFooter = () => {
                                 <Icon color={theme.iconsColor.telegramFooter} iconId={"telegramFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
                             </SocialLink>
                         </SocialItem>
+
+                        <SocialItem>
+                            <SocialLink href={"https://github.com/Kicka3/"} target="_blank">
+                                <Icon iconId={"Git"} height={"50px"} width={"50px"} viewBox={"0 0 90 90"}/>
+                            </SocialLink>
+                        </SocialItem>
                     </SocialList>
                 </FlexWrapper>
 
