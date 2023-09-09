@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import styled, {css} from 'styled-components';
-import {MoonStyled} from "../../../components/MoonImg/MoonImg";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
 import {Link} from "react-scroll";
 import {SocialLink} from "../../Footer/NewFooter";
 import {Icon} from "../../../components/icon/icon";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 
 export const MobileHeaderMenu = () => {
@@ -25,40 +25,50 @@ export const MobileHeaderMenu = () => {
                 <MobileMenuPopUp isOpen={menuIsOpen} onClick={() => {
                     setmenuIsOpen(false)
                 }}>
-                    <MenuItemsUl role={"menu"} aria-label={"Menu"}>
-                        <StyledHedLi role={"menuitem"}>
-                            <NavLink to={"home"} smooth={true}>Home</NavLink>
-                        </StyledHedLi>
+                    <FlexWrapper direction={"column"} gap={"40px"}>
+                        <MenuItemsUl role={"menu"} aria-label={"Menu"}>
+                            <StyledHedLi role={"menuitem"}>
+                                <NavLink to={"home"} smooth={true}>Home</NavLink>
+                            </StyledHedLi>
 
-                        <StyledHedLi role={"menuitem"}>
-                            <NavLink to={"skills"} smooth={true}>Skills</NavLink>
-                        </StyledHedLi>
+                            <StyledHedLi role={"menuitem"}>
+                                <NavLink to={"skills"} smooth={true}>Skills</NavLink>
+                            </StyledHedLi>
 
-                        <StyledHedLi role={"menuitem"}>
-                            <NavLink to={"projects"} smooth={true}>Projects</NavLink>
-                        </StyledHedLi>
+                            <StyledHedLi role={"menuitem"}>
+                                <NavLink to={"projects"} smooth={true}>Projects</NavLink>
+                            </StyledHedLi>
 
-                        <StyledHedLi role={"menuitem"}>
-                            <NavLink to={"about"} smooth={true}>About</NavLink>
-                        </StyledHedLi>
+                            <StyledHedLi role={"menuitem"}>
+                                <NavLink to={"about"} smooth={true}>About</NavLink>
+                            </StyledHedLi>
 
-                        <StyledHedLi role={"menuitem"}>
-                            <NavLink to={"contact"} smooth={true}>Content</NavLink>
-                        </StyledHedLi>
+                            <StyledHedLi role={"menuitem"}>
+                                <NavLink to={"contact"} smooth={true}>Content</NavLink>
+                            </StyledHedLi>
 
-                        {/*<StyledHedLi>*/}
-                        {/*    <MoonStyled/>*/}
-                        {/*</StyledHedLi>*/}
-                    </MenuItemsUl>
+                            {/*<StyledHedLi>*/}
+                            {/*    <MoonStyled/>*/}
+                            {/*</StyledHedLi>*/}
+                        </MenuItemsUl>
 
                         <IconsMobileMenuUl>
-                            <IconListLi>
-                                <SocialLink>
-                                    <Icon iconId={"Git"} height={"20px"} width={"20px"} viewBox={"0 0 20 20"}/>
-                                </SocialLink>
-                            </IconListLi>
+                            <FlexWrapper direction={"row"} gap={"30px"}>
+                                <IconListLi>
+                                    <SocialLink>
+                                        <Icon iconId={"Git"} height={"40px"} width={"40px"} viewBox={"0 0 90 90"}/>
+                                    </SocialLink>
+                                </IconListLi>
+
+                                <IconListLi>
+                                    <SocialLink>
+                                        <Icon iconId={"Git"} height={"40px"} width={"40px"} viewBox={"0 0 90 90"}/>
+                                    </SocialLink>
+                                </IconListLi>
+                            </FlexWrapper>
                         </IconsMobileMenuUl>
 
+                    </FlexWrapper>
                 </MobileMenuPopUp>
 
             </StyledHeadMenu>
@@ -140,12 +150,8 @@ const MobileMenuPopUp = styled.div<{ isOpen: Boolean }>`
   bottom: 0;
   z-index: 999999;
   background-color: rgba(166, 188, 250, 92%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-content: center;
-  gap: 40px;
+  display: none;
+
 
   ${props => props.isOpen && css<{ isOpen: Boolean }>`
     display: flex;
@@ -178,7 +184,7 @@ const NavLink = styled(Link)`
   color: ${theme.whiteThemeColors.fontOne};
   position: relative;
   cursor: pointer;
-  
+
   @media ${theme.media.newTablet895} {
     font-size: 50px;
   }

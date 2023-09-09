@@ -19,25 +19,25 @@ export const NewFooter = () => {
                     <SocialList>
 
                         <SocialItem>
-                            <SocialLink>
+                            <SocialLink href={"https://vk.com/yareyaredaz"} target="_blank">
                                 <Icon color={theme.iconsColor.vkFooter} iconId={"vkFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
                             </SocialLink>
                         </SocialItem>
 
                         <SocialItem>
-                            <SocialLink>
+                            <SocialLink href={"https://www.linkedin.com/in/kirill-ozornin-904768264/"} target="_blank">
                                 <Icon color={theme.iconsColor.linkedInFooter} iconId={"linkedInFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
                             </SocialLink>
                         </SocialItem>
 
                         <SocialItem>
-                            <SocialLink >
-                                <Icon color={theme.iconsColor.whatUpFooter} iconId={"whatsUpFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
+                            <SocialLink href={"https://wa.me/79193822014?text=Здравствуйте,%20давайте%20заинтересовало%20Ваше%20резюме,%20давайте%20кодить%20вместе!%20"} target="_blank">
+                            <Icon color={theme.iconsColor.whatUpFooter} iconId={"whatsUpFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
                             </SocialLink>
                         </SocialItem>
 
                         <SocialItem>
-                            <SocialLink >
+                            <SocialLink href={"https://t.me/Kesarcjer/"} target="_blank">
                                 <Icon color={theme.iconsColor.telegramFooter} iconId={"telegramFooter"} height={"50px"} width={"50px"} viewBox={"0 0 16 16"}/>
                             </SocialLink>
                         </SocialItem>
