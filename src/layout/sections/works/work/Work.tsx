@@ -52,7 +52,7 @@ const WorkCardsWrapper = styled.div`
   background: white;
   padding: 20px 30px;
   border-radius: 0 0 26px 26px;
-  transition: .5s;
+  transition: ${theme.animations.transaction};
 
   &:hover {
     background-color: ${theme.whiteThemeColors.secondaryBg};

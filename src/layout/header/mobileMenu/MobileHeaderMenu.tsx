@@ -58,14 +58,9 @@ export const MobileHeaderMenu = () => {
 const StyledHeaderNav = styled.nav`
   display: none;
 
-    // @media ${theme.media.tablet} {
-  //   display: block;
-  // } 
-
   @media ${theme.media.newTablet895} {
     display: block;
   }
-
 `;
 
 const BurgerButton = styled.button<{ isOpen: Boolean }>`
@@ -133,7 +128,7 @@ const MobileMenuPopUp = styled.div<{ isOpen: Boolean }>`
   right: 0;
   bottom: 0;
   z-index: 999999;
-  background-color: rgba(166, 188, 250, 0.63);
+  background-color: rgba(166, 188, 250, 92%);
   display: none;
 
   ${props => props.isOpen && css<{ isOpen: Boolean }>`
@@ -163,8 +158,7 @@ const NavLink = styled(Link)`
   color: ${theme.whiteThemeColors.fontOne};
   position: relative;
   cursor: pointer;
-
-
+  
   @media ${theme.media.newTablet895} {
     font-size: 50px;
   }
@@ -178,7 +172,7 @@ const NavLink = styled(Link)`
     width: 0;
     height: 2px; /* Высота линии */
     background-color: ${theme.whiteThemeColors.fontOne}; /* Цвет подчеркивания при исчезании линии*/
-    transition: width 0.5s; /* Время эффекта */
+    transition: width 0.2s; /* Время эффекта */
   }
 
   &:hover:after {
@@ -190,7 +184,7 @@ const NavLink = styled(Link)`
     bottom: -3px;
     height: 2px; /* Высота линии */
     background-color: ${theme.whiteThemeColors.fontOne}; /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s; /* Время эффекта */
+    transition: width 0.2s; /* Время эффекта */
   }
 `;
 

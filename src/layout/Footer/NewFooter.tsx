@@ -74,6 +74,7 @@ const SocialItem = styled.li`
 
 const SocialLink = styled.a`
   cursor: pointer;
+  transition: ${theme.animations.transaction};
   
   &:hover svg {
     color: ${theme.iconsColor.hoverTelegramFooter};
