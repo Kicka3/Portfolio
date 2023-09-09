@@ -20,6 +20,7 @@ const ButtonStyled = styled.button`
   border-radius: 9px;
   cursor: pointer;
   
+  
   &:hover {
     background-color: ${theme.whiteThemeColors.fontSix};
   }

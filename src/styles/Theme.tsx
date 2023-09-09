@@ -35,6 +35,10 @@ export const theme = {
         hoverWhatUpFooter: "rgba(37,211,60,0.7)",
     },
 
+    animations: {
+        transaction: ".2s ease-in-out",
+    },
+
     //Media
     media: {
         mobile1345: "screen and (max-width: 1345px)",

@@ -67,13 +67,14 @@ const StyledHeaderUl = styled.ul`
   ${font({family: "Roboto , sans-serif", weight: "700", Fmin: 10, Fmax: 16})};
   //font-size: 16px;
   align-items: center;
+  
+  
   @media ${theme.media.mobile1000} {
     gap: 43px;
   }
 
   @media ${theme.media.mobile948} {
     gap: 32px;
-
   }
 `;
 
@@ -113,9 +114,3 @@ const NavLink = styled(Link)`
     transition: width 0.5s; /* Время эффекта */
   }
 `;
-//
-// const MoonWrapper = styled.div`
-//   transition-property: all;
-//   transition: all ease 1s;
-// `;
-
