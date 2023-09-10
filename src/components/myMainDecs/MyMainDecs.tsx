@@ -27,7 +27,8 @@ export const MyMainDecs = () => {
                 />
             </MainDescProf>
             <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ea.
+                {/*Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ea.*/}
+                A Front-end junior dev. My hobbies are programming and snowboarding.
             </span>
             <FlexWrapper justify={"flex-start"} align={"center"} gap={"30px"}>
                 <FlexWrapperButtons>
