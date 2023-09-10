@@ -52,7 +52,7 @@ const StyledBgLeftPicture = styled.div`
   }
   
   @media ${theme.media.mobileIphone} {
-    //height: 791px;
+    
     height: 800px;
   }
   
