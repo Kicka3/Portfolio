@@ -72,9 +72,9 @@ const StyledHeaderUl = styled.ul`
   @media ${theme.media.mobile1110} {
     gap: 34px;
   }
-
-  @media ${theme.media.mobile948} {
-    gap: 32px;
+  
+  @media ${theme.media.mobile1000} {
+    gap: 24px;
   }
 `;
 
