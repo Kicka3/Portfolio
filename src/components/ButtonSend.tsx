@@ -29,13 +29,13 @@ const ButtonStyled = styled.button`
     transform: translateY(3px);
   }
 
-  @media ${theme.media.mobile493} {
-    position: relative;
-    left: 44px;
-  }
+  // @media ${theme.media.mobile493} {
+  //   position: relative;
+  //   left: 44px;
+  // }
   
-  @media ${theme.media.mobileIphone375} {
-    position: relative;
-    left: 64px;
-  }
+  // @media ${theme.media.mobileIphone375} {
+  //   position: relative;
+  //   left: 64px;
+  // }
 `;

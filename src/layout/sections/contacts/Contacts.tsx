@@ -42,8 +42,8 @@ export const Contact = () => {
                     <FlexWrapper align={"flex-start"} gap={"128px"}>
                         <FlexWrapper gap={"37px"} direction={"column"} justify={"flex-start"} align={"stretch"}
                                      wrap={"wrap"}>
-                            <InputWrapper>
 
+                            <InputWrapper>
                                 <FlexWrapper direction={"column"} wrap={"wrap"} gap={"23px"}>
                                     <FlexWrapper gap={"7px"}>
                                         <StyledField placeholder={"E-mail"}/>
@@ -157,15 +157,14 @@ const StyledFormWrapper = styled.div`
 `;
 
 const InputWrapper = styled.form`
-  width: 429px;
+  max-width: 429px;
+  width: 100%;
   display: flex;
   align-content: space-around;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-
-
-
+  
 `;
 
 
@@ -184,9 +183,9 @@ const StyledField = styled.input`
     outline: 1px solid ${theme.whiteThemeColors.dontForms};
   }
 
-  @media ${theme.media.mobileIphone375} {
-    width: 44%;
-  }
+  // @media ${theme.media.mobileIphone375} {
+  //   max-width: 44%;
+  // }
 `;
 
 const StyledFieldMessageTextArea = styled.input`
@@ -196,8 +195,8 @@ const StyledFieldMessageTextArea = styled.input`
   //font-family: Roboto, sans-serif;
   //font-size: 13px;
   border: none;
-  width: 429px;
-  height: 152px;
+  max-width: 429px;
+  min-height: 152px;
   border-radius: 9px;
   padding: 17px 25px 17px 29px;
   text-transform: capitalize;
@@ -213,7 +212,7 @@ const StyledFieldMessageTextArea = styled.input`
   @media ${theme.media.mobileIphone375} {
     max-width: 300px;
     position: relative;
-    left: 14px;
+    //left: 14px;
   }
 }
 `;
