@@ -30,9 +30,24 @@ export const Works = () => {
             <Container>
                 <BgDotsWork/>
                 <FlexWrapper wrap={"wrap"} justify={"center"} align={"center"} direction={"column"} gap={"0px"}>
-                    <SectionTitle size={"48px"}>Projects</SectionTitle>
-                    <CircleIcon/>
-                    <Subtitle lineH={"26px"} size={"32px"}>Things I’ve built so far</Subtitle>
+                    <Fade cascade={true}
+                          damping={0.2}
+                          direction={"left"}
+                    >
+                        <SectionTitle size={"48px"}>Projects</SectionTitle>
+                    </Fade>
+                    <Fade cascade={true}
+                          damping={2}
+                          direction={"right"}
+                    >
+                        <CircleIcon/>
+                    </Fade>
+                    <Fade cascade={true}
+                          damping={2}
+                          direction={"right"}
+                    >
+                        <Subtitle lineH={"26px"} size={"32px"}>Things I’ve built so far</Subtitle>
+                    </Fade>
                     <BgXWork/>
 
                     <FlexWrapper gap={"34px"} wrap={"wrap"}>
@@ -40,24 +55,24 @@ export const Works = () => {
                               damping={0.2}
                               direction={"right"}
                         >
-                        <Work src={work1} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work2} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work3} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work4} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work5} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work6} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work7} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <Work src={work8} title={"Project Tile goes here"}
-                              text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work1} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work2} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work3} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work4} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work5} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work6} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work7} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <Work src={work8} title={"Project Tile goes here"}
+                                  text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
                         </Fade>
-                        </FlexWrapper>
+                    </FlexWrapper>
 
                 </FlexWrapper>
             </Container>

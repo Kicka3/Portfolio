@@ -13,8 +13,18 @@ const Skills = () => {
         <StyledSkill id={"skills"}>
             <Container>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"50px"}>
-                    <SectionTitle marginT={"70px"}>My Tech Stack</SectionTitle>
-                    <CircleIcon/>
+                    <Fade cascade={true}
+                          damping={0.2}
+                          direction={"right"}
+                    >
+                        <SectionTitle marginT={"70px"}>My Tech Stack</SectionTitle>
+                    </Fade>
+                    <Fade cascade={true}
+                          damping={2}
+                          direction={"left"}
+                    >
+                        <CircleIcon/>
+                    </Fade>
                 </FlexWrapper>
                 <FlexWrapper wrap={"wrap"} gap={"60px"} rowGap={"32px"}>
                     <Fade cascade={true} damping={0.2}>

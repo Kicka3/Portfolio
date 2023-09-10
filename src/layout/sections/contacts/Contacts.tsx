@@ -13,6 +13,7 @@ import {PhoneImg} from "./contactDecs/imgCons/PhoneImg";
 import {font} from "../../../styles/Common";
 import {HThreeTitle} from "../../../components/H3title";
 import {ContactMobile} from "./contactDecs/imgCons/ContactMobile";
+import {Fade} from "react-awesome-reveal";
 
 
 export const Contact = () => {
@@ -20,8 +21,18 @@ export const Contact = () => {
         <StyledContacts id={"contact"}>
             <Container>
                 <FlexWrapper justify={"center"} align={"center"} direction={"column"} gap={"5px"} marginB={"65px"}>
-                    <SectionTitle size={"32px"}>Contact Us</SectionTitle>
-                    <CircleIcon/>
+                    <Fade cascade={true}
+                          damping={0.2}
+                          direction={"right"}
+                    >
+                        <SectionTitle size={"32px"}>Contact Us</SectionTitle>
+                    </Fade>
+                    <Fade cascade={true}
+                          damping={2}
+                          direction={"left"}
+                    >
+                        <CircleIcon/>
+                    </Fade>
                 </FlexWrapper>
 
 
@@ -129,7 +140,7 @@ const StyledFormWrapper = styled.div`
   }
 
 
-  @media ${theme.media.newTablet768}{
+  @media ${theme.media.newTablet768} {
     max-width: 593px;
     margin-bottom: 42px;
 
@@ -153,8 +164,8 @@ const InputWrapper = styled.form`
   flex-direction: column;
   align-items: flex-start;
 
- 
-  
+
+
 `;
 
 
@@ -198,7 +209,7 @@ const StyledFieldMessageTextArea = styled.input`
   @media ${theme.media.mobile493} {
     max-width: 341px;
   }
-  
+
   @media ${theme.media.mobileIphone375} {
     max-width: 300px;
     position: relative;
