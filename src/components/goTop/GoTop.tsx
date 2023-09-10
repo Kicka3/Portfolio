@@ -40,6 +40,7 @@ const StyledGoTop = styled.button`
   cursor: pointer;
   padding: 8px;
   position: fixed;
+  z-index: 999;
   bottom: 280px;
   right: 30px;
   transition: all 0.2s ease 0s;

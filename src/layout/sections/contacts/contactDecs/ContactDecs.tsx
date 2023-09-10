@@ -2,7 +2,6 @@ import React, {PropsWithChildren} from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
-import {font} from "../../../../styles/Common";
 
 
 type ContactDecsPropsType = {
@@ -13,10 +12,10 @@ type ContactDecsPropsType = {
 
 export const ContactDecs = (props: PropsWithChildren<ContactDecsPropsType>) => {
     return (
-            <FlexWrapper direction={"column"}  align={"flex-start"} wrap={"wrap"}>
-                <LocationTitle>{props.locTitle}</LocationTitle>
-                <LocationDesc>{props.locDesc}</LocationDesc>
-            </FlexWrapper>
+        <FlexWrapper direction={"column"} align={"flex-start"} wrap={"wrap"}>
+            <LocationTitle>{props.locTitle}</LocationTitle>
+            <LocationDesc>{props.locDesc}</LocationDesc>
+        </FlexWrapper>
     );
 };
 
@@ -28,6 +27,7 @@ const LocationTitle = styled.p`
   font-weight: 500;
 
 `;
+
 
 const LocationDesc = styled.p`
   color: ${theme.whiteThemeColors.locationCityColor};
