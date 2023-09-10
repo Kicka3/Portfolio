@@ -18,7 +18,6 @@ const StyledCircleBg = styled.div`
   stroke: rgba(33, 87, 242, 0.40);
   right: 139px;
   bottom: -13px;
-  transform: rotate(-45deg);
   background-size: contain;
   background-repeat: no-repeat;
 

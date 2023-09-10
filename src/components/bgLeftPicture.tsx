@@ -10,7 +10,7 @@ export const BgLeftPicture = () => {
 };
 
 const StyledBgLeftPicture = styled.div`
-  min-width: 453px;
+  //min-width: 453px;
   width: 100%;
   height: 946px;
   position: absolute;
@@ -28,10 +28,7 @@ const StyledBgLeftPicture = styled.div`
     height: 1042px;
     background-image: linear-gradient(90deg, #ffffff 0%, #A6BCFA 0% 52%, #ffffff 31%);
   }
-
-    // @media ${theme.media.tablet} {
-  //width: 400px;
-  //}
+  
 
   @media ${theme.media.newTablet730} {
     //width: 358px;
@@ -48,12 +45,7 @@ const StyledBgLeftPicture = styled.div`
     //width: 242px;
     height: 864px;
   }
-
-  @media ${theme.media.mobile444} {
-    //width: 199px;
-    //height: 869px;
-  }
-
+  
   @media ${theme.media.mobile425} {
     //height: 791px;
     background-image: linear-gradient(90deg,#ffffff 0%,#A6BCFA 0% 47%,#ffffff 31%);
@@ -66,6 +58,6 @@ const StyledBgLeftPicture = styled.div`
   
   @media ${theme.media.mobileIphone375} {
     //height: 791px;
-    background-image: linear-gradient(90deg,#ffffff 0%,#A6BCFA 0% 43%,#ffffff 31%);
+    background-image: linear-gradient(90deg,#ffffff 0%,#A6BCFA 0% 52%,#ffffff 31%);
   }
 `;
