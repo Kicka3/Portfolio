@@ -69,8 +69,8 @@ const StyledHeaderUl = styled.ul`
   align-items: center;
   
   
-  @media ${theme.media.mobile1000} {
-    gap: 43px;
+  @media ${theme.media.mobile1110} {
+    gap: 34px;
   }
 
   @media ${theme.media.mobile948} {
