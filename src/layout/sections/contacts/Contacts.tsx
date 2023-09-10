@@ -63,7 +63,7 @@ export const Contact = () => {
                                          align={"flex-start"} wrap={"wrap"}>
                                 <FlexWrapper gap={"26px"}>
                                     <LocationImg/>
-                                    <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg"}/>
+                                    <ContactDecs locTitle={"Location"} locDesc={"Ekaterinburg city"}/>
                                 </FlexWrapper>
 
                                 <FlexWrapper gap={"26px"}>

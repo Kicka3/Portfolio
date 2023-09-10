@@ -6,8 +6,8 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import {CircleIcon} from "../../../components/svgIcons/icons/CircleIcon";
 import {Container} from "../../../components/Container";
-import {BgDotsWork} from "../../../components/BgDotsWork";
-import {BgXWork} from "../../../components/BgXWork";
+import {BgDotsWork} from "../../../components/backGrounds/BgDotsWork";
+import {BgXWork} from "../../../components/backGrounds/BgXWork";
 
 import {Fade} from "react-awesome-reveal";
 

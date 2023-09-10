@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import BgXImg from "../assets/images/BgXWork.png";
-import {theme} from "../styles/Theme";
+import BgXImg from "../../assets/images/BgXWork.png";
+import {theme} from "../../styles/Theme";
 
 
 export const BgXWork = () => {

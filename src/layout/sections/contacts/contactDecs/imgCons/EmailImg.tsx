@@ -5,7 +5,7 @@ import {theme} from "../../../../../styles/Theme";
 
 export const EmailImg = () => {
     return (
-        <LocationDescLink>
+        <LocationDescLink href={"https://ozornin_kirill@inbox.ru"} target={"_blank"}>
             <StyledEmailImg/>
         </LocationDescLink>
     );

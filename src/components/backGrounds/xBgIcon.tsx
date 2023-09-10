@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import XIcon from "../assets/images/x.png"
-import {theme} from "../styles/Theme";
+import XIcon from "../../assets/images/x.png"
+import {theme} from "../../styles/Theme";
 
 
 export const XBgIcon = () => {

@@ -4,8 +4,8 @@ import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
-import {BgLeftPicture} from "../../components/bgLeftPicture";
-import {XBgIcon} from "../../components/xBgIcon";
+import {BgLeftPicture} from "../../components/backGrounds/bgLeftPicture";
+import {XBgIcon} from "../../components/backGrounds/xBgIcon";
 
 
 

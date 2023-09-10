@@ -1,7 +1,7 @@
 import React from 'react';
-import BgDots from "../assets/images/BgDots.png";
+import BgDots from "../../assets/images/BgDots.png";
 import styled from "styled-components";
-import {theme} from "../styles/Theme";
+import {theme} from "../../styles/Theme";
 
 export const BgDotsWork = () => {
     return (
